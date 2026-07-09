@@ -1,0 +1,5148 @@
+[
+  {
+    "province": "adana",
+    "district": "Şehir Merkezi",
+    "name": "Geylaniler Petrol Ürünleri Ticaret Ve Sanayi Limited Şirketi",
+    "address": "Cumhuriyet Caddesi 27. sokak Sokağı No:34 ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 36.96576,
+    "lng": 35.609555,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "YÜREĞİR",
+    "name": "ALTINYÜZÜK GIDA AKARYAKIT VE PETROL ÜRÜNLERİ İTHALAT İHRACAT TURİZM TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Taşçı Mahallesi Karataş Bulvarı No:925/A ( Ada:108 , Pafta: - , Parsel:16 )",
+    "lat": 36.873306,
+    "lng": 35.346085
+  },
+  {
+    "province": "adana",
+    "district": "KOZAN",
+    "name": "Tanrıverdi Petrol Nakliyat Gıda Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Sırkıntı Caddesi No:342 Şevkiye Mahallesi Kozan /Adana",
+    "lat": 37.442945,
+    "lng": 35.780642,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "KOZAN",
+    "name": "Mobay Petrol Turizm Tarım Gübre İnşaat Gıda Fırın Lokanta Nakliyat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Ağlıboğaz Mahallesi No:328 Feke Yolu ( Ada:- , Pafta:3 , Parsel:857 )",
+    "lat": 37.491919,
+    "lng": 35.83175
+  },
+  {
+    "province": "adana",
+    "district": "KOZAN",
+    "name": "İZ PETROL İNŞAAT NAKLİYAT GIDA GÜBRE MADEN İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Varsaklar Mahallesi Adana Caddesi ( Ada:1519 , Pafta:19.K.111.c , Parsel:1 )",
+    "lat": 37.424777,
+    "lng": 35.788907,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "KARATAŞ",
+    "name": "MEHMET ALTINYÜZÜK-YÜZBAŞI PETROL - 2",
+    "address": "Yüzbaşı Mahallesi Yüzbaşı Sokağı No:50 ( Ada: - , Pafta: - , Parsel:34 )",
+    "lat": 36.724757,
+    "lng": 35.335552
+  },
+  {
+    "province": "adana",
+    "district": "KARATAŞ",
+    "name": "Mehmet Altınyüzük-Yüzbaşı Petrol",
+    "address": "Yüzbaşı Mahallesi Yüzbaşı Sokağı No:5 ( Ada:- , Pafta:- , Parsel:129 ) KARATAŞ / ADANA",
+    "lat": 36.725556,
+    "lng": 35.336114
+  },
+  {
+    "province": "adana",
+    "district": "İMAMOĞLU",
+    "name": "Nadir İnşaat Nakliyat Hafriyat Turizm Temizlik Gıda Marketçilik Daynıklıtüketim Petrol Ürünler Taahhüt Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Adalet Mahallesi Koyunevi Caddesi No:70 İmamoğlu/adana",
+    "lat": 37.259391,
+    "lng": 35.661505,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "KOZAN",
+    "name": "KARDELEN PETROL ÜRÜNLERİ TARIM NAKLİYE GIDA İNŞAAT EMLAK OTOMOTİV SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kuyuluk Mahallesi Merkez Sokak No:1 / A ( Ada:- , Pafta:- , Parsel:400 )",
+    "lat": 37.370829,
+    "lng": 35.845197
+  },
+  {
+    "province": "adana",
+    "district": "KARATAŞ",
+    "name": "BİNBEĞİ PETROL ÜRÜNLERİ LPG TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Kemaliye Mahallesi Atatürk Caddesi No:277/1 ( Ada:543 , Pafta: - , Parsel:1 )",
+    "lat": 36.587922,
+    "lng": 35.383953,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "CEYHAN",
+    "name": "Bazlar Gıda Zirai İlaç Gübre Tarım Petrol Sanayi ve Ticaret Limited Şirketi",
+    "address": "Yenikent Mah. Atatürk Cad. No:7 Birkent Kasabası (Pafta:1 Ada:- Parsel:580) Ceyhan / ADANA",
+    "lat": 36.8078487,
+    "lng": 35.5663104
+  },
+  {
+    "province": "adana",
+    "district": "YÜREĞİR",
+    "name": "RAV PETROL YEMEKÇİLİK TEMİZLİK İNŞAAT SANAYİ TİCARET ANONİM ŞİRKETİ-2",
+    "address": "Yavuzlar Mahallesi Kışla Caddesi No:140 ( Ada:5142 , Pafta: - , Parsel:28 )",
+    "lat": 36.996357,
+    "lng": 35.343408,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adana",
+    "district": "İMAMOĞLU",
+    "name": "CENGİZ GÖL",
+    "address": "Havuzlubahçe Mahallesi Saydam Caddesi No:150/A ( Ada:16251 , Pafta:- , Parsel:4 )",
+    "lat": 37.2717,
+    "lng": 35.6818
+  },
+  {
+    "province": "adana",
+    "district": "SEYHAN",
+    "name": "TASER GRUP İNŞAAT HAZIR BETON MADENCİLİK NAKLİYE İMALAT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Döşeme Mahallesi Kurtuluş Caddesi No:30/a ( Ada:4242 , Pafta: - , Parsel:2 )",
+    "lat": 36.991911,
+    "lng": 35.316111
+  },
+  {
+    "province": "adana",
+    "district": "KOZAN",
+    "name": "ALTUNOK PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gazi Mahallesi Atatürk Caddesi No:68a ( Ada:0 , Pafta: - , Parsel:1514 )",
+    "lat": 37.276241,
+    "lng": 35.854505,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "KAHTA",
+    "name": "Yetiş Petrol Ticaret Kollektif Şirketi Mehmet Emin Yetiş Ve Ortakları",
+    "address": "Turgut Özal Mahallesi Sağlık Ocağı Caddesi",
+    "phone": "0416 725 52 14",
+    "lat": 37.78775,
+    "lng": 38.625768,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "Şehir Merkezi",
+    "name": "GÜMÜŞ AKARYAKIT İNŞAAT NAKLİYAT GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Adıyaman Gölbaşı Karayolu Üzeri 14.km",
+    "lat": 37.7007,
+    "lng": 38.121016,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "Şehir Merkezi",
+    "name": "Özdereci Akaryakıt Turizm İnşaat Mühendislik Nakliyat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Gölbaşı Yolu Üzeri 10. Km. ( Ada:- , Pafta:- , Parsel:1710 ) MERKEZ / ADIYAMAN",
+    "phone": "0416 223 15 78",
+    "lat": 37.722979,
+    "lng": 38.175086
+  },
+  {
+    "province": "adiyaman",
+    "district": "GERGER",
+    "name": "Erdal Özdemir",
+    "address": "Yeni Mahallesi No:69/A Yeni Kümeevleri ( Ada:140 , Pafta: - , Parsel:44 ) GERGER / ADIYAMAN",
+    "lat": 38.0211658,
+    "lng": 39.027196,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "Şehir Merkezi",
+    "name": "SEZGİN AKARYAKIT OTOMOTİV GIDA TAŞIMACILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Sanayi Mahallesi Huzur Caddesi No:5 A ( Ada:3630 , Pafta:- , Parsel:1 )",
+    "lat": 37.75638,
+    "lng": 38.23621,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "KAHTA",
+    "name": "MUSCEN TARIM İNŞAAT TAŞIMACILIK TEMİZLİK HAYVANCILIK AKARYAKIT GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tuğlu Köyü Elmalı Mezrası No: 7 ( Ada: - , Pafta:M.41.B.21.C , Parsel:426 )",
+    "lat": 37.77372,
+    "lng": 38.790827
+  },
+  {
+    "province": "adiyaman",
+    "district": "SAMSAT",
+    "name": "ENVEROĞLU TAŞIMACILIK AKARYAKIT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Örentaş Mahallesi, Adıyaman Caddesi No:3 ( Ada:421 , Pafta:40M-IVa , Parsel:4 )",
+    "lat": 37.579807,
+    "lng": 38.475697,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "adiyaman",
+    "district": "KAHTA",
+    "name": "KAHTA TARIMSAL YAYIM VE DANIŞMANLIK MEDİKAL TAŞIMACILIK HAYVANCILIK PETROL ÜRÜNLERİ YENİLENEBİLİR ENERJİ TARIM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gülahmet Mezrası Mahallesi Tuğlu Köyü Gülahmet Mezrası Gülahmet Küme Evleri No:22 ( Ada:- , Pafta:- , Parsel:939 )",
+    "lat": 37.811288,
+    "lng": 38.771199
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "Şehir Merkezi",
+    "name": "FETHİBEY BELEDİYESİ AKARYAKIT İSTASYONU İŞLETMESİ",
+    "address": "Yunus Emre Mahallesi Menderes 3 Caddesi No:5 ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 38.851515,
+    "lng": 30.498702
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "DAZKIRI",
+    "name": "Yeni Sarıkavak Petrol Gıda Taşımacılık İnşaat Turizm Pazarlama Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Sarıkavak ( Ada: - , Pafta: - , Parsel:2893 ) DAZKIRI / AFYON",
+    "lat": 37.872013,
+    "lng": 29.810114,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "BOLVADİN",
+    "name": "ALPAY TEKSTİL ÜRÜNLERİ İMALAT PAZARLAMA VE SANAYİ TİCARET LİMİTED ŞİRKETİ - 2",
+    "address": "Yakup Şevki Paşa Mahallesi No:1/A ( Ada:419 , Pafta:138 , Parsel:17 )Çevre Yolu Yanı Köyü",
+    "lat": 38.717604,
+    "lng": 31.036207
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "SİNANPAŞA",
+    "name": "DİLHAS UĞUR",
+    "address": "Bağdat Mahallesi Uşak Caddesi No:80 Akören Kasabası (Ada:508, Pafta:K24-B-23-A-2, Parsel:210)",
+    "lat": 38.798506,
+    "lng": 30.373787,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "Şehir Merkezi",
+    "name": "Alpay Tekstil Ürünleri İmalat Pazarlama ve Sanayi Ticaret Ltd. Şti.",
+    "address": "Zafer Mahallesi No:11/A Afyonkarahisar-konya Karayolu Üzeri 18. Km.sülümenli Kasabası( Ada:- , Pafta:5 , Parsel:8969 ) Merkez / Afyonkarahisar",
+    "lat": 38.686916,
+    "lng": 30.709947,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "SİNANPAŞA",
+    "name": "iptal ASİ NAKLİYAT VE PETROLCÜLÜK SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Atatürk Mah. Aliçetinkaya Cad. No:1 Kılıçarslan Kasabası ( Ada:219 , Pafta: - , Parsel:149 )",
+    "lat": 38.737415,
+    "lng": 30.349426
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "ÇAY",
+    "name": "AKKUM HARFİYAT NAKLİYAT PETROL ÜRÜNLERİ YURT İŞLETMECİLİĞİ VE TEMİZLİK TİC. LTD. ŞTİ.",
+    "address": "Yeşilevler Mahallesi Akçay Sokağı No:77 ( Ada:278 , Pafta:20MI , Parsel:194 )",
+    "lat": 38.596904,
+    "lng": 31.034427,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "BOLVADİN",
+    "name": "AFYON AK GRUP İNŞAAT PVC HAZIR BETON TARIM HAYVANCILIK OTOMOTİV NAKLİYE KÖMÜR MADENCİLİK AKARYAKIT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yıldırım Mahallesi 13.çiftlikler No.23 ( Ada:438 , Pafta:148 , Parsel:49 )",
+    "phone": "0272 611 20 22",
+    "lat": 38.695556,
+    "lng": 31.051667,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "ŞUHUT",
+    "name": "KOCAAHMEDLER PETROL İNŞAAT MİMARLIK TARIM HAYVANCILIK VE İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yalı Mahallesi Atatürk Caddesi No:96 ( Ada:623 , Pafta: - , Parsel:1 )",
+    "lat": 38.5262,
+    "lng": 30.5478
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "SİNANPAŞA",
+    "name": "HAYDAROĞULLARI PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Düzağaç Kasabası Fatih Mahallesi Kayraklı Küme Evleri No:18",
+    "lat": 38.795768,
+    "lng": 30.195102,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "DİNAR",
+    "name": "ABİM AKARYAKIT TARIM GIDA NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dombay Köyü No:48/1 ( Ada:- , Pafta:- , Parsel:913 )",
+    "lat": 38.164504,
+    "lng": 30.191886,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "SİNANPAŞA",
+    "name": "TOLU AKARYAKIT YAPI İNŞAAT NAKLİYAT PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kocatepe Mah. Aliçetinkaya Cad. No:122 Kılıçarslan Kasabası ( Ada:188 , Pafta: - , Parsel:3,4,18 )"
+  },
+  {
+    "province": "afyonkarahisar",
+    "district": "EMİRDAĞ",
+    "name": "GEMPA ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Mevki Emirdağ Sok. No:44 Aşağıpiribeyli Köyü Emirdağ/Afyonkarahisar",
+    "lat": 38.926579,
+    "lng": 31.596194
+  },
+  {
+    "province": "agri",
+    "district": "PATNOS",
+    "name": "ESİN SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "İnönü Mahallesi Malazgirt Caddesi No:197 ( Ada:J.49C03D.01.A , Pafta:230 , Parsel:75 )",
+    "phone": "0472 616 17 30",
+    "lat": 39.22412,
+    "lng": 42.853812
+  },
+  {
+    "province": "agri",
+    "district": "Şehir Merkezi",
+    "name": "Emrah Yıldırım",
+    "address": "100. YIL MAHALLESİ KENT ORMANI KARŞISI AĞRI-VAN YOLU ÜZERİ NO:370 (Ada:- , Pafta:İ50.D.06.A , Parsel:400)",
+    "lat": 39.67892,
+    "lng": 43.02256,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "Şehir Merkezi",
+    "name": "Nurşah Nakliyat İnşaat Taahhüt Sanayi Ticaret Limited Şirketi",
+    "address": "Ağrı Taşlıçay Karayolu 18.km. Göl Mevkii Murat Bucağı ( Ada: - , Pafta:İ 50. D.10.B , Parsel:299 )",
+    "lat": 39.68592,
+    "lng": 43.240005,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "DOĞUBAYAZIT",
+    "name": "DOĞUKAN TANRIKULU",
+    "address": "Ağrı Yolu Üzeri Atabakan Köyü Şorik Mevkii No.69 ( Ada:169 , Pafta: - , Parsel:2 )",
+    "lat": 39.5445,
+    "lng": 43.959905,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "PATNOS",
+    "name": "Adem Boğucu",
+    "address": "Adilcevaz Bitlis Yolu Üzeri ( Ada:112 , Pafta:1 , Parsel:5/489 )Kazanbey Köyü PATNOS / AĞRI",
+    "lat": 39.0758,
+    "lng": 42.8972
+  },
+  {
+    "province": "agri",
+    "district": "DİYADİN",
+    "name": "CMS PETROL İNŞAAT TURİZM GIDA İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ-AĞRI",
+    "address": "Fatih Mahallesi Kaplıca Yolu Caddesi No:97 ( Ada:229 , Pafta:İ51D2B4A , Parsel:5 )",
+    "lat": 39.53298,
+    "lng": 43.67607,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "DOĞUBAYAZIT",
+    "name": "ZANA NAKLİYE PETROL OTOMOTİV İNŞAAT GIDA İTHALAT VE İHRACAT PAZARLAMA SANAYİ LTD. ŞTİ.",
+    "address": "No:76 Karacaköyü Doğubayazıt - Iğdır Karayolu ( Ada:0 , Pafta:I52D12D , Parsel:176 )",
+    "lat": 39.60016,
+    "lng": 44.052449,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "DİYADİN",
+    "name": "ZANA NAKLİYE PETROL OTOMOTİV İNŞAAT GIDA İTHALAT VE İHRACAT PAZARLAMA SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Murat Mah. Kaymakam Özgür Azer Kurak Cad. No:75A",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "agri",
+    "district": "DOĞUBAYAZIT",
+    "name": "CMS PETROL İNŞAAT TURİZM GIDA İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "7.km Çaldıran Yol Kavşağı ( Ada: - , Pafta:İ51.C25.B , Parsel:104 )Yılanlı Köyü Köyü",
+    "lat": 39.5395,
+    "lng": 43.9838,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "ÜMİT TEMİZLİK İNŞAAT TURİZM GIDA TARIM PETROLCÜLÜK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "E-90 Karayolu Üzeri (Ada: - , Pafta:L31B04C4D , Parsel:2428) Topakkaya",
+    "lat": 38.448374,
+    "lng": 33.931399
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "OKURLAR PETROL HAYVANCILIK TARIM İNŞAAT GIDA NAKLİYE SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Aksaray- Konya Karayolu Üzeri 21. Km Akhan Mevkii( Ada:214 , Pafta:31B21A , Parsel:14 )",
+    "lat": 38.292107,
+    "lng": 33.767361
+  },
+  {
+    "province": "aksaray",
+    "district": "GÜZELYURT",
+    "name": "MFİ GÜNGÖR PETROL GIDA HAYVANCILIK İNŞAAT OTOMOTİV TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Harmanlık Mahallesi Vadi Caddesi No:2",
+    "lat": 38.241086,
+    "lng": 34.300347
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "ÜNAL KARDEŞLER İNŞAAT NAKLİYAT MADENCİLİK TURİZM PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Topakkaya Kasabası Medeni Mah. Ş.Üzeri Küme Evler NO:33 (Ada:425 , Pafta:- , Parsel:4)",
+    "lat": 38.437725,
+    "lng": 33.944874,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aksaray",
+    "district": "ESKİL",
+    "name": "KELİKLER AKARYAKIT TARIM HAYVANCILIK NAKLİYE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karayağmur Karşısı Zafer Mahallesi Konya Aksaray Yolu Üzeri 60. Km. No:54 ( Ada: - , Pafta:l30c07b2a- 2b , Parsel:15608 )",
+    "lat": 38.196499,
+    "lng": 33.343786
+  },
+  {
+    "province": "aksaray",
+    "district": "ORTAKOY",
+    "name": "AYYILDIZLAR PETROL ÜRÜNLERİ MADENİ YAĞ NAKLİYE İNŞAAT TAAHHÜT GIDA MARKET EMLAK VE OTO ALIM SATIM KOMİSYONCULUĞU SANAYİ VE TİCARET LİMİTED ŞİRKETİ(AKSARAY)",
+    "address": "Yeni Mahallesi İhsan Özmen Bulvarı Kırşehir Caddesi No:373 ( Ada:1305 , Pafta:K32D01B2C , Parsel:9 )",
+    "lat": 38.740268,
+    "lng": 34.044096
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "AKSARAY DURU PETROLCÜLÜK SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tacin Mahallesi 5/konya Bulvarı No:146/5/1 ( Ada:4636 , Pafta:18J1 , Parsel:3 )",
+    "lat": 38.358124,
+    "lng": 33.975842
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "NESPET AKARYAKIT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Taşpınar Beldesi Yeni Cami Mahallesi Atatürk Bulvarı No:81 ( Ada:390 , Pafta:L31B25C , Parsel:436 )",
+    "lat": 38.251482,
+    "lng": 33.994794,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "AYTUĞ AKARYAKIT İNŞAAT PAZARLAMA NAKLİYAT SANAYİ VE TİCARET LTD.ŞTİ",
+    "address": "Taşpazar Mah. 2/Kapadokya Bulvarı (2. Bul.)8/1",
+    "lat": 38.366466,
+    "lng": 34.007316,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aksaray",
+    "district": "Şehir Merkezi",
+    "name": "BAYRAKDAR AKARYAKIT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yenikent Beldesi / Köyü Gazi Mahallesi Belediye Çarşı Caddesi No:11 ( Ada:470 , Pafta: - , Parsel:1 )",
+    "lat": 38.343355,
+    "lng": 33.751255,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "amasya",
+    "district": "MERZİFON",
+    "name": "ÖMER BİLGİN AKARYAKIT OTOMOTİV SANAYİ TİCARET LİMİTED ŞİRKETİ (Bahçecik Köyü)",
+    "address": "Bahçecik Köyü Bahçecik Mevkii No:128 ( Ada: - , Pafta:G3B15C , Parsel:765-766 )",
+    "lat": 40.859275,
+    "lng": 35.480771,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "amasya",
+    "district": "MERZİFON",
+    "name": "TÜMTURK PETROLCÜLÜK ANONİM ŞİRKETİ (AMASYA)",
+    "address": "Gökçebağ Köyü Ören Mevkii Ören Mevkii ( Küme Evler) Akaryakıt İstasyonu Sitesi No: 6/1 ( Ada:- , Pafta:G35a11d , Parsel:1512 )",
+    "lat": 40.86657,
+    "lng": 35.52855,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "ŞEREFLİKOÇHİSAR",
+    "name": "ÜNYAZ OTOMOTİV PETROL ÜRÜNLERİ PAZARLAMA SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "İstiklal Mahallesi E-90 Karayolu Caddesi No:245 A / 3-4 ( Ada:1675 , Pafta: - , Parsel:73 )",
+    "lat": 38.93363,
+    "lng": 33.542701,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "YENİMAHALLE",
+    "name": "Akköprü Petrol Akaryakıt Ürünleri TaşımacılıkTicaret Ve Sanayi Anonim Şirketi(Yenimahalle)",
+    "address": "Varlık Mahallesi İstanbul Caddesi No:172 - 172/B -172/C - 172/D Yenimahalle / ANKARA",
+    "lat": 39.954361,
+    "lng": 32.831495,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "BEYPAZARI",
+    "name": "İbrahim Sarı",
+    "address": "Hacıkara Mahallesi Karapınar Kırbaşı Yolu Üzeri Küme Evler No: 25 ( Ada:1626 , Pafta:H27c14a4c , Parsel:2 )",
+    "lat": 40.129262,
+    "lng": 31.910893,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "KAHRAMANKAZAN",
+    "name": "Başkent Oil Akaryakıt Nakliye İnşaat Gıda Ürünleri Sanayi İç Ve Dış Ticaret Limited Şirketi",
+    "address": "Kayı Mahallesi Istanbul Yolu 45.km (Ada:1328, Pafta:-, Parsel:1)",
+    "phone": "0312 800 02 00",
+    "lat": 40.199163,
+    "lng": 32.691588,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "POLATLI",
+    "name": "ASSİYE KILINÇ",
+    "address": "İNLER MAHALLESİ İNLER SOKAĞI NO:63(ADA:101,PAFTA:-, PARSEL:1)",
+    "lat": 39.25710634774285,
+    "lng": 32.25628081534144,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "HAYMANA",
+    "name": "Mihraç Petrol Ürünleri Otomotiv Nakliyat Tarım İnşaat Malzemeleri Sanayi Ticaret Limited Şirketi",
+    "address": "Kayabaşı Mahallesi Bünyamin Adacı Caddesi No.116 (Ada:729, Pafta: -, Parsel:1)",
+    "lat": 39.431601,
+    "lng": 32.517861
+  },
+  {
+    "province": "ankara",
+    "district": "ŞEREFLİKOÇHİSAR",
+    "name": "DAMLASOY PETROL ÜRÜNLERİ NAKLİYE TARIM VE HAYVANCILIK SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Akarca Mahallesi Akarca Sokağı No:68 ( Ada:155 , Pafta: - , Parsel:3 )",
+    "lat": 39.1505,
+    "lng": 33.278
+  },
+  {
+    "province": "ankara",
+    "district": "ETİMESGUT",
+    "name": "BK Petrol Akaryakıt Ürünleri Taşımacılık Ticaret ve Sanayi Limited Şirketi",
+    "address": "Bahçekapı Mahallesi 2542. Cadde No:18",
+    "lat": 39.934349,
+    "lng": 32.71914,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "BALA",
+    "name": "ANKARA KALE PETROL NAKLİYE İNŞAAT TARIM HAYVANCILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karahamzalı Mahallesi Karahamzalı Sokağı No:268 ( Ada:121 , Pafta:- , Parsel:1 )",
+    "lat": 39.234671,
+    "lng": 33.019966,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "ELMADAĞ",
+    "name": "BCR GIDA İÇ VE DIŞ TİCARET ANONİM ŞİRKETİ",
+    "address": "Hasanoğlan Bahçelievler Mahallesi 560 Cadde No.4 ( Ada:1225 , Pafta: - , Parsel:2 )",
+    "lat": 39.966219,
+    "lng": 33.143266,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "KAHRAMANKAZAN",
+    "name": "KESER PETROL SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Saray Mahallesi Fatih Sultan Mehmet Bulvarı No:380 ( Ada:362 , Pafta:- , Parsel:2 )",
+    "lat": 40.057301,
+    "lng": 32.625001,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "BEYPAZARI",
+    "name": "İBRAHİM SARI",
+    "address": "Hacıkara Mahallesi Alparslan Türkeş Bulvarı No:103/1 ( Ada:63 , Pafta: - , Parsel:1 )",
+    "lat": 40.16855,
+    "lng": 31.924841,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "ŞEREFLİKOÇHİSAR",
+    "name": "ÜLGERLER TUZGÖLÜ AKARYAKIT TURİZM NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hacıbektaşlı Mahallesi Hacıbektaşlı Küme Evleri No:70",
+    "lat": 39.076122,
+    "lng": 33.413143
+  },
+  {
+    "province": "ankara",
+    "district": "POLATLI",
+    "name": "ARAYIT PETROL GIDA İNŞAAT NAKLİYE TARIM SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Eskikarsak Mah. Aşağı Eskikarsak Küme Evleri No:32 ( Ada:- , Pafta:- , Parsel:638 )",
+    "lat": 39.414224,
+    "lng": 31.987441
+  },
+  {
+    "province": "ankara",
+    "district": "ÇANKAYA",
+    "name": "KUĞULU PETROL AKARYAKIT ÜRÜNLERİ TAŞIMACILIK SANAYİ VE TİCARE A.Ş.",
+    "address": "Remzi Oğuz Arık Mahallesi John F. Kennedy Cad. No:8",
+    "lat": 39.908841,
+    "lng": 32.858512,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "BEYPAZARI",
+    "name": "AY KOC PETROL GIDA NAKLİYAT İNŞAAT TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ayvaşık Mahallesi Alpaslan Türkeş Bulvarı No:1-1/B ( Ada:785 , Pafta: - , Parsel:1 )"
+  },
+  {
+    "province": "ankara",
+    "district": "HAYMANA",
+    "name": "YENİKENT PETROL ÜRÜNLERİ OTOMOTİV İNŞAAT GİYİM GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ-2",
+    "address": "Altıpınar Mahallesi Altıpınar Sokağı No:228 ( Ada:101 , Pafta: - , Parsel:1 )",
+    "lat": 39.204318,
+    "lng": 32.743497
+  },
+  {
+    "province": "ankara",
+    "district": "MAMAK",
+    "name": "ODİ ENERJİ AKARYAKIT NAKLİYE OTOMOTİV İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ortaköy Mahallesi 19 Mayıs Bulvarı No:334 ( Ada:184-185 , Pafta:- , Parsel:1-28,31 )",
+    "lat": 39.95209,
+    "lng": 33.06555
+  },
+  {
+    "province": "ankara",
+    "district": "GOLBASI",
+    "name": "BAŞKENT VİZYON AKARYAKIT LİMİTED ŞİRKETİ GÖLBAŞI ŞUBESİ",
+    "address": "Mahmatlıbahçe Mahallesi Mahmatlı Bahçe Küme Evleri No. 222 ( Ada:1 , Pafta: - , Parsel:1 )",
+    "lat": 39.547311,
+    "lng": 32.859838,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "POLATLI",
+    "name": "ŞTAŞ AKARYAKIT ENERJİ NAKLİYE OTOMOTİV İNŞAAT SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Kuşçu Mahallesi Kuşçu Mücavir Küme Evleri No:46 ( Ada:210 , Pafta: - , Parsel:4 )",
+    "lat": 39.655979,
+    "lng": 32.218631,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ankara",
+    "district": "KEÇİÖREN",
+    "name": "ASİ NAKLİYAT VE PETROLCÜLÜK SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karakaya Mahallesi Bağlum Bulvarı No:155 ( Ada:91453 , Pafta: - , Parsel:7 )",
+    "lat": 40.033858,
+    "lng": 32.856048
+  },
+  {
+    "province": "antalya",
+    "district": "DÖŞEMEALTI",
+    "name": "GENÇLER PET. ÜRÜ. VE OTO. SANAYİ TURZ. TAAH. TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dağbeli Beldesi Mahallesi ( Ada:- , Pafta:- , Parsel:2176 )",
+    "lat": 37.219848,
+    "lng": 30.506657,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "ALANYA",
+    "name": "HAKER PETROL ÜRÜNLERİ İNŞAAT TURİZM TARIM VE ORMANCILIK PAZARLAMA NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Güllerpınarı Mahallesi Çevreyolu Kenarı ( Ada:694 , Pafta: - , Parsel:1-2 )",
+    "lat": 36.550671,
+    "lng": 32.015686,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "AKSU",
+    "name": "TEK-PET PETROL ÜRÜNLERİ TİCARETİ VE DİNLENME TESİSLERİ İŞLETMECİLİĞİ TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Altınova Mahallesi Serik Caddesi No:5(Ada:226 , Pafta: - , Parsel:2) Çalkaya",
+    "lat": 36.947062,
+    "lng": 30.850823
+  },
+  {
+    "province": "antalya",
+    "district": "KUMLUCA",
+    "name": "ÖNCÜ ÇİÇEK AKARYAKIT VE OTOGAZ ÜRÜNLERİ İNŞAAT GIDA PAZARLAMA TİCARET LİMİTED ŞİRKETİ",
+    "address": "Göksu Mahallesi Ahmet Ali Ağa Bulvarı No:236 ( Ada:648 , Pafta:P24B.16B.4A , Parsel:11 )",
+    "lat": 36.332245,
+    "lng": 30.27671,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "MURATPAŞA",
+    "name": "POLATLAR GÜVENLİK SİSTEMLERİ AYDINLATMA PETROL OTOMOTİV NAKLİYAT İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Topçular Mahallesi Aspendos Bulvarı No:165 ( Ada:6640 , Pafta:- , Parsel:8 )",
+    "lat": 36.8985,
+    "lng": 30.7621
+  },
+  {
+    "province": "antalya",
+    "district": "MANAVGAT",
+    "name": "MARİN ENERJİ LOJİSTİK İNŞAAT PETROL GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Taşağıl Mahallesi Serik Caddesi No:194/1 ( Ada:156 , Pafta:- , Parsel:1-3 )",
+    "lat": 36.899338,
+    "lng": 31.207151,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "MURATPAŞA",
+    "name": "URAS AKARYAKIT NAKLİYE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kızıltoprak Mahallesi Aspendos Bulvarı No:43 ( Ada:2527 , Pafta: - , Parsel:1 )",
+    "lat": 36.888412,
+    "lng": 30.735659,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "AKSU",
+    "name": "AKSU FRİGO AKARYAKIT NAKLİYE ARAÇ KİRALAMA İNŞAAT GAYRİMENKUL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Barbaros Mahallesi Serik Caddesi No:311 ( Ada:13427 , Pafta: - , Parsel:105 )",
+    "lat": 36.946816,
+    "lng": 30.867027,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "AKSU",
+    "name": "BALSAY PETROL ÜRÜNLERİ TAŞIMACILIK SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Kemerağzı Mahallesi Yaşar Sobutay Bulvarı No:21 ( Ada:6991 , Pafta: - , Parsel:8 )",
+    "lat": 36.857693,
+    "lng": 30.869498,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "antalya",
+    "district": "FİNİKE",
+    "name": "TEK-PET PETROL ÜRÜNLERİ TİCARETİ VE DİNLENME TESİSLERİ İŞLETMECİLİĞİ TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ-3",
+    "address": "Turunçova Mahallesi Mehmet Bahçeci Bulvarı No:54 ( Ada:378 , Pafta: - , Parsel:27 )",
+    "lat": 36.3647,
+    "lng": 30.1512
+  },
+  {
+    "province": "antalya",
+    "district": "MANAVGAT",
+    "name": "Köprüçay Petrol Ürünleri Turizm Tarım Hayvancılık Sanayi Ticaret Limited Şirketi",
+    "address": "Bahçelievler Mahallesi Serik Caddesi No:4 Taşağıl Taşağıl Beldesi Köyü",
+    "lat": 36.915183,
+    "lng": 31.233912,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "ÇİNE",
+    "name": "Çine Çınar Petrol İnşaat Enerji Tarım Gıda Hayvancılık Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Eski Çine Mahallesi Muğla(eski Çine) Bulvarı No:50 ( Ada:106 , Pafta: - , Parsel:5 )ÇİNE / AYDIN",
+    "lat": 37.54928,
+    "lng": 28.062157,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "EFELER",
+    "name": "Özaltındağ Petrol Sanayi ve Ticaret Limited Şirketi",
+    "address": "7 Eylül Mahallesi Muğla Bulvarı No:36 ( Ada:1598 , Pafta:17K1 , Parsel:1 )",
+    "phone": "0256 227 00 00",
+    "lat": 37.831944,
+    "lng": 27.844166,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "ÇİNE",
+    "name": "YONPET AKARYAKIT ÜRÜNLERİ İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dorumlar Mahallesi Muğla (dorumlar) Bulvarı No:9 ( Ada:130 , Pafta: - , Parsel:14 )",
+    "lat": 37.696676,
+    "lng": 27.949726
+  },
+  {
+    "province": "aydin",
+    "district": "SULTANHİSAR",
+    "name": "DURU PETROLCÜLÜK ASFALT DEPOLAMA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Salavatlı Mahallesi İstasyon Caddesi No:28A ( Ada:173 , Pafta: - , Parsel:9 )",
+    "lat": 37.883285,
+    "lng": 28.103747,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "NAZİLLİ",
+    "name": "ESENBEY AKARYAKIT PETROL ÜRÜNLERİ NAKLİYE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karaçay Mahallesi Mahallesi Hürriyet Caddesi No:250 ( Ada:1193 ,Parsel:34 )",
+    "lat": 37.910152,
+    "lng": 28.324034,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "NAZİLLİ",
+    "name": "AKTOLUN KARDEŞLER OTOMOTİV İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kardeşköy Mahallesi 3310 Sokağı No:45 ( Ada: - , Pafta: - , Parsel:377 )",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "KÖŞK",
+    "name": "ARVEL AKARYAKIT SANAYİ TİC. LTD.ŞTİ.",
+    "address": "Yavuzköy Mah. Denizli(Yavuzköy)Blv.No:8",
+    "lat": 37.853679,
+    "lng": 28.072979,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "aydin",
+    "district": "SÖKE",
+    "name": "ERKA PETROLCÜLÜK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yenikent Mahallesi 480 Sokağı No:30 (Ada:1465 , Pafta: - , Parsel:1)",
+    "lat": 37.762532,
+    "lng": 27.373732
+  },
+  {
+    "province": "balikesir",
+    "district": "BİGADİÇ",
+    "name": "YURTSEVER DÂHİLİ TİCARET PETROL ÜRÜNLERİ PAZARLAMA LİMİTED ŞİRKETİ",
+    "address": "Çağış Beldesi Köyü",
+    "lat": 39.522388,
+    "lng": 28.011856
+  },
+  {
+    "province": "balikesir",
+    "district": "GÖMEÇ",
+    "name": "Özel Kardeşler Petrol Gıda Kuyumculuk Tarım Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Ağa Köy Mevkii ( Ada: - , Pafta:18 M IV , Parsel:4848 ) GÖMEÇ / BALIKESİR",
+    "lat": 39.389513,
+    "lng": 26.836338
+  },
+  {
+    "province": "balikesir",
+    "district": "BURHANİYE",
+    "name": "3M1 Akaryakıt İnş. Gıda İhr. İth. San. Tic. Ltd. Şti.",
+    "address": "Bahçelievler Mahallesi Ali Kemal Deveciler Bulvarı No:20 ( Ada:794 , Pafta:28 29 H , Parsel:1 )",
+    "lat": 39.510062,
+    "lng": 26.973247,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "balikesir",
+    "district": "AYVALIK",
+    "name": "Kozcan Tarım Gıda Ve Petrol Ürünleri İnşaat Nakliyat Hayvancılık Sanayi Ticaret Limited Şirketi",
+    "address": "Tıfıllar Mahallesi Tıfıllar Sokak No.130a ( Ada:103 , Pafta:J17-b-17-c-2 , Parsel:72 ) AYVALIK / BALIKESİR",
+    "lat": 39.318898,
+    "lng": 26.840328,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "balikesir",
+    "district": "AYVALIK",
+    "name": "Kozcan Tarım Gıda Ve Petrol Ürünleri İnşaat Nakliyat Hayvancılık Sanayi Ticaret Limited Şirketi – 2 (168 ada)",
+    "address": "Tıfıllar Mahallesi Tıfıllar Sokağı No:130 ( Ada:168 , Pafta: - , Parsel:1 ) AYVALIK / BALIKESİR",
+    "lat": 39.318428,
+    "lng": 26.840386,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "balikesir",
+    "district": "GÖMEÇ",
+    "name": "MARİNA AKARYAKIT PETROL ÜRÜNLERİ İNŞAAT OTOMOTİV TURİZM İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hacıosman Mahallesi Hacıosman Sokağı No:1 ( Ada:120 , Pafta: - , Parsel:55 )",
+    "lat": 39.378821,
+    "lng": 26.830125
+  },
+  {
+    "province": "balikesir",
+    "district": "SUSURLUK",
+    "name": "ÖZ KARDEŞLER PETROL NAKLİYAT İNŞAAT TARIM HAYVANCILIK İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karapürçek Mah. Karapürçek Cad. No:91",
+    "lat": 39.990261,
+    "lng": 28.202961,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "balikesir",
+    "district": "GÖNEN",
+    "name": "CANER PETROL ÜRÜNLERİ GIDA MADDELERİ VE TURİZM İŞLETMECİLİĞİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çifteçeşmeler Mahallesi Asfalt Üstü Küme Evler No:2 ( Ada: - , Pafta: - , Parsel:1597 )",
+    "lat": 40.292875,
+    "lng": 27.564852,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bartin",
+    "district": "Şehir Merkezi",
+    "name": "ÖTÜKENT İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gecen Mahallesi No:55 Aşağı Düz Mevki ( Ada:132 , Pafta:E28c17a2c , Parsel:32 )",
+    "lat": 41.590663,
+    "lng": 32.322473,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "batman",
+    "district": "Şehir Merkezi",
+    "name": "ÖZPOLATLAR PETROL İNŞAAT TAAHHÜT NAKLİYE OTOMOTİV GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Mahallesi 8 Caddesi No:210 ( Ada:- , Pafta:- , Parsel:- )Yeni Mahalle 8.cadde No:210 Köyü",
+    "lat": 37.884605,
+    "lng": 41.121891,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "batman",
+    "district": "Şehir Merkezi",
+    "name": "ÖZ AYHAN PETROL KUYUMCULUK İNŞAAT NAKLİYAT TAAHHÜT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "FATİH MAHALLESİ, KÖRÜK CADDESİ, NO: 83",
+    "lat": 37.890169,
+    "lng": 41.15099,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "batman",
+    "district": "Şehir Merkezi",
+    "name": "BARAN-YAĞMUR PETROL NAKLİYAT İNŞAAT TEMİZLİK MEDİKAL TAAHHÜT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hürriyet Mahallesi Mahallesi Felek Caddesi Caddesi No:20 ( Ada:- , Pafta:20 , Parsel:6066 )",
+    "lat": 37.875865,
+    "lng": 41.116176,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "batman",
+    "district": "Şehir Merkezi",
+    "name": "BECİRMAN PETROL İNŞAAT NAKLİYAT HAFRİYAT TEKSTİL TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Batman Bitlis Yolu Sokağı No:10A ( Ada:182 , Pafta:M46-A-04-D , Parsel:1 )Bıçakçı Köyü",
+    "lat": 37.974722,
+    "lng": 41.151111
+  },
+  {
+    "province": "batman",
+    "district": "Şehir Merkezi",
+    "name": "YAŞAM MÜHENDİSLİK İNŞAAT NAKLİYAT TAAHHÜT PETROL GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Korik Mahallesi Tpao Bulvarı No:44 ( Ada:855 , Pafta:20L-3A , Parsel:3 )",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "batman",
+    "district": "HASANKEYF",
+    "name": "OĞUZLAR DİNLENME TESİSLERİ PETROL İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kavak Mezra Kavak Küme Evler No:27/27 Üçyol Köyü",
+    "lat": 37.70404,
+    "lng": 41.46763
+  },
+  {
+    "province": "batman",
+    "district": "BEŞİRİ",
+    "name": "CANYOL PETROL OTOMOTİV İNŞAAT NAKLİYE TELEKOMÜNİKASYON SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Mehmet Yatkın Mahallesi Kurtalan Bulvarı No:37/f ( Ada:297 , Pafta:m46- B- 06- B- 3- C , M46- B- 06- C- 2- B , Parsel:4 )",
+    "lat": 37.925262,
+    "lng": 41.297058
+  },
+  {
+    "province": "batman",
+    "district": "KOZLUK",
+    "name": "LİDER-ÖNDER PETROL NAKLİYE İNŞAAT GIDA TARIM HAYVANCILIK TURİZM TEKSTİL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tepecik Mahallesi İpekyolu Caddesi No:31/z2 ( Ada:627 , Pafta: - , Parsel:3 )",
+    "lat": 41.20956,
+    "lng": 36.597752
+  },
+  {
+    "province": "bilecik",
+    "district": "SÖĞÜT",
+    "name": "HÜSEYİN SARI-2",
+    "address": "Türkmenbaşı Mahallesi Ertuğrulgazi Caddesi No:106 ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 40.027107,
+    "lng": 30.178247,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bilecik",
+    "district": "SÖĞÜT",
+    "name": "HÜSEYİN SARI",
+    "address": "Merkez Mahalle Hastane Caddesi No:37 (pafta:6 - Parsel:6541 - 6545)Küre Beldesi ( Ada: - , Pafta:6 , Parsel:6541- 6545 )",
+    "lat": 40.08813,
+    "lng": 30.14792
+  },
+  {
+    "province": "bilecik",
+    "district": "Şehir Merkezi",
+    "name": "İMROZ ÖZDEMİR-HAMZAOĞLU PETROL",
+    "address": "Gülümbe Köyü Gülümbe Mücavir Dışı Köy Sk.No:1 (Pafta:32 Ada:- Parsel:5441)",
+    "lat": 40.231857,
+    "lng": 30.016707
+  },
+  {
+    "province": "bilecik",
+    "district": "BOZÜYÜK",
+    "name": "PİGA AKARYAKIT LİMİTED ŞİRKETİ",
+    "address": "Yeniçepni Küme Evler No:130 Yeniçepni Köyü ( Ada:- , Pafta:i24a14a , Parsel:1245 )",
+    "lat": 39.885076,
+    "lng": 30.160404
+  },
+  {
+    "province": "bingol",
+    "district": "SOLHAN",
+    "name": "Yüzen Ada Yakıt Enerji İnşaat Gıda Tarım Hayvancılık Eğitim Turizm Ticaret Ve Sanayi Limited Şirketi",
+    "address": "Boğlan Mahallesi No:135 Muş Yolu Üzeri (Ada:134 , Pafta:8-12 , Parsel:60)",
+    "phone": "0426 711 37 00",
+    "lat": 38.967511,
+    "lng": 41.070309,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bingol",
+    "district": "GENÇ",
+    "name": "Öz Genç Petrol Ürünleri Turizm İnşaat Nakliyat Tarım Hayvancılık Gıda Temizlik Ticaret Ve Sanayi Limited Şirketi",
+    "address": "Kültür Mahallesi Bingöl Caddesi No:51 ( Ada:103 , Pafta:24 , Parsel:32 ) GENÇ / BİNGÖL",
+    "phone": "0426 411 46 92",
+    "lat": 38.751093,
+    "lng": 40.54025,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bingol",
+    "district": "Şehir Merkezi",
+    "name": "Kervansaraylar Petrol İnşaat Turizm Hayvancılık Gıda Ticaret ve Sanayi Limited Şirketi",
+    "address": "Bingöl- Karlıova Karayolu 12. Km Ekinyolu Köyü Köprübaşı Mevkii BİNGÖL",
+    "phone": "0426 232 75 18",
+    "lat": 38.913263,
+    "lng": 40.598207,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "bingol",
+    "district": "Şehir Merkezi",
+    "name": "AZİZOĞLU PETROL EMLAK İNŞAAT GIDA NAKLİYAT SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çavuşlar Köyü 276 Merkez / Bingöl ( Ada:105 , Pafta:K45A10B , Parsel:198 )",
+    "lat": 38.934276,
+    "lng": 38.934276
+  },
+  {
+    "province": "bingol",
+    "district": "KARLIOVA",
+    "name": "KARABAĞLAR YAKIT CANLI HAYVAN TEKSTİL TAŞIMACILIK GIDA İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Turgut Özal Mahallesi No:334 Bingöl Yolu 1.km ( Ada:105 , Pafta: - , Parsel:10 )",
+    "lat": 39.286811,
+    "lng": 41.001071,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bitlis",
+    "district": "Şehir Merkezi",
+    "name": "MERMER PETROL ÜRÜNLERİ MADENCİLİK İNŞAAT TURİZM TAAHHÜT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Saray Mahallesi Veysel Karani Caddesi No:339 ( Ada:119 , Pafta:248-A-12-C-2-C , Parsel:1 ) Merkez / Bitlis",
+    "lat": 38.367949,
+    "lng": 42.093766
+  },
+  {
+    "province": "bitlis",
+    "district": "AHLAT",
+    "name": "Ahlat Petrol İnşaat Turizm Madencilik Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Selçuklu Mahallesi Selçuklu 1 Caddesi No.210 ( Ada:819 , Pafta:K48C05A2B , Parsel:8 )",
+    "phone": "0434 412 42 13",
+    "lat": 38.747687,
+    "lng": 42.471893,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "bitlis",
+    "district": "Şehir Merkezi",
+    "name": "DT Doğukan Tekstil Petrol Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Yeni Mahalle Belediye Küme Evleri No:1 Yolalan Beldesi ( Ada:- , Pafta:4 , Parsel:582 ) Merkez/Bitlis",
+    "lat": 38.275358,
+    "lng": 42.312049,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bitlis",
+    "district": "AHLAT",
+    "name": "MEHMET SIDDIK PORSUK",
+    "address": "Ovakışla Beldesi Orta Mahallesi Bulanık Caddesi No:84/1 ( Ada:- , Pafta:K48B18D , Parsel:1897 )",
+    "lat": 38.802829,
+    "lng": 42.352786,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "bitlis",
+    "district": "HİZAN",
+    "name": "KARASU İKİZLER PETROL İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Taşlı Pınar Mahallesi Hükümet Caddesi No:122/122/B ( Ada:188 , Pafta:- , Parsel:61 )Hizan/Bitlis",
+    "lat": 38.2215,
+    "lng": 42.4167
+  },
+  {
+    "province": "bitlis",
+    "district": "Şehir Merkezi",
+    "name": "KASİT KARDEŞLER PETROL MADEN İNŞAAT NAKLİYE SANAYİ VE TİCARETİ LİMİTED ŞİRKETİ",
+    "address": "Saray Mahallesi 1628 Sokağı No:4 ( Ada:136 , Pafta:L48-A-12-C-2-B , Parsel:8 )",
+    "lat": 38.36992893730225,
+    "lng": 42.09443561116486
+  },
+  {
+    "province": "bolu",
+    "district": "SEBEN",
+    "name": "S.S. Haccağız Tarımsal Kalkınma Kooperatifi",
+    "address": "Uluyolaltı (Ada:-, Pafta:3, Parsel:1039) Gerenözü Köyü",
+    "lat": 40.389669,
+    "lng": 31.558432,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "bolu",
+    "district": "GEREDE",
+    "name": "CİHANGİR GRUP AKARYAKIT SANAYİ VE TİCARET LİMİTED ŞİRKETİ (Kazanlar Köyü)",
+    "address": "Kazanlar Köyü Merkez Mevkii Kazanlar Köy Yolu Küme Evleri No:77 ( Ada: - , Pafta: - , Parsel:680 )",
+    "lat": 40.722211,
+    "lng": 32.282223
+  },
+  {
+    "province": "bolu",
+    "district": "GEREDE",
+    "name": "ULTRA PETROL SANAYİ VE TİCARET LTD.ŞTİ (Gerede Şube)",
+    "address": "Karacadağdemirciler Köyü Merkez Mevkii Karacadağdemirciler Merkez Köy Yolu Küme Evleri No:57 Pafta:8 Parsel:1338",
+    "lat": 40.846264,
+    "lng": 32.446487
+  },
+  {
+    "province": "burdur",
+    "district": "YEŞİLOVA",
+    "name": "MAYTUR PETROL ÜRÜNLERİ EMLAK İNŞAAT TURİZM TAŞIMACILIK YÖNETİM DANIŞMANLIĞI TİCARET LİMİTED ŞİRKETİ-BURDUR",
+    "address": "Denizli Caddesi No:23 Güney Kasabası ( Ada:- , Pafta:N23A01BB , Parsel:11144 )",
+    "lat": 37.496133,
+    "lng": 29.54553
+  },
+  {
+    "province": "burdur",
+    "district": "BUCAK",
+    "name": "TEK-PET PETROL ÜRÜNLERİ TİCARETİ VE DİNLENME TESİSLERİ İŞLETMECİLİĞİ TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ-BURDUR",
+    "address": "Antalya-burdur Karayolu Üzeri Uğurlu Köyü ( Ada:- , Pafta:10 , Parsel:1349 )",
+    "lat": 30.485401,
+    "lng": 37.311967
+  },
+  {
+    "province": "burdur",
+    "district": "KARAMANLI",
+    "name": "Melka Umut Petrol Nakliyat İnşaat Turizm Oto Pazarlama Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Burdur Fethiye Yolu Üzeri Mürseller Köyü Altı No: 461 ( Ada: - , Pafta:N231B1OAC , Parsel:10931 ) KARAMANLI / BURDUR",
+    "phone": "0248 533 50 11",
+    "lat": 37.424629,
+    "lng": 29.972341
+  },
+  {
+    "province": "bursa",
+    "district": "KARACABEY",
+    "name": "AYYILDIZLAR PETROL ÜRÜNLERİ MADENİ YAĞ NAKLİYE İNŞAAT TAAHHÜT GIDA MARKET EMLAK VE OTO ALIM SATIM KOMİSYONCULUĞU SANAYİ VE TİCARET LİMİTED ŞİRKETİ-BURSA",
+    "address": "Bursa-izmir Karayolu 40. Km. ( Ada:- , Pafta:H20d03c , Parsel:1546 )Yenikaraağaç Köyü",
+    "lat": 40.2153,
+    "lng": 28.6271
+  },
+  {
+    "province": "bursa",
+    "district": "KARACABEY",
+    "name": "BAŞKENT VİZYON AKARYAKIT LİMİTED ŞİRKETİ-KARACABEY",
+    "address": "Seyran Mahallesi Seyran Sokağı No:288 (Ada:-, Pafta:7, Parsel:911)",
+    "lat": 40.232574,
+    "lng": 28.494919
+  },
+  {
+    "province": "bursa",
+    "district": "İNEGÖL",
+    "name": "AYDOĞANLAR OTOMOTİV SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Gündüzlü Mahallesi İnegöl- Oylat Caddesi No:1/1 ( Ada:101 , Pafta:i23- A- 03- A , Parsel:16 )",
+    "lat": 39.99615,
+    "lng": 29.61086
+  },
+  {
+    "province": "bursa",
+    "district": "ORHANGAZİ",
+    "name": "KARAHAN GRUP PETROL ÜRÜNLERİ İNŞAAT NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gedelek Mahallesi Açmalar Sanayi Sitesi Sokağı No:27 ( Ada:772 , Pafta:H22B06A4A , Parsel:70 )",
+    "lat": 40.436145,
+    "lng": 29.254564,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "canakkale",
+    "district": "GELİBOLU",
+    "name": "ASIRPET AKARYAKIT İNŞAAT VE OTOMOTİV SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Mezarlık / Kumköy Köyü ( Ada:133 , Pafta:H16-B-23-B-2-C,H16-6-23-B-2 , Parsel:48 )",
+    "lat": 40.292501,
+    "lng": 26.394518
+  },
+  {
+    "province": "canakkale",
+    "district": "EZİNE",
+    "name": "ROTA OİL PETROL ÜRÜNLERİ İNŞAAT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Uluköy No:336 ( Ada: - , Pafta:1 , Parsel:1483 )",
+    "lat": 39.71691,
+    "lng": 26.22477
+  },
+  {
+    "province": "cankiri",
+    "district": "KIZILIRMAK",
+    "name": "HASKOÇ PETROL ÜRÜNLERİ GIDA TAŞIMACILIK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Mahalle Sungurlu Yolu Üzeri 1. Km. ( Ada: - , Pafta:17 , Parsel:994 )",
+    "lat": 40.343769,
+    "lng": 33.999798
+  },
+  {
+    "province": "cankiri",
+    "district": "ŞABANÖZÜ",
+    "name": "AYDINLAR AKARYAKIT MARKETÇİLİK İNŞAAT TURİZM OTOMOTİV MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Mahalle Bayramyeri Mevkii No:51 ŞABANÖZÜ / ÇANKIRI",
+    "lat": 40.47,
+    "lng": 33.275278,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "cankiri",
+    "district": "Şehir Merkezi",
+    "name": "Ballıca Petrol Ürünleri Nakliye İnşaat Otomotiv Sanayi Ticaret Limited Şirketi",
+    "address": "Abdulhalik Renda Mahallesi Ankara Caddesi No:182/A ( Ada:604 , Pafta:62 , Parsel:14 )",
+    "lat": 40.55129,
+    "lng": 33.612694,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "cankiri",
+    "district": "Şehir Merkezi",
+    "name": "ROJHAT PETROL İNŞAAT NAKLİYE SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tüney Köyü Tüney Küme Evleri No:205 ( Ada:109 , Pafta:H31-A-11-D-2 , Parsel:9 )",
+    "lat": 40.357833,
+    "lng": 33.525911
+  },
+  {
+    "province": "cankiri",
+    "district": "ILGAZ",
+    "name": "ŞTAŞ AKARYAKIT ENERJİ NAKLİYE OTOMOTİV İNŞAAT SANAYİ LİMİTED ŞİRKETİ-ÇANKIRI",
+    "address": "Belören Köyü Küme Evleri No:232 ( Ada:103 , Pafta:- , Parsel:214 )",
+    "lat": 40.870235,
+    "lng": 33.491978
+  },
+  {
+    "province": "cankiri",
+    "district": "KIZILIRMAK",
+    "name": "AYDOĞMUŞ PETROL ÜRÜNLERİ TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Çankırı-kızılırmak Yolu 2.km (Ada:8, Pafta:1223, Parsel:1472)",
+    "lat": 40.357861,
+    "lng": 33.966351,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "cankiri",
+    "district": "Şehir Merkezi",
+    "name": "MESUT ARSLAN",
+    "address": "Kırkevler Mahallesi No:172 Kenbağ Mevkii Yem Fab. Yanı ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 40.650173,
+    "lng": 33.603165,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "corum",
+    "district": "Şehir Merkezi",
+    "name": "AYD PETROL ÜRÜNLERİ PAZARLAMA NAKLİYE İNŞAAT TAAHHÜT TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Ulukavak Mahallesi İskilip Yolu 4. Km No:84",
+    "lat": 40.557131,
+    "lng": 34.908059,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "corum",
+    "district": "Şehir Merkezi",
+    "name": "YILDIRIM NAKLİYAT TİCARET SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Merkez Kuşsaray Köyü Köyönü Mevkii Samsun Yolu 16.km (Ada:-, Pafta:2, Parsel:541)",
+    "lat": 40.6136,
+    "lng": 35.1222,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "ACIPAYAM",
+    "name": "İBRAHİM UĞUR",
+    "address": "Bangraz Mevkii ( Ada: - , Pafta: - , Parsel: - )Yumrutaş Kasabası Köyü",
+    "lat": 37.361354,
+    "lng": 29.487308,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "KALE",
+    "name": "FA PETROL İNŞAAT TAAHHÜT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Köprübaşı Mahallesi Köprübaşı Sokağı No:4 ( Ada:106 , Pafta:N21A20A2 , Parsel:2 )",
+    "lat": 37.33723,
+    "lng": 28.723733
+  },
+  {
+    "province": "denizli",
+    "district": "SERİNHİSAR",
+    "name": "ŞERİFOĞLU DAYANIKLI TÜKETİM MALLARI TEKSTİL GIDA MOBİLYA VE İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Cumhuriyet Mahallesi Uğur Mumcu Caddesi No:36/A ( Ada:459 , Pafta:36 , Parsel:18 )",
+    "lat": 37.575576,
+    "lng": 29.275263,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "BULDAN",
+    "name": "EVO ENERJİ A.Ş.",
+    "address": "Cumhuriyet Mah. 85. Sok. No:20 Pafta: L21C18D4C-3A Ada: 882 Parsel:2Buldan/Denizli",
+    "lat": 38.05156,
+    "lng": 28.862253
+  },
+  {
+    "province": "denizli",
+    "district": "MERKEZEFENDİ",
+    "name": "YENİ SARIKAVAK PETROL GIDA TAŞIMACILIK İNŞAAT TURİZM PAZARLAMA SANAYİ VE TİCARET LİMİTED ŞİRKETİ-DENİZLİ ŞUBESİ",
+    "address": "SÜMER MAHALLESİ İZMİR BULVARI NO:16 PAFTA:M22A22B3B ADA NO:5121 PARSEL NO:4",
+    "lat": 37.78517,
+    "lng": 29.09312,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "PAMUKKALE",
+    "name": "HÜSEYİN AYRANCI AKARYAKIT TAŞIMACILIK HAZIR BETON İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-ZEYTİNKÖY",
+    "address": "Zeytinköy Mahallesi Acıpayam Bulvarı No:42 ( Ada:122 , Pafta:M22D03A3B , Parsel:1 )",
+    "lat": 37.734311,
+    "lng": 29.121317,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "TAVAS",
+    "name": "HÜSEYİN AYRANCI AKARYAKIT TAŞIMACILIK HAZIR BETON İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-NİKFER",
+    "address": "Nikfer Mahallesi Şehit Ahmet Günday Bulvarı No:56 ( Ada:203 , Pafta:50LIB , Parsel:11 )",
+    "lat": 37.411755,
+    "lng": 29.123609,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "denizli",
+    "district": "TAVAS",
+    "name": "HÜSEYİN AYRANCI AKARYAKIT TAŞIMACILIK HAZIR BETON İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ulukent Mahallesi Denizli Muğla Yolu Caddesi No:18 ( Ada:201 , Pafta:- , Parsel:1 )",
+    "lat": 37.539507,
+    "lng": 29.041736,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ERGANİ",
+    "name": "Abdaloğulları İnşaat Petrol Otomotiv Tarım ve Kuyumculuk Ticaret Limited Şirketi",
+    "address": "Sanayi Mahallesi Diyarbakır Caddesi No:221 Ergani/ DİYARBAKIR",
+    "lat": 38.237374,
+    "lng": 39.789001,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BİSMİL",
+    "name": "SALİHOĞULLARI PETROLCÜLÜK NAKLİYECİLİK VE TARIM ÜRÜNLERİ SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Eski Diyarbakır Yolu Dumlupınar Mahallesi No:48/a ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 37.849905,
+    "lng": 40.654307
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ERGANİ",
+    "name": "İsmail Yiğit Uğur Petrol",
+    "address": "Ergani Diyarbakır Yolu Üzeri 5. Km. ( Ada: - , Pafta:L.43.C.02.D. , Parsel:520 )",
+    "lat": 38.222857,
+    "lng": 39.802139,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "SUR",
+    "name": "Has Petrol İnşaat Otomotiv Turizm Sanayi ve Ticaret Limited Şirketi",
+    "address": "Yeni Mardin Yolu 7.Km Çarıklı Beldesi Diyarbakır",
+    "lat": 37.842192,
+    "lng": 40.229781,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ERGANİ",
+    "name": "Karaaslanoğlu Petrol Otomotiv İnşaat Tarım Hayvancılık Nakliye Turizm İthalat İhracat Sanayi Ticaret Ltd Şti.",
+    "address": "Diyarbakır Yolu Üzeri 1.km, Sanayi sitesi Yanı (Ada:1038,Pafta:20, Parsel:11) Ergani/DİYARBAKIR",
+    "lat": 38.249221,
+    "lng": 39.778073
+  },
+  {
+    "province": "diyarbakir",
+    "district": "HANİ",
+    "name": "Gaban Petrol İnşaat Nakliyat Gıda Turizm Sanayi ve Ticaret Limited Şirketi",
+    "address": "Hani Gürbüz Diyarbakır Yol Kavşağı (Pafta:- Ada:168 Parsel:11) Hani / DİYARBAKIR",
+    "lat": 38.361941,
+    "lng": 40.390512,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "YENISEHIR",
+    "name": "Feyfer İnşaat Nakliyat Hafriyat Petrol Ürünleri Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Üçkuyu Mahallesi Hilar Caddesi No:10 ( Ada:1188 , Pafta:M44A04A1C , Parsel:1 ) YENİŞEHİR / DİYARBAKIR",
+    "lat": 37.991836,
+    "lng": 40.158509,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ERGANİ",
+    "name": "Celal Çelik",
+    "address": "Kemertaş Mahallesi Elazığ Caddesi No:160 ( Ada:4 , Pafta: - , Parsel:50 ) ERGANİ / DİYARBAKIR",
+    "lat": 38.275584,
+    "lng": 39.749227
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ÇERMİK",
+    "name": "Sehit Kaya",
+    "address": "Kalecik Mahallesi No:2 Mahro Küme Evleri ( Ada:106 , Pafta:L-42-C15-B , Parsel:7 ) ÇERMİK / DİYARBAKIR",
+    "lat": 38.127178,
+    "lng": 39.479909
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ERGANİ",
+    "name": "Murat Karadaş - Bereketli Petrol",
+    "address": "Bereketli Mah. Bereketli Küme Evleri No:1 ( Ada:116 , Pafta:- , Parsel:6 ) ERGANİ / DİYARBAKIR",
+    "lat": 38.149733,
+    "lng": 39.822531
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ÇINAR",
+    "name": "Mehmet Halit Demir",
+    "address": "Yeni Mardin Yolu Üzeri Caddesi ÇINAR / DİYARBAKIR",
+    "lat": 37.718833,
+    "lng": 40.421056
+  },
+  {
+    "province": "diyarbakir",
+    "district": "LİCE",
+    "name": "HAMZA GÜNDÜZ",
+    "address": "Dernek Mh.Dernek Küme Evleri Gündüz Petrol no:101/1",
+    "lat": 38.428538,
+    "lng": 40.558267
+  },
+  {
+    "province": "diyarbakir",
+    "district": "SİLVAN",
+    "name": "RCA PETROL ÜRÜNLERİ İNŞAAT SAĞLIK TARIM EĞİTİM HİZMETLERİ SAN. TİC. İTH. İHR. LTD. ŞTİ.",
+    "address": "Yüksek Mahallesi Gazi Caddesi No:326/A ( Ada: - , Pafta: - , Parsel:70 )",
+    "lat": 38.135101,
+    "lng": 41.029656,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BİSMİL",
+    "name": "Bismil Petrol Otomotiv Nakliye İnşaat Emlak Gıda Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Sanayi Mahallesi Batman Bulvarı Petrol Apartmanı No:134 BİSMİL / DİYARBAKIR",
+    "lat": 37.843792,
+    "lng": 40.709735,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "SİLVAN",
+    "name": "Cms Danışmanlık Mühendislik Petrol İnşaat Tarım Sanayi ve Ticaret Limited Şirketi",
+    "address": "Sarıbuğday Mah. Sarıbuğday Küme Evler Akaryakıt İstasyonu No:117 ( Ada:- , Pafta:- , Parsel:216 )Silvan/Diyarbakır",
+    "lat": 38.127918,
+    "lng": 40.779156,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "YENISEHIR",
+    "name": "BARSANPET AKARYAKIT TURİZM İNŞAAT OTOMOTİV VE GIDA LİMİTED ŞİRKETİ",
+    "address": "Çimenler Mahallesi Elazığ Bulvarı No:376/1 ( Ada: - , Pafta: - , Parsel:193 )",
+    "lat": 38.021722,
+    "lng": 40.102111,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "ÇERMİK",
+    "name": "HASEN PETROL İNŞAAT MADENCİLİK GIDA HAYVANCILIK SANAYİ VE TİCARET LTD.ŞTİ",
+    "address": "Artuk Mah. Artuk Küme Evler No:3 Çermik-Diyarbakır",
+    "lat": 38.146682,
+    "lng": 39.507233
+  },
+  {
+    "province": "diyarbakir",
+    "district": "YENISEHIR",
+    "name": "ERYIL PETROL İNŞ. GIDA OTOMOTİV LOJİSTİK SAN. VE TİC. A.Ş.",
+    "address": "Dökmetaş Mah. Elazığ Bulvarı Dış Kapı No:369 yenişehir Diyarbakır",
+    "lat": 38.006222,
+    "lng": 40.116441,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BAĞLAR",
+    "name": "MNZ YAPI İNŞAAT OTOMOTİV PETROL EMLAK TARIM SANAYİ VE TİCARET LTD. ŞTİ.",
+    "address": "Tellikaya Mahallesi Tellikaya Caddesi No:3",
+    "lat": 37.8402774,
+    "lng": 40.1552824,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BAĞLAR",
+    "name": "GRAND PETROL ÜRÜNLERİ İNŞAAT HAZIR BETON ÖZEL EĞİTİM HİZMETLERİ TURİZM OTOMOTİV SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Bağcılar Mah. Çevlik Cad. No:22 Bağlar-Diyarbakır",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BİSMİL",
+    "name": "ALTUNTEPE PETROL TARIM OTOMOTİV NAKLİYE TURİZM İNŞAAT ZİRAİ İLAÇ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tepe Mah.Merkez Cad. No:40 C Bismil / Diyarbakır",
+    "lat": 37.799561,
+    "lng": 40.744261,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "BAĞLAR",
+    "name": "SAYAR GROUP PETROL YAPI NAKLİYAT KATI ATIK SANAYİ ANONİM ŞİRKETİ",
+    "address": "Gömmetaş Mahallesi Urfa Bulvarı No:269 ( Ada: - , Pafta: - , Parsel:37 )",
+    "lat": 37.907793,
+    "lng": 40.069363,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "KAYAPINAR",
+    "name": "Bircihan Petrol Sanayi ve Tic.Ltd.Şti.",
+    "address": "Barış Mah. Urfa Bulvarı No:200/1",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "diyarbakir",
+    "district": "SUR",
+    "name": "Bircihan Petrol Sanayi ve Tic.Ltd.Şti.",
+    "address": "Bağıvar Mah. Mervani Cad. No:1",
+    "lat": 37.8725577,
+    "lng": 40.231079
+  },
+  {
+    "province": "duzce",
+    "district": "KAYNAŞLI",
+    "name": "Bağdatlı Petrol Ürünleri Nakliyat Oto Gıda Turizm Ticaret Sanayi Limited Şirketi",
+    "address": "D 100 Karayolu Kenarı Merkez Mahallesi Kaynaşlı Düzce",
+    "lat": 40.773337,
+    "lng": 31.318999,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "duzce",
+    "district": "YIĞILCA",
+    "name": "KARAM PETROL NAKLİYE SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Güneyaltı Mevkii, Yığılca Caddesi No:22 ( Ada: - , Pafta:26B043o , Parsel:899 )",
+    "lat": 40.9537,
+    "lng": 31.4244
+  },
+  {
+    "province": "duzce",
+    "district": "AKÇAKOCA",
+    "name": "UZUNTUR PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ayazlı Mahallesi Ereğli (37-155) (34-128) Caddesi No:161 ( Ada:623 , Pafta:- , Parsel:1 )",
+    "lat": 41.086536,
+    "lng": 31.177206,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "duzce",
+    "district": "KAYNAŞLI",
+    "name": "HAYMANA GRUP TEKSTİL İNŞAAT PETROL SANAYİ VE TİC. LTD. ŞTİ.",
+    "address": "Üçköprü Köyü Ufuk Mah. 106. Sok No:30",
+    "lat": 40.787958,
+    "lng": 31.260865
+  },
+  {
+    "province": "edirne",
+    "district": "İPSALA",
+    "name": "SAKARYA TARIM ÜRÜNLERİ MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hacı Beldesi ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 40.97947,
+    "lng": 26.549805
+  },
+  {
+    "province": "edirne",
+    "district": "HAVSA",
+    "name": "ALKAN PETROL TAŞIMACILIK GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ- HAVSA",
+    "address": ". Mahallesi Musulça Köyü Süloğlu Yolu Üzeri Değirmen Ovası Mevkii ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 41.668576,
+    "lng": 26.875062
+  },
+  {
+    "province": "edirne",
+    "district": "Şehir Merkezi",
+    "name": "ÇAM GLOBAL GAYRİMENKUL DANIŞMANLIK İNŞAAT PETROL SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "No:115 ( Ada:134 , Pafta:E17A03D , Parsel:20 ) Elçili Köyü",
+    "lat": 41.454872,
+    "lng": 26.622194
+  },
+  {
+    "province": "edirne",
+    "district": "UZUNKÖPRÜ",
+    "name": "ALEMDARLAR PETROL OTOMOTİV TARIM ÜRÜNLERİ GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hamitli Köyü ( Ada: - , Pafta:6 , Parsel:1345 )",
+    "lat": 41.32994,
+    "lng": 26.69254
+  },
+  {
+    "province": "edirne",
+    "district": "MERİÇ",
+    "name": "Ekrem Uludağ (Kadıdondurma)",
+    "address": "Kadıdondurma Köyü Meriç / Edirne",
+    "phone": "0284 513 29 56",
+    "lat": 41.173361,
+    "lng": 26.355624
+  },
+  {
+    "province": "edirne",
+    "district": "UZUNKÖPRÜ",
+    "name": "ATA OİL PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ-2",
+    "address": "Cumhuriyet Mahallesi Girne Caddesi No:64 Kırcasalih ( Ada:- , Pafta:7 , Parsel:7011 )",
+    "lat": 41.409272,
+    "lng": 26.819241,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "edirne",
+    "district": "Şehir Merkezi",
+    "name": "YİĞİTEFE ENERJİ VE PETROL LTD. ŞTİ",
+    "address": "Yenikadın Köyü Köyün Kendisi Sokak No:213 Merkez/Edirne",
+    "lat": 41.690601,
+    "lng": 26.453996
+  },
+  {
+    "province": "edirne",
+    "district": "MERİÇ",
+    "name": "AKNR EROL PETROL AKARYAKIT İSTASYONLARI VE TARIM ÜRÜNLERİ PAZARLAMA İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Subaşı Beldesi / Köyü İzzet Paşa Mahallesi 21. Sokağı No:2/2a ( Ada: - , Pafta:32 , Parsel:6178 )",
+    "lat": 41.14537,
+    "lng": 26.37245
+  },
+  {
+    "province": "edirne",
+    "district": "Şehir Merkezi",
+    "name": "YİĞİTEFE ENERJİ VE PETROL LİMİTED ŞİRKETİ 2",
+    "address": "Kartaltepe Mevkii Kapıkule Yolu No:6",
+    "lat": 41.686946,
+    "lng": 26.468471
+  },
+  {
+    "province": "edirne",
+    "district": "UZUNKÖPRÜ",
+    "name": "VEKTÖR PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ(EDİRNE)",
+    "address": "Kırcasalih Beldesi / Köyü Okullar Mahallesi Girne Caddesi No:45 ( Ada:124 , Pafta:f17b07d , Parsel:3 )",
+    "lat": 41.40426,
+    "lng": 26.81289,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "edirne",
+    "district": "MERİÇ",
+    "name": "METE TARIMSAL ÜRÜNLER VE AKARYAKIT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Büyükdoğanca Mahallesi Ahmet Tosun Caddesi No:74 ( Ada:28 , Pafta:- , Parsel:14 )",
+    "lat": 41.196688,
+    "lng": 26.424979
+  },
+  {
+    "province": "elazig",
+    "district": "Şehir Merkezi",
+    "name": "YENİHALLER PETROL SANAYİ ve TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kızılay Mah. K.karabekir Cad. No:105 ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 38.656103,
+    "lng": 39.249117,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "elazig",
+    "district": "Şehir Merkezi",
+    "name": "Somay Petrol Otomotiv İnşaat Ve Malzemeleri Üretim Pazarlama İthalat İhracat Sanayi Ve Ticaret Limit Şti.",
+    "address": "Sanayi Mahallesi, Sanayi Sitesi 26. Sokak No:22 /ELAZIĞ",
+    "lat": 38.669303,
+    "lng": 39.248915
+  },
+  {
+    "province": "elazig",
+    "district": "Şehir Merkezi",
+    "name": "Özkeleşler Petrol İnşaat Nakliyat Turizm Besicilik Tekstil Sanayi ve Ticaret Limited Şirketi",
+    "address": "Yüzbaşı Mahallesi Bingöl Yolu 6.Km Akçakiraz (Pafta:9 Ada:17 Parsel:74) / Elazığ",
+    "lat": 38.629951,
+    "lng": 39.268408,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "erzincan",
+    "district": "ÇAYIRLI",
+    "name": "Hasan Karaoğlu - Karaoğlu Petrol",
+    "address": "Atatürk Mah. Hükümet Cad. No:117 (Ada:98 Pafta:2828D PArsel:14)",
+    "lat": 39.8143,
+    "lng": 40.054
+  },
+  {
+    "province": "erzincan",
+    "district": "TERCAN",
+    "name": "METİN BEGEN",
+    "address": "Kargın Kasabası Yollarütü Mahallesi Altküme Evler No:2 ( Ada:- , Pafta:İ44.D1414B , Parsel:73,74,75,76 )",
+    "lat": 39.636581,
+    "lng": 40.179281
+  },
+  {
+    "province": "erzincan",
+    "district": "Şehir Merkezi",
+    "name": "MERCAN ZARİFOĞLU PETROL ÜRÜNLERİ İMALAT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Akşemsettin Mahallesi E-80 Karayolu Caddesi No:22 Mercan ( Ada: - , Pafta: - , Parsel:1385 )",
+    "lat": 39.744641,
+    "lng": 40.272724
+  },
+  {
+    "province": "erzurum",
+    "district": "HORASAN",
+    "name": "Avni Çolak",
+    "address": "Ağrı Caddesi Horasan/ Erzurum",
+    "lat": 40.03601,
+    "lng": 42.181256,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "erzurum",
+    "district": "NARMAN",
+    "name": "Ercan Akdağ-Akdağ Petrol",
+    "address": "Oltu Yolu Üzeri Hümmet Bükü (Pafat:H47D14D, Ada:101, Parsel:87) Narman Erzurum",
+    "phone": "0442 816 14 64",
+    "lat": 40.352231,
+    "lng": 41.916599,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "erzurum",
+    "district": "KARAÇOBAN",
+    "name": "Süleyman Güneş",
+    "address": "Bahçeli Mahallesi Ahmet Kaplan Caddesi No:198 ( Ada:109 , Pafta:J48-A10-A- , Parsel:17 )Kopal Köyü KARAÇOBAN / ERZURUM",
+    "lat": 39.44488,
+    "lng": 42.208173,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "erzurum",
+    "district": "HORASAN",
+    "name": "Han Nakliye Akaryakıt İnşaat Taahhüt Otomotiv Gıda Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Yeşilöz Mahallesi Dellal Sokağı No:9 ( Ada:107 , Pafta: - , Parsel:8-9 ) HORASAN / ERZURUM",
+    "lat": 39.947,
+    "lng": 42.2915
+  },
+  {
+    "province": "erzurum",
+    "district": "AZİZİYE",
+    "name": "Özdemir Petrol Nakliye İnşaat Pazarlama İmalat Sanayi ve Ticaret Limited Şirketi",
+    "address": "Ilıca Çıkışı Çiğdemli Mevkii Ilıca / ERZURUM",
+    "lat": 39.973621,
+    "lng": 41.034326,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "erzurum",
+    "district": "PALANDÖKEN",
+    "name": "MAHSUN KÖMÜRCÜLÜK İNŞAAT NAKLİYAT PETROL ÜRÜNLERİ GIDA MADDELERİ TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Nenehatun Mahallesi E-80 Karayolu Hacıhaliller Mevki ( Ada: - , Pafta:İ46b08a , Parsel:595 )",
+    "lat": 39.94191,
+    "lng": 41.37108
+  },
+  {
+    "province": "eskisehir",
+    "district": "MAHMUDİYE",
+    "name": "ESPO OSMANLI DİNLENME TESİSLERİ ANONİM ŞİRKETİ-2",
+    "address": "Hamidiye Mahallesi Ankara Çevre Yolu No:667 ( Ada:0 , Pafta:i25c31d , Parsel:1558 )",
+    "lat": 39.5875,
+    "lng": 30.8982,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "eskisehir",
+    "district": "SİVRİHİSAR",
+    "name": "ODİ ENERJİ AKARYAKIT NAKLİYE OTOMOTİV İNŞ. SAN. TİC. LTD.ŞTİ - SİVRİHİSAR",
+    "address": "MÜLKKÖY MAHALLESİ MÜLKÖY SOKAĞI NO:177 SİVRİHİSAR / ESKİŞEHİR",
+    "lat": 39.55119,
+    "lng": 31.74386,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "eskisehir",
+    "district": "MİHALIÇÇIK",
+    "name": "GENÇVİP TURİZM AKARYAKIT PETROL ÜRÜNLERİ SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Camikebir Mahallesi Eskişehir Caddesi No:36 ( Ada:208 , Pafta:İ25-B1-5C , Parsel:28 )",
+    "lat": 39.853891,
+    "lng": 31.482748,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "eskisehir",
+    "district": "ODUNPAZARI",
+    "name": "ESPO OSMANLI DİNLENME TESİSLERİ ANONİM ŞİRKETİ 1",
+    "address": "Yahnikapan Mahallesi Ankara Çevre Yolu No:546 ( Ada:14978 , Pafta:125-C-12-A-3 , Parsel:5 )",
+    "lat": 39.6273,
+    "lng": 30.821518,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "gaziantep",
+    "district": "ARABAN",
+    "name": "İlyas Saraçoğlu",
+    "address": "Turgut Özal Mahallesi Gaziantep Caddesi No:76 Araban / GAZİANTEP",
+    "lat": 37.424164,
+    "lng": 37.67952
+  },
+  {
+    "province": "gaziantep",
+    "district": "OĞUZELİ",
+    "name": "Başkan Petrol Ürünleri İnşaat Turizm Nakliyat Sanayi ve Ticaret Limited Şirketi",
+    "address": "Hava Alanı Karşısı",
+    "phone": "0342 477 16 20",
+    "lat": 36.954235,
+    "lng": 37.457251,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "gaziantep",
+    "district": "NİZİP",
+    "name": "Hedef Petrol Ürünleri İthalat İhracat Nakliyat ve İnşaat Sanayi ve Ticaret Limited Şirketi",
+    "address": "E-90 Karayolu Üzeri Günaltı Köyü Mevkii (Pafta: N39c.24d. Ada: 125 Parsel: 836) Nizip / GAZİANTEP",
+    "lat": 37.021141,
+    "lng": 37.910797,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "gaziantep",
+    "district": "ŞEHİTKAMİL",
+    "name": "KADOOĞLU GLOBAL İTHALAT İHRACAT DIŞ TİCARET A.Ş.",
+    "address": "BAŞPINAR(ORGANİZE) OSB MAH. O.S.B 2. ORGANİZE SANAYİ BÖLGESİ VALİ MUAMMER GÜLER NO:16",
+    "lat": 37.161713,
+    "lng": 37.293045,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "gaziantep",
+    "district": "ŞEHİTKAMİL",
+    "name": "ÖZKAYALAR TRANSPORT FİLO TAŞIMACILIK OTOMOTİV SAN. VE TİC. LTD.ŞTİ",
+    "address": "Sanayi Mah. Sani Konukoğlu Bulvarı No:226",
+    "lat": 37.091302,
+    "lng": 37.446405,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "gaziantep",
+    "district": "ŞEHİTKAMİL",
+    "name": "KADOOĞLU EMEK PETROL SANAYİ VE TİC.A.Ş",
+    "address": "PANCARLI MAH. 58072 NOLU SOK. NO:1 ADA:5497 PARSEL:1",
+    "lat": 37.072777,
+    "lng": 37.348611,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "giresun",
+    "district": "TİREBOLU",
+    "name": "Öz Kandazoğlu Ticaret Limited Şirketi(Tirebolu)",
+    "address": "TİREBOLU-TORUL YOLU ÜZERİ ADA:284 PAFTA:G41B03A2D PARSEL: 77",
+    "phone": "0454 429 28 63",
+    "lat": 40.987731,
+    "lng": 38.867644,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "giresun",
+    "district": "YAĞLIDERE",
+    "name": "YAĞLIDERE AKARYAKIT İNŞAAT TAAHHÜT NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "BÜK MAH. GENAR.BAHTİYAR AYDIN BLV. NO: 51 28610 YAĞLIDERE/GİRESUN",
+    "lat": 40.86986,
+    "lng": 38.62372
+  },
+  {
+    "province": "giresun",
+    "district": "TİREBOLU",
+    "name": "BORDO PETROL İNŞAAT MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Doğancı Köyü Sahil Mevkii Köy Sokağı No: 92/a ( Ada:104 , Pafta:G41B01D1B , Parsel:2 )",
+    "lat": 40.973,
+    "lng": 38.7564
+  },
+  {
+    "province": "gumushane",
+    "district": "KÜRTÜN",
+    "name": "Öz Kandazoğlu Ticaret Limited Şirketi(Günyüzü)",
+    "address": "Günyüzü Köyü Sazlıbük Mevkii Kürtün / GÜMÜŞHANE",
+    "lat": 40.745751,
+    "lng": 38.978812,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "gumushane",
+    "district": "KÜRTÜN",
+    "name": "Öz Kandazoğlu Ticaret Limited Şirketi(Cayra)",
+    "address": "Cayra Mahallesi Mustafa Deresi Mevkii Özkürtün (Ada:145 , Pafta:- , Parsel:3)",
+    "lat": 40.67849,
+    "lng": 39.143251,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "hakkari",
+    "district": "ÇUKURCA",
+    "name": "Alkanlar Ticaret Ve Sanayi Limited Şirketi",
+    "address": "CUMHURİYET Mahallesi ( Ada:- , Pafta:- , Parsel:- )",
+    "phone": "0438 511 27 58",
+    "lat": 37.248553,
+    "lng": 43.614295
+  },
+  {
+    "province": "hakkari",
+    "district": "Şehir Merkezi",
+    "name": "Özek Petrol Ürünleri İnşaat Gıda Turizm Madencilik Nakliye Sanayi ve Ticaret Limited Şirketi",
+    "address": "Biçer Mahallesi Çevre Yolu Üzeri Kale Yolaltı (Pafta:M51.d.20.c.2.a Ada: 154 Parsel:52) HAKKARİ",
+    "phone": "0438 211 24 52",
+    "lat": 37.57018,
+    "lng": 43.741449,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "hatay",
+    "district": "ALTINÖZÜ",
+    "name": "Ergüvenoğlu İnşaat Ve Ticaret Limited Şirketi",
+    "address": "Yenişehir Mahallesi, Atatürk Cad. Altınözü / Hatay",
+    "lat": 36.112583,
+    "lng": 36.259298,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "hatay",
+    "district": "İSKENDERUN",
+    "name": "RENDE OREKS İTHALAT İHRACAT MADENCİLİK VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çay Mahallesi 5 Temmuz Caddesi No:22/1A ( Ada: - , Pafta:1/4 , Parsel:2057 )",
+    "lat": 36.5896,
+    "lng": 36.1743
+  },
+  {
+    "province": "hatay",
+    "district": "DÖRTYOL",
+    "name": "Çelebi Kollektif Şirketi Aydın Çelebi – Hüseyin Soylu",
+    "address": "Kuzuculu Mahallesi Fevzi Çakmak Caddesi No:15 ( Ada:- , Pafta:3 , Parsel:2677 )Dörtyol / HATAY",
+    "lat": 36.880316,
+    "lng": 36.227777
+  },
+  {
+    "province": "hatay",
+    "district": "SAMANDAĞ",
+    "name": "Haccıoğulları Petrol Ürünleri Taşımacılk Gıda Maddeleri Ticaret Limited Şirketi",
+    "address": "Karaçay Köyü Küçüknehir Mevkii Samandağ Yolu ÜzeriSamandağ / HATAY",
+    "lat": 36.145915,
+    "lng": 36.078021,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "hatay",
+    "district": "Şehir Merkezi",
+    "name": "Öz Atahan Salon İşletmeciliği Gıda Maddeleri Besicilik Akaryakıt Nakliye ve Oto Pazarlama Ticaret Limited Şirketi",
+    "address": "Bahçelievler Mahallesi Çevre Yolu Caddesi No:78 Ekinci Beldesi (Pafta:3.B.2C/A, Parsel:2170) HATAY",
+    "lat": 36.23872,
+    "lng": 36.146429,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "hatay",
+    "district": "REYHANLI",
+    "name": "Dolğunlar Uluslar Arası Nakliyat Tarım Gıda İnşaat Hayvancılık Sanayi ve Ticaret Limited Şirketi",
+    "address": "Gültepe Mah. Hasan Mursaloğlu Cad. No:35, (Pafta -, Ada -, Parsel 555) Reyhanlı/HATAY",
+    "lat": 36.276608,
+    "lng": 36.570696
+  },
+  {
+    "province": "hatay",
+    "district": "ANTAKYA",
+    "name": "Sadun Arslan Petrol Akar. İstasyonu Tarım Orm. Taş.Temel Gıda İnş. Konser ve Zirai Güb. Ve Taş.Tur.Ve Otel İth. İhr.Ve San.Tic.Ltd.Şti",
+    "address": "Bohşin Köyü No:55 (Pafta:32/1 Ada:- Parsel:721)",
+    "lat": 36.207421,
+    "lng": 36.362099
+  },
+  {
+    "province": "hatay",
+    "district": "İSKENDERUN",
+    "name": "KARAAĞAÇ PETROL NAKLİYAT ARAÇ YIKAMA MAKİNALARI TİCARET LİMİTED ŞİRKETİ",
+    "address": "Cumhuriyet Mahallesi Atatürk Caddesi No:475/a ( Ada:- , Pafta:- , Parsel:3698 )",
+    "lat": 36.5497,
+    "lng": 36.0984
+  },
+  {
+    "province": "hatay",
+    "district": "REYHANLI",
+    "name": "Ahmet Çalım Akaryakıt Taşımacılık İthalat İhracat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Fidanlık Mahallesi Nuri Güneş Caddesi No:1 ( Ada:- , Pafta:85/5 , Parsel:3465 )",
+    "lat": 36.271329,
+    "lng": 36.569135
+  },
+  {
+    "province": "hatay",
+    "district": "ANTAKYA",
+    "name": "Öz Atahan Salon İşletmeciliği Gıda Maddeleri Besicilik Akaryakıt Nakliye Ve Oto Pazarlama Ticaret Limited Şirketi - 2",
+    "address": "Ekinci Mahallesi Çevreyolu Caddesi No:67 ANTAKYA / HATAY",
+    "phone": "0326 263 91 84",
+    "lat": 36.233676,
+    "lng": 36.140663,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "hatay",
+    "district": "ALTINÖZÜ",
+    "name": "INVICTUS TARIM ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Fatikli Mahallesi Silivye Sokağı No:10 ( Ada:351 , Pafta:26_30_1 , Parsel:1 )",
+    "lat": 36.1382,
+    "lng": 36.2302
+  },
+  {
+    "province": "igdir",
+    "district": "KARAKOYUNLU",
+    "name": "ÖZ HAKAN TEKSTİL GIDA AKARYAKIT NAKLİYAT MADENCİLİK OTOMOTİV VE İNŞAAT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Mezarlık Mevkii Alican Yol Ayrımı (pafta No.3, Parsel No.1016) ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 37.09304,
+    "lng": 36.28657
+  },
+  {
+    "province": "igdir",
+    "district": "Şehir Merkezi",
+    "name": "MNK Akaryakıt Ticaret İthalat İhracat Limited Şirketi",
+    "address": "ALİKAMERLİ Mahallesi ŞEMSETTİN UZUN Bulvarı No:30(Ada:- , Pafta:11 , Parsel:1437)",
+    "lat": 39.93847,
+    "lng": 44.00278
+  },
+  {
+    "province": "istanbul",
+    "district": "BEYOĞLU",
+    "name": "TAM PETROL PETROL ÜRÜNLERİ ALIM SATIM ANONİM ŞİRKETİ",
+    "address": "Ömer Avni Mahallesi Meclis-i Mebusan Caddesi No:34 ( Ada:2153 , Pafta: - , Parsel:1 )",
+    "lat": 41.035001,
+    "lng": 28.9938
+  },
+  {
+    "province": "istanbul",
+    "district": "SİLİVRİ",
+    "name": "Ortaköy Petrol Ürünleri Sanayi ve Ticaret Limited Şirketi",
+    "address": "Ortaköy Mahallesi Mustafa Kemal Atatürk Caddesi No:6 ( Ada:374 , Pafta: - , Parsel:13 ) Merkez / İstanbul",
+    "lat": 41.096057,
+    "lng": 28.374188,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "istanbul",
+    "district": "ARNAVUTKÖY",
+    "name": "DURUSU AKARYAKIT İNŞAAT TURİZM VE GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tayakadın Yassıören Caddesi Durusu Parkevleri Mevkii ( Ada:- , Pafta:F21a23a2 , Parsel:1152 )",
+    "lat": 41.277041,
+    "lng": 28.612416
+  },
+  {
+    "province": "istanbul",
+    "district": "PENDİK",
+    "name": "ÇINAR AKARYAKIT OTOMOTİV İNŞAAT TARIM VE HAYVANCILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Bahçelievler Mahallesi Nazım Hikmet Caddesi No:70 ( Ada:781 , Pafta:94/3 , Parsel:95 )",
+    "lat": 40.8861,
+    "lng": 29.2361
+  },
+  {
+    "province": "istanbul",
+    "district": "GAZİOSMANPAŞA",
+    "name": "VEKTÖR PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karayolları Mahallesi Hekimsuyu Caddesi No:59A ( Ada:- , Pafta:14 , Parsel:16888 )",
+    "lat": 41.080581,
+    "lng": 28.907252,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "istanbul",
+    "district": "BAĞCILAR",
+    "name": "ÇİLEK AKARYAKIT SANAYİ VE TİCARET A.Ş.",
+    "address": "Mahmutbey Mah. İnönü Cad. No:105A",
+    "lat": 41.058075,
+    "lng": 28.831149,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "istanbul",
+    "district": "GAZİOSMANPAŞA",
+    "name": "KUĞULU PETROL AKARYAKIT ÜRÜNLERİ TAŞIMACILIK SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Yeni Mahallesi Cebeci Caddesi No:108/ A ( Ada:- , Pafta:16- 17 , Parsel:16373 )",
+    "lat": 41.0821,
+    "lng": 28.8929,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "BERGAMA",
+    "name": "HÜSEYİN TABAK",
+    "address": "İslamsaray Mahallesi No:29 İstiklal Meydanı ( Ada:- , Pafta:- , Parsel:-",
+    "lat": 39.122402,
+    "lng": 27.181337
+  },
+  {
+    "province": "izmir",
+    "district": "ÖDEMİŞ",
+    "name": "Emircanlar Petrol İnşaat Gıda Turizm Sanayi ve Ticaret Limited Şirketi",
+    "address": "Ovakent Beldesi Dutlukuyu Mevkii No: 71 (Pafta:L20D06D3D Ada: Parsel:5075) Ödemiş / İZMİR",
+    "lat": 38.151831,
+    "lng": 28.016119,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "TORBALI",
+    "name": "Hassen Petrol Ürünleri Akaryakıt Nakliyat Ticaret Limited Şirketi",
+    "address": "Bekir Saydam Caddesi No:76 (Ada:358, Pafta:31K-IIIb, Parsel: 2)",
+    "lat": 38.3789912,
+    "lng": 27.1502665,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "DİKİLİ",
+    "name": "Üç-As Akaryakıt Nakliye İnşaat Turizm Taahhüt Ve İthalat İhracat Sanayi Ticaret Limited Şirketi",
+    "address": "Cumhuriyet Mahallesi Atatürk Caddesi No:93 ( Ada:2075 , Pafta: - , Parsel:16 ) DİKİLİ / İZMİR",
+    "lat": 39.080466,
+    "lng": 26.896637
+  },
+  {
+    "province": "izmir",
+    "district": "KONAK",
+    "name": "Tankar Otomotiv Petrol Gıda Tekstil Hizmet İnş. San. Ve Tic. Ltd. Şti.",
+    "address": "Yeşillik Caddesi No:238 Karabağlar Konak/İzmir",
+    "lat": 38.395532,
+    "lng": 27.135027,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "MENDERES",
+    "name": "ÖZALTINDAĞ AKARYAKIT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Kısık Mahallesi İzmir Aydın Caddesi No:191 (Ada:138 , Pafta: - , Parsel:3)",
+    "lat": 38.279496,
+    "lng": 27.214539,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "BORNOVA",
+    "name": "MARİN AKARYAKIT SANAYİ VE TİCARET A.Ş.",
+    "address": "Kazım Dirik Mahallesi Üniversite Caddesi No:136 ( Ada:51 , Pafta: - , Parsel:10 )",
+    "lat": 38.442915,
+    "lng": 27.18083
+  },
+  {
+    "province": "izmir",
+    "district": "MENEMEN",
+    "name": "ESENBEY PETROL ÜRÜNLERİ LPG NAKLİYE İNŞAATI SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Zeytinlik Mahallesi Çanakkale Asfaltı Caddesi No:250 ( Ada:299 , Pafta:- , Parsel:6 )",
+    "lat": 38.586139,
+    "lng": 27.072781,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "KONAK",
+    "name": "MERSİNLİ AKARYAKIT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Mersinli Mahallesi Fatih Caddesi No:232",
+    "lat": 38.429311,
+    "lng": 27.179811,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "BORNOVA",
+    "name": "GOLD HİLL AKARYAKIT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karacaoğlan Mahallesi Kemalpaşa Caddesi No:299/a ( Ada:22718 , Pafta:- , Parsel:5 )",
+    "lat": 38.431698,
+    "lng": 27.225566,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "izmir",
+    "district": "KEMALPASA",
+    "name": "ENG PETROL SANAYİ VE TİCARET A.Ş.",
+    "address": "Kemalpaşa OSB Mah. İzmir Ankara Asfaltı Cad. Dış Kapı No:18",
+    "lat": 38.46262,
+    "lng": 27.3437
+  },
+  {
+    "province": "kahramanmaras",
+    "district": "ELBİSTAN",
+    "name": "YD AKARYAKIT SANAYİ TİCARET ANONİM ŞİRKETİ",
+    "address": "Doğan Mah. Şehit Astsubay Ömer Halisdemir (Doğan) Sk. No:25/1 A",
+    "lat": 38.29445,
+    "lng": 37.144787,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "karabuk",
+    "district": "SAFRANBOLU",
+    "name": "Orhan Esen Petrol İnşaat Sanayi ve Ticaret Limited Şirketi",
+    "address": "( Ada:109 , Pafta:11 , Parsel:3 )Bostanbükü Köyü KöyüSafranbolu/Karabük",
+    "lat": 41.217243,
+    "lng": 32.675846
+  },
+  {
+    "province": "karaman",
+    "district": "Şehir Merkezi",
+    "name": "BUĞRA PETROL ÜRÜNLERİ PAZARLAMA SİNTİNE ATIK ALIM VE ARITIMI İŞLETMESİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "No:1A Çakırbağ Köyü Köyün Kendisi Köy Bağlısı Çakırbağ Küme Evleri ( Ada:286 , Pafta: - , Parsel:2 )",
+    "lat": 37.190892,
+    "lng": 33.161424
+  },
+  {
+    "province": "kars",
+    "district": "KAĞIZMAN",
+    "name": "Mehmet Alkan-Uğur Petrol(Bayam)",
+    "address": "Bayam Mahallesi (Ada:106, Pafta:H50d07c2, Parsel:6)",
+    "lat": 40.167569,
+    "lng": 43.095439,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kars",
+    "district": "DİGOR",
+    "name": "Hakan KERENCİLER",
+    "address": "Kars Caddesi No:2 (Pafta:14a Ada:144 Parsel:41)Digor/KARS",
+    "lat": 40.380678,
+    "lng": 43.414379,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kars",
+    "district": "KAĞIZMAN",
+    "name": "Yılmaz Demir-Demir Petrol Akaryakıt İstasyonu",
+    "address": "Akçay Köyü Köprübaşı Mevkii No:1/1 ( Ada:104 , Pafta:06c.3d , Parsel:108 )",
+    "lat": 40.151919,
+    "lng": 43.291171
+  },
+  {
+    "province": "kars",
+    "district": "KAĞIZMAN",
+    "name": "Mehmet Alkan-Uğur Petrol (Şahindere)",
+    "address": "Şahindere Mahallesi Narinkale Caddesi No:270 (Ada:233, Pafta:H50D08C4, Parsel:2)",
+    "lat": 40.153662,
+    "lng": 43.128831,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kastamonu",
+    "district": "ARAÇ",
+    "name": "YILDIZ GRUP PETROL SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Akgeçit Köyü Karasu Mahallesi No:49 ( Ada:132 , Pafta:- , Parsel:89 )",
+    "lat": 41.200791,
+    "lng": 32.933072,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kastamonu",
+    "district": "Şehir Merkezi",
+    "name": "Kaçakoğlu Akaryakıt Gıda Zahirecilik Nakliyat Isı İnşaat Sanayi Ticaret Limited Şirketi",
+    "address": "Karaş Köyü No:5 (Ada:166 , Pafta:F31b13b2a , Parsel:4)",
+    "lat": 41.394846,
+    "lng": 33.893719
+  },
+  {
+    "province": "kastamonu",
+    "district": "Şehir Merkezi",
+    "name": "BÜYÜKBAYRAM İNŞAAT MÜTEAHHİTLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "No:7 Porsukhanı Mezra Porsukhanı Küme Evleri ( Ada:145 , Pafta:F31A18D1A , Parsel:20 )Kurucaören Köyü",
+    "lat": 41.318718,
+    "lng": 33.603197
+  },
+  {
+    "province": "kayseri",
+    "district": "KOCASİNAN",
+    "name": "TECİKLER PETROL VE TARIM ÜRÜNLERİ GIDA TAŞIMACILIK TURİZM SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Ankara Yolu 29.km ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 38.8231,
+    "lng": 35.209495,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "kayseri",
+    "district": "PINARBASI",
+    "name": "Mesut Onar",
+    "address": "Kahramanmaraş-Malatya Kavşağı ( Ada: 97 , Pafta: K36C04A4D, Parsel: 1)",
+    "phone": "0352 512 10 18",
+    "lat": 38.728572,
+    "lng": 36.402131,
+    "services": [
+      "ECOMAX",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "kayseri",
+    "district": "SARIOĞLAN",
+    "name": "Kumaş Petrol Nakliyecilik ve İnşaat Sanayi Ticaret Limited Şirketi",
+    "address": "Şenyurt Mahallesi Güven Caddesi Sarıoğlan /KAYSERİ",
+    "lat": 39.077538,
+    "lng": 35.963562
+  },
+  {
+    "province": "kilis",
+    "district": "Şehir Merkezi",
+    "name": "Lüks Varol İnşaat Turizm Seyahat Akaryakıt Nakliyat İthalat İhracat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Gaziantep Yolu Üzeri Beşikkaya Mevkii",
+    "phone": "0348 848 40 99",
+    "lat": 36.70766,
+    "lng": 37.189877,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "YAHŞİHAN",
+    "name": "ELVAN ÇAKIR İNŞAAT TAAHHÜT TAŞIMACILIK LOKANTACILIK AKARYAKIT BAYİ TUHAFİYE KONFEKSİYON HAYVANCILIK VE TURİZM LİMİTED ŞİRKETİ-2",
+    "address": "Yeşil Vadi Mahallesi Bağdat Caddesi No:5 ( Ada:657 , Pafta: - , Parsel:2 )",
+    "lat": 39.849774,
+    "lng": 33.482436,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "KESKİN",
+    "name": "Asil Petrol Nakliyat İnşaat Turizm Otomotiv Gıda Mobilya İthalat İhracat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Tandoğan Mah. Sağlık Lojmanları Küme Evleri No:1 Ceritmüminli Köyü ( Ada:210 , Pafta:- , Parsel:2 ) KESKİN / KIRIKKALE",
+    "lat": 39.705978,
+    "lng": 33.765099
+  },
+  {
+    "province": "kirikkale",
+    "district": "Şehir Merkezi",
+    "name": "ELVAN ÇAKIR İNŞAAT TAAHHÜT TAŞIMACILIK LOKANTACILIK AKARYAKIT BAYİ TUHAFİYE KONFEKSİYON HAYVANCILIK VE TURİZM LİMİTED ŞİRKETİ",
+    "address": "Aşağımahmutlar Mahallesi Çevreyolu Bulvarı No:215 ( Ada:712 , Pafta: - , Parsel:9 )",
+    "lat": 39.849705,
+    "lng": 33.572552,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "SULAKYURT",
+    "name": "HAYDAR YURT / EFENDİLER PETROL",
+    "address": "Yeşilyurt Mahallesi Sanayi Sitesi No:29 ( Ada: - , Pafta: - , Parsel:27 )a",
+    "lat": 40.154027,
+    "lng": 33.724558,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "DELİCE",
+    "name": "DURU NAKLİYE PETROL İNŞAAT GIDA HAYVANCILIK REKLAM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Köyün Kendisi Mahallesi Köy Sokak No:100 Fadılobası Köyü ( Ada:- , Pafta:3 , Parsel:2154 )",
+    "lat": 39.931629,
+    "lng": 33.954781
+  },
+  {
+    "province": "kirikkale",
+    "district": "DELİCE",
+    "name": "RAHMAN PETROL İNŞAAT EMLAKÇILIK OTOMOTİV GIDA SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yerlikent Mahallesi Ankara Caddesi No:9 Çerikli ( Ada:302 , Pafta:- , Parsel:17 )",
+    "lat": 39.89159,
+    "lng": 34.01171
+  },
+  {
+    "province": "kirikkale",
+    "district": "YAHŞİHAN",
+    "name": "GÖKHAN AKARYAKIT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "No:158 Hacıbalı Küme Evleri ( Ada:1 , Pafta: - , Parsel:1 )Hacıbalı Köyü",
+    "lat": 39.916421,
+    "lng": 33.432523,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "Şehir Merkezi",
+    "name": "AYTUĞ AKARYAKIT İNŞAAT PAZARLAMA NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kurtuluş Mahallesi Ahılı Caddesi No:5/ A ( Ada:595 , Pafta: - , Parsel:27 )",
+    "lat": 39.839496,
+    "lng": 33.514767,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "Şehir Merkezi",
+    "name": "LVN AKARYAKIT İÇ VE DIŞ TİCARET A.Ş.",
+    "address": "Yuva Mah. Alparslan Türkeş Bulvarı No:414/A",
+    "lat": 39.844969,
+    "lng": 33.550417,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirikkale",
+    "district": "SULAKYURT",
+    "name": "AYDOĞMUŞ PETROL ÜRÜNLERİ TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Yeniöz Mahallesi Mustafa Kemal Caddesi No:10",
+    "lat": 40.162366,
+    "lng": 33.722971,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirklareli",
+    "district": "Şehir Merkezi",
+    "name": "BAŞLAR PETROL ÜRÜNLERİ NAKLİYECİLİK VE ZAHİRECİLİK LİMİTED ŞİRKETİ-2",
+    "address": "Karaca İbrahim Mahallesi Mustafa Kemal Bulvarı No:65H/19 Sanayi Sitesi ( Ada:786 , Pafta:- , Parsel:203 )",
+    "lat": 41.72932,
+    "lng": 27.223838
+  },
+  {
+    "province": "kirklareli",
+    "district": "Şehir Merkezi",
+    "name": "ŞAHİNLER PETROLCÜLÜK GIDA TARIM ÜRÜNLERİ SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karakaş Mahallesi Kavaklıyolu 1. Km ( Ada:689 , Pafta: - , Parsel:21 )",
+    "lat": 41.719167,
+    "lng": 27.214722
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "EFZA PETROL NAKLİYAT GIDA VE TURİZM LİMİTED ŞİRKETİ",
+    "address": "Sinanlı Beldesi / Köyü Cumhuriyet Mahallesi Mandıra Caddesi No:14 ( Ada:189 , Pafta:f18a13d , Parsel:19 )",
+    "lat": 41.349459,
+    "lng": 27.117825
+  },
+  {
+    "province": "kirklareli",
+    "district": "PEHLİVANKÖY",
+    "name": "Pavli Petrol Gıda Tarım Ürünleri Pazarlama Nakliye ve Ticaret Limited Şirketi",
+    "address": "Kazım Dirik Mahallesi Ecz. Mahmut Tuna Caddesi No:26/A (Ada:12, Pafta:5, Parsel:01)",
+    "lat": 41.347566,
+    "lng": 26.913484,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "ERŞANLI PETROL İNŞAAT NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-2",
+    "address": "Halilpaşa Mahallesi Atatürk Caddesi Karahalil No:3 ( Ada: - , Pafta:1 , Parsel:19 )",
+    "lat": 41.600517,
+    "lng": 27.042034
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "DOĞUSAN LOJİSTİK AKARYAKIT İNŞAAT SAN. VE TİC. LTD. ŞTİ.",
+    "address": "Atatürk Mevkii İnönü Sokak No:3 / A Sinanlı Köyü ( Ada:111 , Pafta:F18A-19A-1A , Parsel:01 )",
+    "lat": 41.348311,
+    "lng": 27.145998
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "COŞKUN PETROLCÜLÜK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gazikemal Mahallesi Ekici Sokak No:50",
+    "lat": 41.425658,
+    "lng": 27.101848,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirklareli",
+    "district": "LÜLEBURGAZ",
+    "name": "METYUN PETROL İŞLETMELERİ LİMİTED ŞİRKETİ",
+    "address": "Küçükkarıştıran Mahallesi No:14 D-100 Karayolu Büyükkarıştıran ( Ada:208 , Pafta: - , Parsel:24 )"
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "ATA OİL PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dindoğru Mahallesi D-100 Karayolu Caddesi No:25/A ( Ada:238 , Pafta:39 , Parsel:18 )",
+    "lat": 41.450309,
+    "lng": 27.048202
+  },
+  {
+    "province": "kirklareli",
+    "district": "LÜLEBURGAZ",
+    "name": "ÖZSU AKARYAKIT LOJİSTİK İNŞAAT TURİZM OTOMOTİV MADENCİLİK LTD.ŞTİ.",
+    "address": "Yeni Mah. Muratlı Asfaltıl Cad. No:1/2 Büyükkarıştıran",
+    "lat": 41.28684,
+    "lng": 27.56073,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirklareli",
+    "district": "Şehir Merkezi",
+    "name": "BAŞLAR PETROL ÜRÜNLERİ NAKLİYECİLİK VE ZAHİRECİLİK LİMİTED ŞİRKETİ",
+    "address": "Kayalı Köyü ( Ada:186 , Pafta: - , Parsel:2 )",
+    "lat": 41.77708,
+    "lng": 27.099144
+  },
+  {
+    "province": "kirklareli",
+    "district": "BABAESKİ",
+    "name": "ERŞANLI PETROL İNŞAAT NAKLİYAT SANAYİ VE TİC.LTD.ŞTİ",
+    "address": "Cumhuriyet Meydanı No:5/2 Hazinedar Köyü",
+    "lat": 41.562209,
+    "lng": 27.00389
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "AYYILDIZLAR PETROL ÜRÜNLERİ MADENİ YAĞ NAKLİYE İNŞAAT TAAHHÜT GIDA MARKET EMLAK VE OTO ALIM SATIM KOMİSYONCULUĞU SANAYİ VE TİCARET LİMİTED ŞİRKETİ(KIRŞEHİR)",
+    "address": "Kırşehir - Ortaköy Karayolu 25. Km ( Ada:183 , Pafta: - , Parsel:3 )",
+    "lat": 38.929214,
+    "lng": 34.179493
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "KULE YAPI KENT İNŞAAT İMAR MÜTEAHHİTLİK TAAHHÜT AKARYAKIT LPG VE PETROL ÜRÜNLERİ TARIM VE HAYVANCILIK İÇ VE DIŞ TİCARET SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çugun Köyü Mevkii ( Ada: - , Pafta:J32a19a3 , Parsel:2 )",
+    "lat": 39.336391,
+    "lng": 34.162888,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "COŞAR AKARYAKIT VE İNŞAAT MALZEMELERİ OTOMOTİV SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kındam Mahallesi Ankara-kayseri Caddesi No:2/10 ( Ada:449 , Pafta:- , Parsel:30 )",
+    "lat": 39.1182,
+    "lng": 34.1974
+  },
+  {
+    "province": "kirsehir",
+    "district": "KAMAN",
+    "name": "AS IRMAK AKARYAKIT NAKLİYE LİMİTED ŞİRKETİ",
+    "address": "Cuma Mahallesi Prens Mikasa Caddesi No:164-1 ( Ada:3270 , Pafta:20N IV , Parsel:5 )",
+    "lat": 39.360767,
+    "lng": 33.745445,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "ŞAH ASLAN PETROL VE PETROL ÜRÜNLERİ GIDA SANAYİ TİCARET LİMİTED ŞİRKETİ-1",
+    "address": "Ahi Evran Mahallesi Ankara- Kayseri Caddesi No:24 ( Ada:282 , Pafta: - , Parsel:69 )",
+    "lat": 39.187941,
+    "lng": 34.151328,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "ŞAH ASLAN PETROL VE PETROL ÜRÜNLERİ GIDA SANAYİ TİCARET LİMİTED ŞİRKETİ 2",
+    "address": "Kervansaray Mahallesi Ankara - Kayseri Caddesi No:1 ( Ada:324 , Pafta: - , Parsel:119 )",
+    "lat": 39.196239,
+    "lng": 34.147809,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kirsehir",
+    "district": "Şehir Merkezi",
+    "name": "YERKÖY AKARYAKIT TİCARET ANONİM ŞİRKETİ-KIRŞEHİR",
+    "address": "Özbağ Beldesi / Köyü Örcün Mahallesi Atasoylar Sokağı No:11 ( Ada:120 , Pafta: - , Parsel:25 )",
+    "lat": 39.257022,
+    "lng": 34.122594,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kocaeli",
+    "district": "İZMİT",
+    "name": "CEMALETTİN AKSOY-AKSOY PETROL",
+    "address": "Bahçecik Seymen Mahallesi E-130 İzmit Yalova Karayolu Üzeri ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 40.7088,
+    "lng": 29.8973
+  },
+  {
+    "province": "kocaeli",
+    "district": "GEBZE",
+    "name": "BURTAÇ PETROL İNŞAAT TURİZM GIDA OTOMOTİV SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çayırova Mahallesi Fatih Caddesi No:14 (Ada:5591 , Pafta:G22B18D2C , Parsel:10)",
+    "lat": 40.81319,
+    "lng": 29.39828
+  },
+  {
+    "province": "kocaeli",
+    "district": "KÖRFEZ",
+    "name": "Erbil Akaryakıt Madeni Yağ Pazarlama Nakliyat Gıda Sanayi ve Ticaret Limited Şirketi",
+    "address": "Karacaoğlu Mevkii Sevindikli Köyü",
+    "phone": "0262 533 70 08",
+    "lat": 40.888005,
+    "lng": 29.76925
+  },
+  {
+    "province": "kocaeli",
+    "district": "KÖRFEZ",
+    "name": "ÖNAY YATIRIM ENERJİ LOJİSTİK DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Atalar Mahallesi Hızırreis Caddesi No:534 ( Ada:961 , Pafta:30LIA , Parsel:5 )",
+    "lat": 40.7768,
+    "lng": 29.7181
+  },
+  {
+    "province": "kocaeli",
+    "district": "ÇAYIROVA",
+    "name": "ZÜMRA PETROLCÜLÜK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Şekerpınar Mahallesi Muhsin Yazıcıoğlu Caddesi No:106 ( Ada:547 , Pafta:G22B13C2D , Parsel:4 )",
+    "lat": 40.8621,
+    "lng": 29.3877
+  },
+  {
+    "province": "kocaeli",
+    "district": "DİLOVASI",
+    "name": "ÇİLEK AKARYAKIT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Dilovası Organize Sanayi Bölgesi Dilovası Osb Mahallesi Dicle Caddesi No:10 ( Ada:14 , Pafta: - , Parsel:7 )",
+    "lat": 40.786868,
+    "lng": 29.533423,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "kocaeli",
+    "district": "GEBZE",
+    "name": "BALKANLAR AKARYAKIT ENERJİ İNŞAAT ANONİM ŞİRKETİ",
+    "address": "Beylikbağı Mahallesi Güney Yan Yol Caddesi No:52 ( Ada:5742 , Pafta:G22B23B2A , Parsel:4 )",
+    "lat": 40.796001,
+    "lng": 29.387301,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "SARAYÖNÜ",
+    "name": "Bekir Uğur",
+    "address": "Kadıoğlu Beldesi Demirel Caddesi No:7 SARAYÖNÜ / KONYA",
+    "phone": "0332 629 40 37",
+    "lat": 38.739502,
+    "lng": 32.494205,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "SARAYÖNÜ",
+    "name": "OFLAZ PETROL MİMARLIK MÜHENDİSLİK İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Konya - Afyon Karayolu 40. Km ( Ada:- , Pafta:40 , Parsel:8924 )Ladik Kasabası Köyü",
+    "lat": 38.208301,
+    "lng": 32.370601
+  },
+  {
+    "province": "konya",
+    "district": "SARAYÖNÜ",
+    "name": "MANAV PETROL TARIM VE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Konya Yolu 1. Km Çeşmelisebil Kasabası ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 38.6087455,
+    "lng": 32.5450967,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ALTINEKİN",
+    "name": "Dere Petrol Tarım ve Motorlu Araçlar Ticaret Limited Şirketi",
+    "address": "AKINCILAR MAHALLESİ KONYA CADDESİ NO:3",
+    "phone": "0332 681 41 90",
+    "lat": 38.41161,
+    "lng": 32.88706
+  },
+  {
+    "province": "konya",
+    "district": "EREĞLİ",
+    "name": "S.S. Ereğli Şeker Nakliye Motorlu Taşıyıcılar Kooperatifi",
+    "address": "Ziya Gökalp Mahallesi Adana Caddesi No:281(408 Ada, 202 Parsel) Ereğli/KONYA",
+    "lat": 37.54729,
+    "lng": 34.085082,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "BOZKIR",
+    "name": "Bozkırlı Petrol Ürünleri Turizm Nakliyat Otomotiv Emlak Limited Şirketi",
+    "address": "Demirasaf Mahallesi Demirasaf Caddesi No:79 (Ada:338 , Pafta:N28C06A1A , Parsel:15)",
+    "lat": 37.1907189,
+    "lng": 33.161523
+  },
+  {
+    "province": "konya",
+    "district": "CİHANBEYLİ",
+    "name": "Yeniceoba Petrol Madencilik Tarım Turizm Nakliye Sanayi Ve Ticaret Limited Şirketi - 1",
+    "address": "Yenice Mahallesi Tarla Caddesi No:51 ( Ada:- , Pafta:20K 2C , Parsel:7028 )Yeniceoba Köyü CİHANBEYLİ / KONYA",
+    "lat": 38.87566,
+    "lng": 32.772686,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ILGIN",
+    "name": "TURAN PETROL TESİSLERİ VE TİCARET KOLLEKTİF ŞİRKETİ EROL TURAN VE ORTAKLARI",
+    "address": "Babaküstü Mahallesi Açıkılıca Caddesi No:2 Çavuşçugöl Beldesi ( Ada:192 , Pafta:L.27.b.12.c , Parsel:6 )",
+    "lat": 38.353962,
+    "lng": 31.852969,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "CİHANBEYLİ",
+    "name": "Yeniceoba Petrol Madencilik Tarım Turizm Nakliye Sanayi ve Ticaret Limited Şirketi - 2",
+    "address": "Yenice Mahallesi Yenice Caddesi No: 109 Yeniceoba(Pafta:20L-1-d Ada:- Parsel:4050) Cihanbeyli / KONYA",
+    "lat": 38.873882,
+    "lng": 32.778414,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "SARAYÖNÜ",
+    "name": "Atak Tavukçuluk Ekipmanları Gıda Tarım Nakliyat Petrol Sanayi Ticaret Anonim Şirketi",
+    "address": "Kurşunlu Mahallesi Konya-Afyon Yolu Caddesi No:22 (Ada:-, Pafta:4, Parsel:847)",
+    "phone": "0332 322 72 10",
+    "lat": 38.190461,
+    "lng": 32.450064,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ÇUMRA",
+    "name": "Baykara Petrol Ürünleri Limited Şirketi",
+    "address": "İçeriçumra Mahallesi Karaman Caddesi No:1089 ( Ada:- , Pafta:17 , Parsel:12918 ) ÇUMRA / KONYA",
+    "lat": 37.5794904,
+    "lng": 32.654767,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "CİHANBEYLİ",
+    "name": "TÖMEKLER PETROL ÜRÜNLERİ NAKLİYE TRAKTÖR VE TARIM ALETLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Taşpınar Mahallesi Aydınlık Caddesi No.94 ( Ada:151 , Pafta: - , Parsel:11 )Cihanbeyli Konya",
+    "lat": 38.392905,
+    "lng": 32.992333
+  },
+  {
+    "province": "konya",
+    "district": "KADINHANI",
+    "name": "Necati Büyükşahin",
+    "address": "Kolukısa Beratlı Mahallesi Kolukısa Caddesi No:85",
+    "phone": "0332 234 21 34",
+    "lat": 38.514812,
+    "lng": 32.261914,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ILGIN",
+    "name": "ÖZGÜR PARK AKARYAKIT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Argıthanı Mahallesi Yeni İstanbul Caddesi No:2226 ( Ada:- , Pafta: - , Parsel:13380 )",
+    "lat": 38.297662,
+    "lng": 31.673433
+  },
+  {
+    "province": "konya",
+    "district": "KULU",
+    "name": "ALİN NAKLİYAT AKARYAKIT SANAYİ VE TİCARET A.Ş.",
+    "address": "Acıkuyu Mah. Ankara Cad. No:1505",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ALTINEKİN",
+    "name": "TÖMEKLER PETROL ÜRÜNLERİ NAKLİYE TRAKTÖR VE TARIM ALETLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ-2",
+    "address": "Oğuzeli Mahallesi Atatürk Caddesi No:92/1 ( Ada:262 , Pafta: - , Parsel:138 )",
+    "lat": 38.355681,
+    "lng": 33.103505,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "CİHANBEYLİ",
+    "name": "OMTA PETROL TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kırkkışla Mahallesi Ankara Caddesi No:1023( Ada:255 , Pafta:k29- C- 23- D- 1- C , Parsel:7 )",
+    "lat": 38.515347,
+    "lng": 32.858753,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "YUNAK",
+    "name": "ÖZMPET PETROL NAKLİYAT TARIM ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Sülüklü Kasabası Köyü",
+    "lat": 38.8806,
+    "lng": 32.3355,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "konya",
+    "district": "ÇELTİK",
+    "name": "ÖMEROĞLU AKARYAKIT OTOMOTİV KUYUMCULUK TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Selçuk Mahallesi Yunus Emre Caddesi No:115A ( Ada:159 , Pafta:J27C21B , Parsel:2 )",
+    "lat": 39.034301,
+    "lng": 31.780529,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "HİSARCIK",
+    "name": "DEREKÖY SÜT ÜRÜNLERİ PETROL GIDA TAŞIMACILIK HAYVANCILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Şehit Fatih Seven Caddesi No:54 Dereköy Beldesi Köyü",
+    "lat": 39.192179,
+    "lng": 29.290756,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "GEDİZ",
+    "name": "Eğilmezler Turizm Taşımacılık Ticaret Limited Şirketi(GEDİZ)",
+    "address": "Umurbey Mahallesi Sanayi Sitesi Bulvarı 28. Cadde Caddesi No:8 (Ada:449 , Pafta:11 , Parsel:236)",
+    "lat": 38.975687,
+    "lng": 29.388403,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "SİMAV",
+    "name": "EĞİLMEZLER TURİZM TAŞIMACILIK TİCARET LİMİTED ŞİRKETİ (SİMAV)",
+    "address": "Fatih Mahallesi No:106 Şehitler Bulvarı ( Ada:272 , Pafta:E.3.D.A. , Parsel:23 )",
+    "lat": 39.093501,
+    "lng": 28.974112,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "ŞAPHANE",
+    "name": "EĞİLMEZLER TURİZM TAŞIMACILIK TİCARET LİMİTED ŞİRKETİ(ŞAPHANE)",
+    "address": "Türegün Mahallesi Gediz-simav Şosesi No.2 43950 ( Ada:- , Pafta:48 , Parsel:7121 )",
+    "lat": 39.012013,
+    "lng": 29.2147,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "TAVŞANLI",
+    "name": "ÇAKIRLAR PETROL ÜRÜNLERİ İNŞAAT TAAHHÜT TURİZM TAŞIMACILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "TAVŞANLI HARMANCIK KARAYOLU 4.KM. TAVŞANLI-AYVALI KÖYÜ KÜME EVLERİ NO:39",
+    "lat": 39.576385,
+    "lng": 29.423006,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "HİSARCIK",
+    "name": "GÜNEŞ TRAFİK HİZMETLERİ AKARYAKIT NAKLİYAT MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hisarcık Emet Yolu 1. Km. Un Fabrikası Karşısı ( Ada: - , Pafta:30 K.II.a , Parsel:5318 )",
+    "lat": 39.262636,
+    "lng": 29.225942,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "kutahya",
+    "district": "GEDİZ",
+    "name": "DCK PETROL ÜRÜNLERİ NAKLİYAT İNŞAAT GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Umurbey Mahallesi 725. Sokağı No:2 ( Ada:449 , Pafta:11 , Parsel:319 )",
+    "lat": 38.975963,
+    "lng": 29.387809,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "malatya",
+    "district": "ARGUVAN",
+    "name": "Berpet Petrol Otomotiv Turizm Gıda İnşaat Ticaret ve Sanayi Limited Şirketi",
+    "address": "Malatya-Arapgir Devlet Yolu 32. Km. Morhamam Köyü(Pafta:40 Ada:08, Parsel:1151) Erguvan / MALATYA",
+    "lat": 38.68853,
+    "lng": 38.361381,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "malatya",
+    "district": "PÜTÜRGE",
+    "name": "Mirpaş Petrol Gıda İnşaat Nakliye Tekstil Turizm Ziraat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Pazarcık Mahallesi Pazarcık Sokağı No:31(Ada:125 , Pafta:- , Parsel:10)",
+    "phone": "0422 321 74 74",
+    "lat": 38.219429,
+    "lng": 38.727297,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "malatya",
+    "district": "DOĞANŞEHİR",
+    "name": "Has İnşaat Ve Petrol Ürünleri Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Esentepe Mahallesi No:22/A Çobandere Küme Evleri ( Ada:118 , Pafta: - , Parsel:90 )",
+    "phone": "0422 517 14 96",
+    "lat": 38.069108,
+    "lng": 37.903336,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "manisa",
+    "district": "Şehir Merkezi",
+    "name": "Abdurrahmanoğulları Petrol Ürünleri İnşaat Gıda Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Fevzipaşa Mahallesi Kasaba Caddesi No:27(Ada: - , Pafta:2 , Parsel:357) Aşağıçobanisa MERKEZ / MANİSA",
+    "lat": 38.556619,
+    "lng": 27.565683
+  },
+  {
+    "province": "manisa",
+    "district": "AKHİSAR",
+    "name": "ÖRGE PETROL ÜRÜNLERİ NAKLİYE İTHALAT İHRACAT OTOMOTİV MÜTEAHHİTLİK TAAHHÜT HAYVANCILIK SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hacı Ishak Mahallesi 15. Caddesi No:143 ( Ada:2248 , Pafta:47K-3B , Parsel:1 )",
+    "lat": 38.902818,
+    "lng": 27.836993,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "manisa",
+    "district": "SALİHLİ",
+    "name": "HAYDAROĞULLARI PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Durasıllı Mahallesi 92. Sokağı No:3 ( Ada:337 , Pafta:11 , Parsel:3 )",
+    "lat": 38.508806,
+    "lng": 28.261038,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "manisa",
+    "district": "KÖPRÜBAŞI",
+    "name": "İSA TAŞER",
+    "address": "Alanyolu Mahallesi Alanyolu Sokağı No:345 ( Ada:127 , Pafta: - , Parsel:18 )",
+    "lat": 38.790915,
+    "lng": 28.32582,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "manisa",
+    "district": "SELENDİ",
+    "name": "ŞABAN KARADAŞ",
+    "address": "Zafer Mahallesi Mehmet Akif Ersoy Caddesi No:176/A ( Ada:188 , Pafta:27-31-2 , Parsel:2 )",
+    "lat": 38.753368,
+    "lng": 28.866185,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "manisa",
+    "district": "SALİHLİ",
+    "name": "HAYDAROĞULLARI PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ - 3",
+    "address": "Mersinli Mahallesi Ankara Asfaltı Yanı No:6 ( Ada:273 , Pafta: - , Parsel:2 )",
+    "lat": 38.524034,
+    "lng": 28.382159
+  },
+  {
+    "province": "manisa",
+    "district": "TURGUTLU",
+    "name": "PETRA ENERJİ AKARYAKIT SANAYİ TİCARET ANONİM ŞİRKETİ",
+    "address": "Derbent Mahallesi Battalgazi Caddesi No:141 ( Ada:184 , Pafta:19m- 2d , Parsel:10 )",
+    "lat": 38.484178,
+    "lng": 27.810022
+  },
+  {
+    "province": "mardin",
+    "district": "YEŞİLLİ",
+    "name": "İLTERLER PETROL ÜRÜNLERİ DAYANIKLI TÜKETİM MALLARI TURİZM İNŞAAT TEKSTİL NAKLİYAT İTHALAT İHRACAT TEMİZLİK GIDA SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gül Mahallesi Vatan Caddesi No:54 ( Ada:294 , Pafta:n45-B-17-A-2-D , Parsel:34 )",
+    "lat": 37.339607,
+    "lng": 40.816163
+  },
+  {
+    "province": "mardin",
+    "district": "KIZILTEPE",
+    "name": "Samedoğlu Turizm Hayvancılık Nakliyat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Kızıltepe Ceylanpınar Yolu Üzeri 5+700 Km Kızıltepe /Mardin",
+    "lat": 37.15582,
+    "lng": 40.527535,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "SAVUR",
+    "name": "Fatih Petrol Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Kaplan Mahallesi Mardin Caddesi No:19 ( Ada:159 , Pafta:M-45-o-23-b , Parsel:21 ) SAVUR / MARDİN",
+    "lat": 37.54494,
+    "lng": 40.881504,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "NUSAYBİN",
+    "name": "Baypet Petrol İnşaat Nakliyat Elektronik Kuyumculuk Gıda İthalat İhracat Sanayi Veticaret Limited Şiketi",
+    "address": "İpek Yolu Üzeri Bölge Trafik Karşısı Nusaybin / Mardin",
+    "lat": 37.092696,
+    "lng": 41.195371
+  },
+  {
+    "province": "mardin",
+    "district": "KIZILTEPE",
+    "name": "ÖZSARIOĞULLARI PETROL ÖZEL EĞİTİM TARIM NAKLİYE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ersoylu Mah. Ipek Cad. No:344 Viranşehir Yolu 1.km, ( Ada:107 , Pafta:- , Parsel:12 )",
+    "lat": 37.193524,
+    "lng": 40.552753,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "MİDYAT",
+    "name": "Öz Sa Petrol İnşaat Nakliyat Sanayi ve Ticaret Limited Şirketi",
+    "address": "Ortaçarşı Mahallesi Nusaybin Caddesi No:46 ( Ada:289 , Pafta:N46-B-07-C-2-B , Parsel:242 )Midyat/Mardin",
+    "lat": 37.412533,
+    "lng": 41.342636
+  },
+  {
+    "province": "mardin",
+    "district": "Şehir Merkezi",
+    "name": "Kabala Kayalar Petrol Nakliyat İnşaat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Kabala Mahallesi Çimento Fabrikası Karşısı (Ada: - , Pafta:15 , Parsel:2531) Artuklu",
+    "phone": "0482 226 68 01",
+    "lat": 37.339934,
+    "lng": 40.793177,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "KIZILTEPE",
+    "name": "Şeyhmusoğlu Petrol Tarım Gıda Nak. İnş. San. İç Ve Dış Tic.Ltd.Şti",
+    "address": "Kovalı Mahallesi Kovalı Caddesi No:60(Ada: - , Pafta: - , Parsel:257) DERİK",
+    "lat": 37.18907165,
+    "lng": 40.51690673,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "MAZIDAĞI",
+    "name": "Hıdır Kalı",
+    "address": "Poyraz Mahallesi Derik Caddesi, Mazıdağı/MARDİN",
+    "lat": 37.473495,
+    "lng": 40.476325
+  },
+  {
+    "province": "mardin",
+    "district": "ARTUKLU",
+    "name": "Alpdağ Petrol İnşaat Nakliye Temizlik Gıda Hayvancılık Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Kotek Mahallesi Nusaybin Caddesi No:181 (Ada: -, Pafta:1, Parsel:267)",
+    "lat": 37.304069,
+    "lng": 40.763412,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "NUSAYBİN",
+    "name": "Yekta Petrol Nakliyat İnşaat Elektrik Elektronik Lpg Doğalgaz Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Mor Yakup Mahallesi Lozan Caddesi No:116 ( Ada:37 , Pafta:4847UA , Parsel:28-29 ) NUSAYBİN / MARDİN",
+    "lat": 37.0691,
+    "lng": 41.2199
+  },
+  {
+    "province": "mardin",
+    "district": "KIZILTEPE",
+    "name": "CEMİLOĞULLARI ERTAŞ PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dikmen Mahallesi Ceylanpınar Yolu Caddesi No:107A ( Ada:135 , Pafta:n44-c-18-h , Parsel:1 )",
+    "lat": 37.17086438,
+    "lng": 40.55052905,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "ARTUKLU",
+    "name": "MEZOPOTAMYA OTOMOTİV TURİZM DANIŞMANLIK ORGANİZASYON İNŞAAT GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ.",
+    "address": "Ofis Mahallesi 1 Caddesi No:345 ( Ada:- , Pafta:3 , Parsel:681 )",
+    "lat": 37.273976,
+    "lng": 40.688856,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "NUSAYBİN",
+    "name": "MESUT TURİSTİK KONAKLAMA TESİSLERİ PETROL TEKSTİL NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-1",
+    "address": "Gırnavas Mahallesi İpekyolu Caddesi No:197",
+    "lat": 37.088467,
+    "lng": 41.230669,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "ARTUKLU",
+    "name": "NECMİ DEMİR İNŞAAT TURİZM VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ensar Mahallesi Nusaybin Caddesi No:12 ( Ada:264 , Pafta:31.32.E.D , Parsel:45 )",
+    "lat": 37.316029,
+    "lng": 40.754217,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "ÖMERLİ",
+    "name": "UZUNKAYA KUYUMCULUK DERİCİLİK DAYANIKLI TÜKETİM MALLARI TURİZM PETROL SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Cumhuriyet Mahallesi Hürriyet Caddesi No:28 (Ada:254, Pafta:m45- B14- B2, Parsel:11)",
+    "lat": 37.39745694,
+    "lng": 40.940632,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mardin",
+    "district": "NUSAYBİN",
+    "name": "ALTAYLAR PETROL LİMİTED ŞİRKETİ",
+    "address": "Beylik Mahallesi İpek Yolu Caddesi No:286 ( Ada:- , Pafta:n46. C. 16. A , Parsel:489 )",
+    "lat": 37.084687,
+    "lng": 41.258997,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "Ateşler Petrol Ürünleri Toprak Mahsulleri Lokantacılık Otomotiv Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Tarsus-adana Karayolu Üzeri, 5. Km TARSUS / MERSİN",
+    "phone": "0324 616 34 08",
+    "lat": 36.935289,
+    "lng": 34.963883
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "YUSUF KALKAVAN OĞULLARI DENİZCİLİK YATIRIM SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Yenice Kasabası Atalar Mahallesi E-5 Karayolu Üzeri ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 36.969395,
+    "lng": 35.045415,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "ATEŞLER PETROL ÜRÜNLERİ TOPRAK MAHSULLERİ LOKANTACILIK OTOMOTİV SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tarsus Çamlıyayla Yolu 10.km ( Ada: - , Pafta: - , Parsel: - )Sucular Köyü",
+    "lat": 36.97613,
+    "lng": 34.807337
+  },
+  {
+    "province": "mersin",
+    "district": "ANAMUR",
+    "name": "ATALAY - DEMİRLER PETROL ÜRÜNLERİ İNŞAAT NAKLİYE GIDA TURİZM SANAYİ VE TİC. LTD. ŞTİ.",
+    "address": "Bahçe Mahallesi Sanayi Sitesi Girişi",
+    "lat": 36.086441,
+    "lng": 32.858089
+  },
+  {
+    "province": "mersin",
+    "district": "MUT",
+    "name": "HASİN DAĞ - SUNPET PETROL(MUT)",
+    "address": "Karşıyaka Mahallesi Mustafa Kemal Bulvarı No:68 ( Ada:221 , Pafta:26.30.OA , Parsel:-",
+    "lat": 36.645874,
+    "lng": 33.431465,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "Delil-Pet Petrol Ürünleri Uluslar arası Nakliyat Gıda İnşaat Otomotiv İç Ve Dış Ticaret Limited Şirketi",
+    "address": "Yarbay Şemsettin Mahallesi Ankara Bulvarı No:140/A(Pafta:-Ada-Parsel:1239) Tarsus / MERSİN",
+    "lat": 36.944743,
+    "lng": 34.930614,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "AKDENİZ",
+    "name": "Hasin Dağ - Sunpet Petrol",
+    "address": "Dikilitaş Mahallesi Cumhuriyet Caddesi No:40/A ( Ada:9775 , Pafta:26PII , Parsel:1 )Dikilitaş Beldesi Köyü Akdeniz/Mersin",
+    "lat": 36.870391,
+    "lng": 34.663322,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "AKDENİZ",
+    "name": "MVS Petrol Ürünleri Taşımacılık Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Gündoğdu Mahallesi Çiftçiler Caddesi No:88a ( Ada:22.M.III , Pafta:3 , Parsel:3997 ) AKDENİZ / MERSİN",
+    "lat": 36.820218,
+    "lng": 34.630397,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "AKDENİZ",
+    "name": "CESA AKARYAKIT ÜRÜNLERİ NAKLİYAT İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karacailyas Emek Mahallesi Atatürk Bulvarı No:20/a ( Ada:138 , Pafta:033A20A1C , Parsel:5 )",
+    "lat": 36.841388,
+    "lng": 34.710555,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "DEMİRKOLLAR AKARYAKIT LOJİSTİK GIDA SANAYİ VE TİCARET LTD. ŞTİ.",
+    "address": "Yarbay Şemsettin Mahallesi Ankara Bulvarı No:190/A ( Ada:- , Pafta:- , Parsel:1252 )",
+    "lat": 36.968552,
+    "lng": 34.948307,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "MUT",
+    "name": "HASİN DAĞ",
+    "address": "Yapıntı Mahallesi Yapıntı Küme Evleri Sokağı No:390 ( Ada:123 , Pafta:O30-C-04-D-4 , Parsel:13 )",
+    "lat": 36.704205,
+    "lng": 33.401232,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mersin",
+    "district": "TARSUS",
+    "name": "SELÇUK NAKLİYAT İNŞAAT MALZEMELERİ OTOMOTİV TARIM ÜRÜNLERİ PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "( Ada: - , Pafta: - , Parsel: - )Taşobası Köyü Köyü",
+    "lat": 37.087456,
+    "lng": 34.921785
+  },
+  {
+    "province": "mugla",
+    "district": "FETHİYE",
+    "name": "BERKOL PETROL ÜRÜNLERİ TİCARET VE TAA LİMİTED ŞİRKETİ",
+    "address": "Antalya Yolu Üzeri Patlangıç ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 36.628168,
+    "lng": 29.138711,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "mugla",
+    "district": "SEYDİKEMER",
+    "name": "SEKİ PETROL İNŞAAT TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Seki Mah. Atatürk Cad. No:01 ( Ada: - , Pafta:023A18C-3C , Parsel:2997 )",
+    "lat": 36.80214,
+    "lng": 29.644194,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mugla",
+    "district": "MİLAS",
+    "name": "AKSU FRİGO AKARYAKIT NAKLİYE ARAÇ KİRALAMA İNŞAAT GAYRİMENKUL SANAYİ VE TİCARET LİMİTED ŞİRKETİ (Milas)",
+    "address": "Milas Bodrum Yolu Caddesi No:No:22 Güllük-güvercinlik Arası-1 ( Ada: - , Pafta:N19D2.1B , Parsel:63 )Akyol Köyü Köyü",
+    "lat": 37.222739,
+    "lng": 27.663793,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "mugla",
+    "district": "KÖYCEĞİZ",
+    "name": "PAÇ AKARYAKIT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Toparlar Mahallesi Muğla- Fethiye Karayolu No:38- 38a ( Ada:106 , Pafta:021a3b1d , Parsel:2 )",
+    "lat": 36.991,
+    "lng": 28.6283
+  },
+  {
+    "province": "mugla",
+    "district": "MİLAS",
+    "name": "USS TURKEY AKARYAKIT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kemikler Mahallesi No:40/2 Güllük Güvercinlik Arası -2 ( Ada:107 , Pafta:N19-D-04-D-1-D , Parsel:122 )",
+    "lat": 37.214676,
+    "lng": 27.656179,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mugla",
+    "district": "MENTEŞE",
+    "name": "HÜSEYİN AYRANCI AKARYAKIT TAŞIMACILIK HAZIR BETON İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-MUĞLA ŞUBESİ",
+    "address": "Akçaova Mahallesi Moğla ( Akc ) Bulvarı No:19 ( Ada:410 , Pafta:n20c013b , Parsel:17 )",
+    "lat": 37.236462,
+    "lng": 28.297575,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mus",
+    "district": "Şehir Merkezi",
+    "name": "Serhatcan Petrol Gıda Telekomünikasyon İnşaat Taahhüt Sanayi ve Dış Ticaret Limited Şirketi",
+    "address": "Erzurum Yolu Karasu Köprü Mevkii (Pafta:2 Ada:- Parsel:1111) / MUŞ",
+    "phone": "0436 212 54 63",
+    "lat": 38.780344,
+    "lng": 41.496273,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mus",
+    "district": "BULANIK",
+    "name": "Süreyya ARSLAN- Arslanlar Petrol",
+    "address": "Bahçelievler Mahallesi Devlet Karayolları CaddesiNo:20 (Pafta: 3 Ada: 104 Parsel:36) Bulanık/MUŞ",
+    "lat": 39.097869,
+    "lng": 42.270606,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "mus",
+    "district": "Şehir Merkezi",
+    "name": "Saytaş Petrol Ürünleri Turizm Taşımacılık İnşaat Gıda Sanayi Ve Dış Ticaret Limited Şirketi",
+    "address": "Hürriyet Mahallesi Sağlık Caddesi No:151/1 Sungu ( Ada: - , Pafta:9 , Parsel:1425 )",
+    "lat": 38.718824,
+    "lng": 41.61826
+  },
+  {
+    "province": "nevsehir",
+    "district": "HACIBEKTAŞ",
+    "name": "Arif Sinop Petrol Ürünleri Tarım Ticaret Ve Sanayi Limited Şirketi",
+    "address": "Kızılağıl Kasabası",
+    "phone": "0384 455 61 27",
+    "lat": 39.008747,
+    "lng": 34.766323
+  },
+  {
+    "province": "nevsehir",
+    "district": "ACIGÖL",
+    "name": "BİRBİMS İMALAT SANAYİ AKARYAKIT VE NAKLİYE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karapınar Beldesi / Köyü Bahçelievler Mahallesi Muhsin Yazıcıoğlu Bulvarı No:1 ( Ada:139 , Pafta:K33D17D , Parsel:96-97 )",
+    "lat": 38.552377,
+    "lng": 34.565852
+  },
+  {
+    "province": "nevsehir",
+    "district": "KOZAKLI",
+    "name": "Peker Petrol Ürünleri ve Taşımacılık Ticaret Limited Şirketi",
+    "address": "Karahasanlı Köyü Sadıkali Mah. No:105 ( Ada:- , Pafta:13 , Parsel:165 )",
+    "lat": 39.293084,
+    "lng": 34.719967
+  },
+  {
+    "province": "nigde",
+    "district": "Şehir Merkezi",
+    "name": "ODK PETROL HAYVANCILIK TURİZM ENERJİ İNŞAAT TİCARET VE SANAYİ A.Ş.",
+    "address": "Aktaş Beldesi, Yeni Mahallesi Kayseri Cadde Kaya Tarım Apt. No:38/38Aktaş Beldesi",
+    "lat": 38.0323,
+    "lng": 34.7476,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ordu",
+    "district": "FATSA",
+    "name": "Atagün Otomotiv İnş.Taah. Müteahhitlik Turizm Nak.Petrol ve Orman Ürünl.Toplu Temizlik Özel Güv.İlaçlama Mak.San.İth.İhr.Tic.Ltd.Şti.",
+    "address": "Dolunay Mahallesi Devlet Sahil Yolu Üzeri Sanayi Sitesi Karşısı",
+    "phone": "0452 423 99 66",
+    "lat": 41.074821,
+    "lng": 37.442167,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "ordu",
+    "district": "KORGAN",
+    "name": "İŞLEMELER TARIM ÜRÜNLERİ PETROL İNŞAAT HAYVANCILIK NAKLİYE TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Tepealan Güllü Mahallesi Merkez Caddesi ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 40.743232,
+    "lng": 37.310504
+  },
+  {
+    "province": "ordu",
+    "district": "ÜNYE",
+    "name": "AKÇAYLAR AKARYAKIT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Eskikızılcakese Mahallesi Yalı Sokak No:87/1( Ada:117 , Pafta:f38- C- 19- A- 3- C , Parsel:1 )",
+    "lat": 41.07713,
+    "lng": 37.42402
+  },
+  {
+    "province": "osmaniye",
+    "district": "DÜZİÇİ",
+    "name": "ŞEN TARIM VE PETROL ÜRÜNLERİ NAKLİYE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ (Çevreyolu Caddesi)",
+    "address": "Uzunbanı Mahallesi Çevreyolu Caddesi No:128 ( Ada: - , Pafta:2875 , Parsel:N36C04-B )",
+    "lat": 37.242099,
+    "lng": 36.430825,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "osmaniye",
+    "district": "BAHÇE",
+    "name": "TUFAN TESİSLERİ TURİZM AKARYAKIT İNŞAAT GIDA HAYVANCILIK NAKLİYAT YATIRIM TAAHHÜT SANAYİ VE TİCARET LİMİTED ŞİRKETİ-KUZEY",
+    "address": "Tag Otoyol Üzeri Sakızgediği Mevkii ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 37.092801,
+    "lng": 36.208801,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "osmaniye",
+    "district": "DÜZİÇİ",
+    "name": "ŞEN TARIM VE PETROL ÜRÜNLERİ NAKLİYE İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ (Refik Cesur Bulvarı)",
+    "address": "Uzunbanı Mahallesi No:199 Refik Cesur Bulvarı ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 37.236705,
+    "lng": 36.449605,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "osmaniye",
+    "district": "Şehir Merkezi",
+    "name": "TUFAN TESİSLERİ TURİZM AKARYAKIT İNŞAAT GIDA HAYVANCILIK NAKLİYAT YATIRIM TAAHHÜT SANAYİ VE TİCARET LİMİTED ŞİRKETİ- GÜNEY",
+    "address": "Tag Yolu Sakız Gediği Mevkii (güney) ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 37.09059,
+    "lng": 36.20679,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "osmaniye",
+    "district": "Şehir Merkezi",
+    "name": "OSMANİYE GÜLERYÜZ PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kanlıgeçit Mevkii D-400 Karayolu Üzeri ( Ada:118 , Pafta:N36-C-08-C-2-C , Parsel:1 )Kırıklı Köyü",
+    "lat": 37.166495,
+    "lng": 36.397706
+  },
+  {
+    "province": "osmaniye",
+    "district": "Şehir Merkezi",
+    "name": "MEHMETLER PETROL ÜRÜNLERİ NAKLİYAT MARKETÇİLİK VE PAZARLAMA TURİZM İNŞAAT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ahmet Yesevi Mahallesi Musa Şahin Bulvarı D- 400 Karayolu No:472 ( Ada:- , Pafta:1 , Parsel:314 )",
+    "lat": 37.092995,
+    "lng": 36.286797,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "osmaniye",
+    "district": "Şehir Merkezi",
+    "name": "SARUHAN ERDİNE",
+    "address": "Yıldırım Beyazıt Mahallesi Ray Sokağı No:58 ( Ada:942 , Pafta: - , Parsel:28 )",
+    "lat": 37.076533,
+    "lng": 36.233425,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sakarya",
+    "district": "ADAPAZARI",
+    "name": "AKYAZI PETROL ÜRÜNLERİ GIDA TAŞIMACILIK TURİZM MAD. TİCARET SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Batakköy Mahallesi D-140 Caddesi No:230 A ( Ada:103 , Pafta:2782 , Parsel:1 )",
+    "lat": 40.6792,
+    "lng": 30.5804
+  },
+  {
+    "province": "sakarya",
+    "district": "KAYNARCA",
+    "name": "NURSAV TARIM VE GIDA MADDELERİ PETROL ÜRÜNLERİ TAŞIMACILIK HİZMETLERİ TAAHÜT TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Merkez Mahallesi Ş. Fahrettin Azak Caddesi No:113 ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 41.021883,
+    "lng": 30.295104
+  },
+  {
+    "province": "sakarya",
+    "district": "ADAPAZARI",
+    "name": "BEŞKÖPRÜ YILDIZ PETROL GIDA MADDELERİ TEMİZLİK OTOMOTİV TAŞIMACILIK TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Beşköprü Mahallesi D-100 Karayolu Caddesi No:189 ( Ada:1513 , Pafta:G24C03A3A , Parsel:22 )",
+    "lat": 40.7347,
+    "lng": 30.366
+  },
+  {
+    "province": "sakarya",
+    "district": "PAMUKOVA",
+    "name": "ARV Petrol Madeni Yağlar İnsaat Sanayi ve Ticaret Limited Şirketi",
+    "address": "D 650 Karayolu Üzeri , (Pafta:H.24.c02.b, Parsel:1255) Hayrettin Köyü",
+    "lat": 40.497833,
+    "lng": 30.093315,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sakarya",
+    "district": "ARİFİYE",
+    "name": "HBS ENDÜSTRİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Arifbey Mahallesi Zübeyde Hanım Caddesi No:92/1 ( Ada:845 , Pafta:G24.c.03.d.1.d-G24.c.02.c.2.c , Parsel:10 )",
+    "lat": 40.713892,
+    "lng": 30.350535,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sakarya",
+    "district": "PAMUKOVA",
+    "name": "BAŞKENT VİZYON AKARYAKIT LİMİTED ŞİRKETİ",
+    "address": "Turgutlu Mahallesi Turgutlu Sokağı No:249 ( Ada:129 , Pafta:G24D24C3B , Parsel:58 )",
+    "lat": 40.510086,
+    "lng": 30.198112,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "sakarya",
+    "district": "PAMUKOVA",
+    "name": "BAŞKENT VİZYON AKARYAKIT LİMİTED ŞİRKETİ - PAMUKOVA 2",
+    "address": "Oruçlu Mahallesi Oruçlu/6 Sokak Sokağı No:3 ( Ada:521 , Pafta:g24- D- 23- D- 4 , Parsel:15 )",
+    "lat": 40.515251,
+    "lng": 30.112822,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "ONDOKUZMAYIS",
+    "name": "MURAT PETROL NAKLİYE VE HAFRİYAT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Taflan Mahallesi ( Ada:2265 , Pafta:25 F- I B , Parsel:2 )",
+    "lat": 41.434,
+    "lng": 36.144
+  },
+  {
+    "province": "samsun",
+    "district": "İLKADIM",
+    "name": "ATİKLER PETROL NAKLİYAT İNŞAAT TURİZM TARIM VE HAYVAN ÜRÜNLERİ GIDA İMALAT İTHALAT İHRACAT KURUTMA DEPOLAMA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Cumhuriyet Mahallesi Suat Kılıç Bulvarı No:37 ( Ada:877 , Pafta:30M4A , Parsel:1 )",
+    "lat": 41.4948,
+    "lng": 36.0872
+  },
+  {
+    "province": "samsun",
+    "district": "BAFRA",
+    "name": "Hilmi Bayrak Petrolcülük İç Ve Dış Ticaret Limited Şirketi",
+    "address": "Emir Efendi Mahallesi Samsun-sinop Karayolu ÜzeriGarajlar Yanı Bafra/samsun",
+    "lat": 41.557788,
+    "lng": 35.904828,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "19 MAYIS",
+    "name": "ÖZ KANDAZOĞLU TİCARET LİMİTED ŞİRKETİ(Samsun)",
+    "address": "Dereköy Mahallesi Atatürk Bulvarı No:125 ( Ada:303 , Pafta:27E 4B , Parsel:3 )",
+    "lat": 41.468371,
+    "lng": 36.107306,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "TERME",
+    "name": "AKÇAYLAR AKARYAKIT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Gökçeağaç Mahallesi Terme-ünye Caddesi No:191/1 ( Ada:120 , Pafta:17 P I D , Parsel:12 )",
+    "lat": 41.146918,
+    "lng": 37.133874,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "ATAKUM",
+    "name": "MŞ PETROLCÜLÜK TİCARET LİMİTED ŞİRKETİ",
+    "address": "No:35 Güzelyurt Mahallesi Atatürk 7. Kısım Bulvarı No: 35 ( Ada:2146 , Pafta:24-G-I-a , Parsel:10 )",
+    "lat": 41.416191,
+    "lng": 36.171313,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "ONDOKUZMAYIS",
+    "name": "SNN NAKLİYAT AKARYAKIT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Dereköy Mahallesi Atatürk Erenköy Bulvarı No:306 ( Ada:1336 , Pafta:F36-A-08-B-1-C , Parsel:3 )",
+    "lat": 41.442268,
+    "lng": 36.135639,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "ÇARŞAMBA",
+    "name": "BORDO PETROL İNŞAAT MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ-SAMSUN",
+    "address": "Yeşilırmak Mahallesi Yeni Samsun Caddesi No:205 ( Ada:- , Pafta:f37d05d , Parsel:504 )",
+    "lat": 41.2046,
+    "lng": 36.7177
+  },
+  {
+    "province": "samsun",
+    "district": "TEKKEKÖY",
+    "name": "LVN AKARYAKIT İÇ VE DIŞ TİCARET ANONİM ŞİRKETİ (Büyüklü Bulvarı)",
+    "address": "Çinik Mahallesi Büyüklü Bulvarı No:75 ( Ada:1157 , Pafta:f36c05c4a , Parsel:1 )",
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "samsun",
+    "district": "TEKKEKÖY",
+    "name": "LVN AKARYAKIT İÇ VE DIŞ TİCARET ANONİM ŞİRKETİ(Zeynettin Cd)",
+    "address": "Çinik Mh.Şeyh Zeynettin  Cd.No:369Ada:909 , Pafta:f36c10b1b , Parsel:2 )",
+    "lat": 41.199926,
+    "lng": 36.476983,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "HALİLİYE",
+    "name": "ALTUNDAL İNŞAAT MÜHENDİSLİK PETROL TURİZM TARIM ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Konuklu Mahallesi Atatürk Caddesi No:149/1 ( Ada:159 , Pafta: - , Parsel:1 )",
+    "lat": 37.13767,
+    "lng": 38.823756,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "HARRAN",
+    "name": "Çakır Kardeşler Petrol İnşaat Gıda Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Koyunluca Mahallesi Koyunluca Sokağı No:162 ( Ada: - , Pafta: - , Parsel:412 ) HARRAN / ŞANLIURFA",
+    "lat": 36.824461,
+    "lng": 39.333952,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "HARRAN",
+    "name": "Naif Aygün",
+    "address": "Kabataş Mahallesi Kabataş Sokak No.25 Iç Kapı No.1 ( Ada:108 , Pafta: - , Parsel:2 ) HARRAN / ŞANLIURFA",
+    "lat": 36.891381,
+    "lng": 39.086813,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "SURUÇ",
+    "name": "Özkılıçlar İnşaat Sanayi ve Ticaret Limited Şirketi",
+    "address": "11 Nisan Beldesi Tepe Mah. Cumhuriyet Cad. No:50",
+    "lat": 37.028117,
+    "lng": 38.442119,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "Turğut Kardeşler Petrol Tarım Tekstil Nakliyat Gıda Turizm Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Şanlıurfa Yolu Üzeri 3.km ( Ada: - , Pafta: - , Parsel:103 )",
+    "lat": 37.228141,
+    "lng": 39.728533,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "Beşer Petrol Tarım Gıda İnşaat Nakliyat Sanayi ve Ticaret Limited Şirketi",
+    "address": "Emiroğlu Mahallesi Demirci Yolu Caddesi No:122 ( Ada:705 , Pafta: - , Parsel:6 ) VİRANŞEHİR / ŞANLIURFA",
+    "lat": 37.237848,
+    "lng": 39.771284
+  },
+  {
+    "province": "sanliurfa",
+    "district": "KARAKÖPRÜ",
+    "name": "Çınarlı Nakliyat İnşaat Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Korukezen Mahallesi Korukezen Sokak No:50/1 ( Ada:0 , Pafta:- , Parsel:506 ) KARAKÖPRÜ / ŞANLIURFA",
+    "lat": 37.276041,
+    "lng": 38.729642,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "CEYLANPINAR",
+    "name": "Seyidoğlu Petrol İnşaat Tarım Taşımacılık Nakliye Gıda Sanayi Ve Ticaret Limited Şirketi",
+    "address": "Yukarıesence Mahallesi Yukarıesence Sokak No:63 ( Ada:106 , Pafta:- , Parsel:9 )",
+    "lat": 36.9418659,
+    "lng": 40.1003191,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "Selim Sabaz Petrol Ürünleri Nakliyat Sanayi ve Ticaret Limited Şirketi",
+    "address": "Hürriyet Mahallesi Telbender Caddesi No:36 ( Ada:2178 , Pafta: - , Parsel:1 )Viranşehir/Şanlıurfa",
+    "lat": 37.241192,
+    "lng": 39.746998,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "SELİM SABAZ PETROL ÜRÜNLERİ NAKLİYAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Burç Mahallesi Demirci Yolu Caddesi No:300 ( Ada:0 , Pafta:- , Parsel:365 )",
+    "lat": 37.260833,
+    "lng": 39.769444,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "KARAKÖPRÜ",
+    "name": "REMPET OTOMOTİV AKARYAKIT İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Korukezen Mahallesi No:18 Şanlıurfa Bozova Yolu Cadde ( Ada:- , Pafta:- , Parsel:180 )",
+    "lat": 37.280048,
+    "lng": 38.729915
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "ÇERKEZOĞLU LOJİSTİK TARIM PETROL İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yenişehir Mahallesi Ceylanpınar 1 Cadde No: 68/2 ( Ada:962 , Pafta:- , Parsel:10 )",
+    "lat": 37.221213,
+    "lng": 39.768004,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "Aknur Tarım Nakliyat Tekstil İnşaat Turizm Sanayi Ticaret Limited Şirketi",
+    "address": "Kemerli Mahallesi Kemerli Sokağı No:300/1 ( Ada:0, Pafta:-, Parsel:163)",
+    "lat": 37.120972,
+    "lng": 39.74423,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sanliurfa",
+    "district": "EYYÜBİYE",
+    "name": "ÇETİNDAĞ TEKSTİL SANAYİ TİCARET LTD.ŞTİ.",
+    "address": "Uğurlu Mah. Turgut Özal Cadde No:48",
+    "lat": 37.008765,
+    "lng": 38.891336
+  },
+  {
+    "province": "sanliurfa",
+    "district": "HALFETİ",
+    "name": "YILMAZ KARDEŞLER GRUP İNŞAAT İTHALAT İHRACAT VE SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Karaotlak Mahallesi Nazım Hikmet Caddesi No:4 ( Ada: - , Pafta: - , Parsel:6 )",
+    "lat": 37.2323,
+    "lng": 37.94323
+  },
+  {
+    "province": "sanliurfa",
+    "district": "VİRANŞEHİR",
+    "name": "İZGÜL PETROL İNŞAAT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Abalar Mahallesi Abalar Küme Evleri No:63 ( Ada:115 , Pafta: - , Parsel:1 )",
+    "lat": 37.216741,
+    "lng": 39.577055
+  },
+  {
+    "province": "siirt",
+    "district": "KURTALAN",
+    "name": "Kılıççıoğlu İthalat İhracat Kuyumculuk Tarım Ve Dahili Ticaret Limited Şirketi",
+    "address": "Siirt Cad. Kurtalan / Siirt",
+    "lat": 37.9289,
+    "lng": 41.702529
+  },
+  {
+    "province": "siirt",
+    "district": "KURTALAN",
+    "name": "ÖZPOLAT PETROL GIDA TAŞIMACILIK İNŞAAT TARIM HAYVANCILIK SANAYI VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çeşme Mahallesi Atabağı Caddesi No:39(Ada:4 , Pafta:4 , Parsel:236) Kayabağlar Beldesi",
+    "lat": 37.99225,
+    "lng": 41.671509
+  },
+  {
+    "province": "siirt",
+    "district": "KURTALAN",
+    "name": "Sosuncu İnşaat Nakliye Tarım Petrol Enerji Madencilik Sanayi Ticaret Limited Şirketi",
+    "address": "Ziyaret-Baykan T.C.K. Yolu Üzeri 23. Km Kılıçlı Köyü (Ada:115, Pafta:L47-C21_D-3, Parsel:2)",
+    "lat": 38.005338,
+    "lng": 41.77537,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "siirt",
+    "district": "BAYKAN",
+    "name": "EYÜP PETROL ÜRÜNLERİ TURİZM NAKLİYE GIDA İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ziyaret Beldesi Diyarbakır Yolu Üzeri ( Ada:- , Pafta:3 , Parsel:51 )",
+    "lat": 38.130168,
+    "lng": 41.721035,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "siirt",
+    "district": "Şehir Merkezi",
+    "name": "UĞUR GROUP İNŞAAT ENERJİ GIDA SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Doğan Mahallesi Şeyh Musa Caddesi No:22 ( Ada:1354 , Pafta:26.27.N , Parsel:3 )",
+    "lat": 37.9143,
+    "lng": 41.9324
+  },
+  {
+    "province": "sirnak",
+    "district": "SİLOPİ",
+    "name": "Doğu Sanayi ve Pazarlama Dış Ticaret Limited Şirketi",
+    "address": "İpek Yolu Üzeri Dörtyol Civarı Silopi / ŞIRNAK",
+    "phone": "0486 616 16 34",
+    "lat": 37.24769,
+    "lng": 42.467481,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sirnak",
+    "district": "CİZRE",
+    "name": "Abdulkadir Satıcı İnşaat Nakliyat ve Dış Tic. Ltd. Şti.",
+    "address": "Konak Mah. Yafes Cad. Şırnak Yol Kavşağı No:34",
+    "lat": 37.332149,
+    "lng": 42.197233,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "sirnak",
+    "district": "GÜÇLÜKONAK",
+    "name": "Saner Petrol Ürünleri Gıda Nakliyat İnşaat Tekstil Sanayi ve Ticaret Limited Şirketi",
+    "address": "Yeni Mahalle Siirt Caddesi No.5 Güçlükonak / ŞIRNAK",
+    "lat": 37.47541,
+    "lng": 41.907704
+  },
+  {
+    "province": "sirnak",
+    "district": "SİLOPİ",
+    "name": "Çettin Ayan / Ayanlar Petrol",
+    "address": "Yeniköy Şerefhane Mevkii ( Ada:- , Pafta:N48b24d-N48c04a , Parsel:269 ) SİLOPİ / ŞIRNAK",
+    "lat": 37.248949,
+    "lng": 42.410201
+  },
+  {
+    "province": "sirnak",
+    "district": "Şehir Merkezi",
+    "name": "Doğuşsan Petrol İnşaat Nakliyat Gıda Madencilik Sanayi Ve Dış Ticaret Limited Şirketi",
+    "address": "Vakıfkent Mahallesi Uludere Caddesi No:56 ( Ada:377 , Pafta: - , Parsel:7 ) MERKEZ / ŞIRNAK",
+    "phone": "0486 216 10 20",
+    "lat": 37.517442,
+    "lng": 42.462082
+  },
+  {
+    "province": "sirnak",
+    "district": "SİLOPİ",
+    "name": "YILDIRIM ULUSLAR ARASI TAŞIMACILIK PETROL TARIM EĞİTİM HİZMETLERİ GIDA SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "İpekyolu Üzeri 7.km ( Ada: - , Pafta:N48b23d , Parsel:179 )",
+    "lat": 37.26838,
+    "lng": 42.35426
+  },
+  {
+    "province": "sirnak",
+    "district": "ULUDERE",
+    "name": "MERMET PETROL MADENCİLİK HAZIR BETON İNŞAAT NAKLİYAT TAŞIMACILIK TURİZM VE OTELCİLİK İTHALAT İHRACAT SANAYİ İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Şenoba Beldesi Başkaya Mahallesi Taşaltı Sk. No:35/3 ( Ada:243 , Pafta:- , Parsel:12 )",
+    "lat": 37.461617,
+    "lng": 42.704608,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sirnak",
+    "district": "CİZRE",
+    "name": "AKGÜN GROUP PETROL LOJİSTİK TURİZM KUYUMCULUK İLETİŞİM ULUSLARARASI YOLCU VE YÜK TAŞIMACILIĞI SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Şah Mahallesi Orhan Doğan Bulvarı No:44 ( Ada:888 , Pafta:N48-a-19-b , Parsel:1 )",
+    "lat": 37.329768,
+    "lng": 42.187431,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sirnak",
+    "district": "CİZRE",
+    "name": "CİZRE PETROL ÜRÜNLERİ TAŞIMACILIK GIDA İNŞAAT İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Sur Mahallesi Mem U Zin Bulvarı No:168 ( Ada:177 , Pafta: - , Parsel:20 )",
+    "lat": 37.319638,
+    "lng": 42.186729
+  },
+  {
+    "province": "sirnak",
+    "district": "CİZRE",
+    "name": "ÖMEROĞLU PETROLCÜLÜK NAKLİYAT İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Sur Mahallesi Nusaybin Bulvarı No:18/b ( Ada:730 , Pafta:N48A19C3A , Parsel:10 )",
+    "lat": 37.3104,
+    "lng": 42.191
+  },
+  {
+    "province": "sirnak",
+    "district": "CİZRE",
+    "name": "ÖZ ONUR PETROL NAKLİYAT İNŞAAT TARIM GIDA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Cizre- İdil Yolu 11. Km Düzova Köyü No:231 ( Ada: - , Pafta:5 , Parsel:665 ) Cizre/Şırnak",
+    "lat": 37.354244,
+    "lng": 42.093266,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sirnak",
+    "district": "Şehir Merkezi",
+    "name": "DEMOİL PETROL ENERJİ İNŞAAT MADENCİLİK GIDA NAKLİYAT İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "KUMÇATI BELDESİ,NASIRHAN MAHALLESİ VATAN CADDESİ NO:75 MERKEZ/ŞIRNAK",
+    "lat": 37.470657,
+    "lng": 42.321475
+  },
+  {
+    "province": "sirnak",
+    "district": "BEYTÜŞŞEBAP",
+    "name": "İMAMOĞLU YALÇINLAR GIDA İNŞAAT PETROL TAŞIMACILIK TEMİZLİK HİZMETLERİ SANAYİ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Aliçavuş Mahallesi 1. Caddesi No:76 ( Ada:188 , Pafta: - , Parsel:12 )",
+    "lat": 37.569635,
+    "lng": 43.158382,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sivas",
+    "district": "KOYULHİSAR",
+    "name": "DURSUN ÇELİK",
+    "address": "Aşağıkale Mahallesi"
+  },
+  {
+    "province": "sivas",
+    "district": "YILDIZELİ",
+    "name": "TOPÇULAR PETROL AKARYAKIT PERAKENDE GIDA TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Kalın Köyü Termal Mevkii Ankara Asfaltı Sokak No: 19b/b ( Ada:- , Pafta:i37a25b , Parsel:584 )",
+    "lat": 39.78112,
+    "lng": 36.737225,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "sivas",
+    "district": "Şehir Merkezi",
+    "name": "SAHRA GRUP AKARYAKIT İNŞAAT MAKİNA MADEN TURİZM NAKLİYAT OTEL LOKANTA MÜTEAHHİTLİK İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Danişmentgazi Mahallesi Ankara Bulvarı No:20 ( Ada:136 , Pafta:İ37-C-04-D , Parsel:497 )",
+    "lat": 39.722905,
+    "lng": 36.917005,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "HAYRABOLU",
+    "name": "ÖZTEMELLER KOLL. ŞTİ.-MUSTAFA ÖZTEMEL VE ORTAKLARI",
+    "address": "Ilyas Mahallesi Alpullu Yolu Üzeri ( Ada: - , Pafta: - , Parsel: - )"
+  },
+  {
+    "province": "tekirdag",
+    "district": "SARAY",
+    "name": "AKSOY PETROL ÜRÜNLERİ PAZARLAMA VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çukuryurt Köyü Yolu Üzeri ( Ada:- , Pafta:- , Parsel:- )",
+    "lat": 41.435391,
+    "lng": 27.898922,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "Şehir Merkezi",
+    "name": "AHMET KOCAAĞALAR",
+    "address": "Karadeniz Mahallesi Trabzon Caddesi No:202(Ada:343 , Pafta:4 , Parsel:108)",
+    "lat": 41.002132,
+    "lng": 27.478416,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "ÇERKEZKÖY",
+    "name": "YURT KESİM PETROL İNŞAAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Fevzi paşa Mahallesi Güveniş Caddesi No:101(Ada:137 , Pafta:29K3B , Parsel:55)",
+    "lat": 41.2792,
+    "lng": 27.9841
+  },
+  {
+    "province": "tekirdag",
+    "district": "ÇERKEZKÖY",
+    "name": "Cebeci Petrol Turizm ve Ticaret Limited Şirketi",
+    "address": "İSTASYON MAHALLESİ İNÖNÜ CADDESİ NO:43",
+    "lat": 41.275785,
+    "lng": 27.988677,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "MALKARA",
+    "name": "Rüya Yamanoğlu",
+    "address": "Kozyörük Mahallesi Şehit Mehmet Dölkan Caddesi No:1-a ( Ada:- , Pafta:24 , Parsel:5475 ) MALKARA / TEKİRDAĞ",
+    "phone": "0282 435 14 21",
+    "lat": 41.017409,
+    "lng": 26.945778,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "ERGENE",
+    "name": "Muhsin Sezgin",
+    "address": "Pınarbaşı Mahallesi Talatpaşa Cadde No:20 ( Ada:- , Pafta:- , Parsel:3679 )",
+    "lat": 41.386362,
+    "lng": 27.621068
+  },
+  {
+    "province": "tekirdag",
+    "district": "ERGENE",
+    "name": "Muhsin Sezgin",
+    "address": "Karamehmet Mahallesi Emin Dede Cadde No:30 ( Ada:18 , Pafta:- , Parsel:7 )",
+    "lat": 41.302497,
+    "lng": 27.7820855
+  },
+  {
+    "province": "tekirdag",
+    "district": "ÇORLU",
+    "name": "FRT AKARYAKIT NAKLİYAT TİCARET LİMİTED ŞİRKETİ",
+    "address": "Vakıflar Mahallesi Edirne Bulvarı No:236 ( Ada:273 , Pafta:F19-A-24-D-1-C,F-19-A-24-D-4-B , Parsel:5 )",
+    "lat": 41.262497,
+    "lng": 27.659895
+  },
+  {
+    "province": "tekirdag",
+    "district": "MALKARA",
+    "name": "TÜRKOĞLU GLOBAL ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Izgar Mahallesi Izgar 5 Sokak No. 1:240a (Ada:133, Pafta:-, Parsel:1)",
+    "lat": 40.861665,
+    "lng": 26.820407,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "MURATLI",
+    "name": "TÜRKOĞLU GLOBAL ENERJİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ - MURATLI",
+    "address": "İstiklal- Kurtpınar Osb Mahallesi Atatürk Caddesi No:54 ( Ada: - , Pafta: - , Parsel:2642 )",
+    "lat": 41.211771,
+    "lng": 27.524661,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tekirdag",
+    "district": "SARAY",
+    "name": "ÖZASLAN ENERJİ İNŞAAT ANONİM ŞİRKETİ",
+    "address": "Göçerler Mahallesi Başkomutan Atatürk Caddesi No:20 ( Ada:105 , Pafta: - , Parsel:1 )"
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "NİZAM PETROL NAKLİYAT SANAYİ VE TİCARET LTD.ŞTİ.",
+    "address": "Güneş Mahallesi Gaziosmanpaşa Caddesi No:139 (Ada:199, Pafta:52.52.D.A, Parsel:23)",
+    "phone": "0356 275 28 28",
+    "lat": 40.371447,
+    "lng": 36.0977902,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "ZİLE",
+    "name": "AHMET NURİ DEMİRAL",
+    "address": "Çekerek Yolu 1.km ( Ada:- , Pafta:- , Parsel:- )"
+  },
+  {
+    "province": "tokat",
+    "district": "Şehir Merkezi",
+    "name": "ÜM-SA İNŞAAT TAAHHÜT VE TURİZM SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Geyras Mahallesi Sivas Caddesi No:87"
+  },
+  {
+    "province": "tokat",
+    "district": "PAZAR",
+    "name": "Müşüroğlu Ballıca Petrol Ürünleri Nakliye Gıda Tarım Ürünleri İnşaat Taahhüt Ticaret ve Sanayi Limited Şirketi",
+    "address": "Esentepe Mahallesi Köprübaşı Mevkii Atatürk Cd.No:271 (Pafta: H36, Parsel: 5590)",
+    "lat": 40.286558,
+    "lng": 36.304182
+  },
+  {
+    "province": "tokat",
+    "district": "Şehir Merkezi",
+    "name": "Tok-Tar Tarım Otomotiv Petrol İnşaat Turizm Sanayi ve Ticaret Limited Şirketi",
+    "address": "No:171 ( Ada:121 , Pafta: - , Parsel:14 )Kızıl Köyü",
+    "lat": 40.381944,
+    "lng": 36.670277
+  },
+  {
+    "province": "tokat",
+    "district": "PAZAR",
+    "name": "OSMAN AY - CEMALETTİN AY",
+    "address": "Mehmet Akif Ersoy Mahallesi Turhal Caddesi No:1 Üzümören ( Ada:249 , Pafta:H-36-A-24-C-1 , Parsel:4 )",
+    "lat": 40.268092,
+    "lng": 36.181987
+  },
+  {
+    "province": "tokat",
+    "district": "ZİLE",
+    "name": "ALİ BEYAZ",
+    "address": "Zile - Alaca Karayolu Üzeri Pazartepe Mevkii 14.Km ( Ada:104 , Pafta:H35D.02.D , Parsel:7 )",
+    "lat": 40.2897,
+    "lng": 35.8664
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "Dilekler Akaryakıt Nakliye Ticaret Limited Şirketi",
+    "address": "Hamam Mahallesi Atatürk Caddesi No:211 (Ada:445 , Pafta:56.55.J , Parsel:1)",
+    "lat": 40.401015,
+    "lng": 36.097025,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "ALİ EKER ZAHİRECİLİK AKARYAKIT NAKLİYE SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Hamam Mahallesi Atatürk Caddesi No:186 ( Ada:239 , Pafta:56.55.J , Parsel:19 )",
+    "lat": 40.400133,
+    "lng": 36.097192,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "SULUSARAY",
+    "name": "EVA PETROL İNŞAAT NAKLİYE MAKİNE SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+    "address": "Malum Seyit Tekke Mahallesi Yeni Mevkii Barbaros Sokağı No:No:29 Z/Z( Ada:0 , Pafta:8-9 , Parsel:4067 )",
+    "lat": 40.0297,
+    "lng": 36.0239
+  },
+  {
+    "province": "tokat",
+    "district": "Şehir Merkezi",
+    "name": "SAMET USLU",
+    "address": "Küçükbağlar Köyü Köyönü Mevkii No: 192 ( Ada:101 , Pafta:H36-B-22-B-2 , Parsel:103 )",
+    "lat": 40.293846,
+    "lng": 36.344105,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "EKERLER ZAHİRECİLİK AKARYAKIT NAKLİYE VE OTO SANAYİ VE TİCARET LTD. ŞTİ.",
+    "address": "Dökmetepe Köyü Dökmetepe Küme Evleri İdari Bina Blk. No:201",
+    "lat": 40.31074,
+    "lng": 36.286906,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "ERDEM KILIÇ PETROL MADEN NAKLİYE SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kat Köyü Beldesi / Köyü Cumhuriyet Sokağı Uzunyurt No:95Ada:161 , Pafta: - , Parsel:1 )",
+    "lat": 40.317,
+    "lng": 36.3146
+  },
+  {
+    "province": "tokat",
+    "district": "TURHAL",
+    "name": "SINIRLI SORUMLU TURHAL PANCAR EKİCİLERİ KOOPERATİFİ",
+    "address": "Yavuz Selim Mahallesi Prof. Dr. Nihat Gürkan Caddesi No:2/1 ( Ada: - , Pafta:- , Parsel: - )",
+    "lat": 40.386505,
+    "lng": 36.078774
+  },
+  {
+    "province": "tokat",
+    "district": "SULUSARAY",
+    "name": "AYHAN AKDOĞAN (GOP MAH.)",
+    "address": "G.o.p Mahallesi Atatürk Caddesi No:10/9 ( Ada: - , Pafta:16 , Parsel:4230 )",
+    "lat": 39.995475,
+    "lng": 36.090901,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "YESILYURT",
+    "name": "İÇTENLER PETROL KUYUM. TEKS. ZAHİ.İNŞ. SAN. VE TİC. LTD.ŞTİ. (100. Yıl Mahallesi)",
+    "address": "100. Yıl Mahallesi Hürriyet Caddesi No:285/A ( Ada: - , Pafta:H36025D , Parsel:2310 )",
+    "lat": 40.011021,
+    "lng": 36.225234,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "YESILYURT",
+    "name": "İÇTENLER PETROL  KUYUM. TEKS. ZAHİ.İNŞ. SAN. VE TİC. LTD.ŞTİ. (Gop Mahallesi)",
+    "address": "Gaziosmanpaşa Mahallesi Hürriyet Caddesi No:14 ( Ada: - , Pafta:5 , Parsel:1955 )",
+    "lat": 40.007913,
+    "lng": 36.203234,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "SULUSARAY",
+    "name": "BÜNYAMİN AYDIN",
+    "address": "Gaziosmanpaşa Mahallesi Yavuz Sultan Selim Caddesi No:10/1 ( Ada: - , Pafta:15-16 , Parsel:4390 )",
+    "lat": 39.996,
+    "lng": 36.0883,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "tokat",
+    "district": "SULUSARAY",
+    "name": "AKDOĞANLAR PETROL NAKLİYE TURİZM GIDA İNŞAAT OTOMOTİV TARIM HAYVANCILIK TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ilıcak Beldesi / Köyü Ilıcak Küme Evleri No:1 ( Ada:111 , Pafta:i36a02a , Parsel:11 )",
+    "lat": 39.979068,
+    "lng": 36.058953,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "trabzon",
+    "district": "Şehir Merkezi",
+    "name": "Selvi Petrol Nakliyat İnşaat Turizm Ticaret Limited Şirketi",
+    "address": "Aşağı Kaymaklı Mahallesi Anadolu Bulvarı Kapı/Daire No:262 / TRABZON",
+    "phone": "0462 325 18 71",
+    "lat": 40.972191,
+    "lng": 39.747909,
+    "services": [
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "trabzon",
+    "district": "ORTAHİSAR",
+    "name": "SARAÇ PETROL ÜRÜNLERİ NAKLİYAT İNŞAAT TAAHHÜT TURİZM SERVİS YEMEK VE TEMİZLİK HİZMETLERİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Konaklar Mahallesi Sahil Caddesi ( Ada:160 , Pafta:G43A03B2A , Parsel:33 )",
+    "lat": 40.997521,
+    "lng": 39.641716,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "trabzon",
+    "district": "MAÇKA",
+    "name": "ATAKOÇ PETROL ÜRÜNLERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Esiroğlu Mahallesi Kenan Oltan Işıklar Caddesi No:33 (Ada:231, Pafta:g43- A- 14- B- 3- C, Parsel:5- 6)",
+    "services": [
+      "ECOMAX",
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "tunceli",
+    "district": "HOZAT",
+    "name": "Cengiz KAPLAN",
+    "address": "Hamidiye Mahallesi Elazığ Yolu Üzeri Hozat / Tunceli",
+    "lat": 39.09676,
+    "lng": 39.229994,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "EŞME",
+    "name": "Tahir Baykal",
+    "address": "Istasyon Mahallesi Adil Turan Caddesi No:128 ( Ada:1025 , Pafta:L21B15A2D , Parsel:1 ) EŞME / UŞAK",
+    "lat": 38.388659,
+    "lng": 28.968314,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "ULUBEY",
+    "name": "Tahir Baykal - Üyükbaşı",
+    "address": "Üyükbaşı Mahallesi Eşme Asfaltı Üzeri No:10 ( Ada:27 , Pafta:42.51.Ş.Ç. , Parsel:25 ) ULUBEY / UŞAK",
+    "lat": 38.42825,
+    "lng": 29.2923,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "ULUBEY",
+    "name": "Tahir Baykal - Köseler",
+    "address": "Köseler Köyü Şehit Mezarı Mevkii ( Ada: - , Pafta:L22b02a , Parsel:619 ) ULUBEY / UŞAK",
+    "lat": 38.480178,
+    "lng": 29.317474,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "Şehir Merkezi",
+    "name": "Selim Yıldız",
+    "address": "Sirge Köyü Karşı Mevkii Sokak No: 23/1 ( Ada:106 , Pafta:K21-C13-C2-D , Parsel:6 )",
+    "lat": 38.617674,
+    "lng": 28.889619,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "SİVASLI",
+    "name": "YUNUS EMRE PETROL ÜRÜNLERİ İNŞAAT HAYVANCILIK GIDA MADENCİLİK NAKLİYE İTHALAT İHRACAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Konak Mahallesi Gazi Bulvarı No:195 ( Ada:22 , Pafta:30L.1D.2.3 , Parsel:14 )\tBAY/939-82/41879",
+    "lat": 38.502049,
+    "lng": 29.677382
+  },
+  {
+    "province": "usak",
+    "district": "SİVASLI",
+    "name": "KAYGISIZLAR AKARYAKIT NAKLİYAT İNŞAAT MALZEMELERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Asar Sokağı No:30 Bahçelievler, Memoil Petrol Ofisi ( Ada:119 , Pafta:50K.4.B , Parsel:11 )Yayalar Köyü",
+    "lat": 38.4604,
+    "lng": 29.5893,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "SİVASLI",
+    "name": "KAYGISIZLAR AKARYAKIT NAKLİYAT İNŞAAT MALZEMELERİ SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Pınar Mahallesi Çivril Caddesi No:80/1 Pınarbaşı Kasabası ( Ada:307 , Pafta:L23.a.04.c.2c-3b , Parsel:1 )",
+    "lat": 38.461711,
+    "lng": 29.694302,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "usak",
+    "district": "BANAZ",
+    "name": "HALİM KOÇ PETROL MÜTEAHHİTLİK ZAHİRECİLİK TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "31 Ağustos Mahallesi İbrahim Yıldız Caddesi No:147 ( Ada:163 , Pafta:K23-A-25-C , Parsel:20 )",
+    "lat": 38.755983,
+    "lng": 29.747655,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "ERCİŞ",
+    "name": "Gonca Petrol İnşaat Taahhüt Sanayi Ticaret Limited Şirketi",
+    "address": "Kışla Caddesi Adilcevaz Yolu ( Ada:02 , Pafta:26-27 , Parsel:145 )",
+    "lat": 39.016805,
+    "lng": 43.332805
+  },
+  {
+    "province": "van",
+    "district": "ERCİŞ",
+    "name": "Delibaşlar Petrol Ürünleri Ticaret Ve Sanayi Limited Şirketi",
+    "address": "Latifiye Mahallesi Kışla Caddesi No:11",
+    "phone": "0432 351 60 48",
+    "lat": 39.027962,
+    "lng": 43.35721,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "ERCİŞ",
+    "name": "Zenginler Petrol Ürünleri İnşaat Madencilik Tarım Hayvancılık Taşımacılık Gıda Otomotiv İthalat İhracat Ticaret San.Ltd.Şti.",
+    "address": "Salihiye Mah. Van Ağrı Karayolu Üzeri No:14 (Pafta: - Ada: 296 Parsel: -) Erciş /VAN",
+    "phone": "0432 354 33 69",
+    "lat": 39.032399,
+    "lng": 43.366432,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "MURADİYE",
+    "name": "DOĞAN BİRKAN PETROL GIDA NAKLİYE MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çaldıran Yolu Üzeri 3. Km. (Ada:148 , Pafta:J51C16B , Parsel:36)",
+    "lat": 39.133076,
+    "lng": 43.899914
+  },
+  {
+    "province": "van",
+    "district": "MURADİYE",
+    "name": "DURMUŞ KARDEŞLER İNŞAAT TURİZM İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kulçik ( Ada: - , Pafta:K51A03C , Parsel:308 )Keçikıran Köyü Köyü",
+    "lat": 38.962876,
+    "lng": 43.628302
+  },
+  {
+    "province": "van",
+    "district": "EDREMIT",
+    "name": "DORUKLAR 1 PETROL ÜRÜNLERİ İNŞAAT GIDA MADENCİLİK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Bakımlı Mahallesi İpekyolu Caddesi No:150 ( Ada:- , Pafta:L50A14B ve van L50A14C , Parsel:287 ve 322 )",
+    "lat": 38.369757,
+    "lng": 43.187857,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "BAHÇESARAY",
+    "name": "ĞARBİ AYHAN - MİRHASAN PETROL",
+    "address": "Hakkıbey Mezrası Üçköprü Mevkii ( Ada:331 , Pafta: - , Parsel:1 )",
+    "lat": 38.095265,
+    "lng": 42.809015
+  },
+  {
+    "province": "van",
+    "district": "GÜRPINAR",
+    "name": "ÇAVUŞTEPE TAŞIMACILIK PETROL İNŞAAT OTOMOTİV GIDA VE İTHALAT İHRACAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Çavuştepe Mahallesi Çavuştepe Sokağı No:164/1 ( Ada:135 , Pafta:L50B19B2 , Parsel:49 )",
+    "lat": 38.348001,
+    "lng": 43.440832,
+    "services": [
+      "ECOMAX",
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "ERCİŞ",
+    "name": "DOĞUPARK AKARYAKIT TESİSLERİ ANONİM ŞİRKETİ",
+    "address": "Yeşilova Mahallesi Nato Yolu Caddesi Zengin Petrol Apt. No:143",
+    "lat": 39.02865,
+    "lng": 43.32987,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "van",
+    "district": "GEVAŞ",
+    "name": "VANKUL AKARYAKIT İNŞAAT HAYVANCILIK TEMİZLİK GIDA İTHALAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Akdamar Beldesi Işıllar Mahallesi ( Ada:112 , Pafta:VANL49b20d-2 , Parsel:13 )",
+    "lat": 38.321631,
+    "lng": 42.966731
+  },
+  {
+    "province": "van",
+    "district": "GÜRPINAR",
+    "name": "BY GLOBAL PETROL TAŞIMACILIK SANAYİ TİCARET LİMİTED ŞİRKETİ - 1",
+    "address": "Koyunyatağı Mahallesi Yeniyol 17.Sokak Öz Aslan Petrol No:3",
+    "lat": 38.330472,
+    "lng": 43.412461
+  },
+  {
+    "province": "van",
+    "district": "ERCİŞ",
+    "name": "MEHMET ADEMİ",
+    "address": "Beyazıt Mahallesi Zeylan Caddesi No:1 ( Ada:486 , Pafta: - , Parsel:2 )",
+    "lat": 39.0432,
+    "lng": 43.3504,
+    "services": [
+      "KADOGAZ"
+    ]
+  },
+  {
+    "province": "yozgat",
+    "district": "Şehir Merkezi",
+    "name": "UĞUR PETROL ÜRÜNLERİ VE NAKLİYECİLİK TİCARET LİMİTED ŞİRKETİ",
+    "address": "Ankara Yolu No: 98 ( Ada: - , Pafta: - , Parsel: - )",
+    "lat": 39.816968,
+    "lng": 34.788119
+  },
+  {
+    "province": "yozgat",
+    "district": "SORGUN",
+    "name": "NEŞELİ OTOMOTİV PETROL İNŞAAT TARIM HAYVANCILIK NAKLİYE TİCARET VE SANAYİ LİMİTED ŞİRKETİ",
+    "address": "Ahmet Efendi Mahallesi Ankara Bulvarı ( Ada:996 , Pafta:26.27III , Parsel:1-2 )",
+    "lat": 39.8124,
+    "lng": 35.1516
+  },
+  {
+    "province": "yozgat",
+    "district": "BOĞAZLIYAN",
+    "name": "SINIRLI SORUMLU BOĞAZLIYAN KARAYOLU YÜK TAŞIMA KOOPERATİFİ",
+    "address": "Aşağı Mahallesi Atatürk Bulvarı No:116/1(Ada:77 , Pafta:39 , Parsel:104)",
+    "lat": 39.174106,
+    "lng": 35.233292
+  },
+  {
+    "province": "yozgat",
+    "district": "SARAYKENT",
+    "name": "ÖCALLAR İNŞAAT NAKLİYE PETROL TURİZM GIDA TARIM HAYVAN VE YAKIT ÜRÜNLERİ SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Fatih Sultan Mehmet Mahallesi E-88 Karayolu Bulvarı No:5/1 ( Ada:307 , Pafta: - , Parsel:05 )",
+    "lat": 39.6732,
+    "lng": 35.5134
+  },
+  {
+    "province": "yozgat",
+    "district": "ŞEFAATLİ",
+    "name": "MUSTAFA SAKALLI VE YUSUF SAKALLI (Sakallı Petrol)",
+    "address": "Fatih Mahallesi Alpaslan Caddesi No:26 ( Ada:359 , Pafta:- , Parsel:1-2-3-4-5 )",
+    "lat": 39.500958,
+    "lng": 34.758835
+  },
+  {
+    "province": "yozgat",
+    "district": "BOĞAZLIYAN",
+    "name": "TURUDU DURU PETROL TARIM ÜRÜNLERİ VE HAYVANCILIK İNŞAAT MOBİLYA OTOMOTİV TURİZM NAKLİYE ZİRAİ ALET LOKANTA SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Kemaliye Mahallesi Yozgat Caddesi No:110/1 ( Ada:152 , Pafta: - , Parsel:92 )",
+    "lat": 39.210232,
+    "lng": 35.238314,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "yozgat",
+    "district": "YERKÖY",
+    "name": "YERKÖY AKARYAKIT TİCARET ANONİM ŞİRKETİ-YOZGAT",
+    "address": "Saray Beldesi / Köyü Yibitaş Bulvarı Cumhuriyet Mevkii No:117 ( Ada: - , Pafta:i33d08b , Parsel:2404 )",
+    "lat": 39.687505,
+    "lng": 34.645875
+  },
+  {
+    "province": "yozgat",
+    "district": "AKDAĞMADENİ",
+    "name": "HAFIZOĞULLARI AKARYAKIT ÜRÜNLERİ HAYVANCILIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Tekkegüneyi Köyü No.29 ( Ada:133 , Pafta:- , Parsel:37 )",
+    "lat": 39.65535,
+    "lng": 35.826683,
+    "services": [
+      "KADOGAZ",
+      "KADOMATİK"
+    ]
+  },
+  {
+    "province": "yozgat",
+    "district": "KADIŞEHRİ",
+    "name": "ŞİMŞEKLER AKARYAKIT ÜRÜNLERİ TARIM VE HAYVANCILIK İNŞAAT TAAHHÜT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
+    "address": "Yeni Mahalle Cumhuriyet Bulvarı No:165/a ( Ada:101 , Pafta:- , Parsel:2 )",
+    "lat": 39.9882,
+    "lng": 35.7868
+  },
+  {
+    "province": "yozgat",
+    "district": "KADIŞEHRİ",
+    "name": "SÜHEYLA KARA",
+    "address": "Yeni Mahallesi Sağlık Caddesi No:11 ( Ada:218 , Pafta:- , Parsel:26 )",
+    "lat": 39.9938,
+    "lng": 35.7917
+  },
+  {
+    "province": "yozgat",
+    "district": "YERKÖY",
+    "name": "YUSUF KAYA - KAYA PETROL",
+    "address": "Haşim Kılıç Mahallesi Kırşehir Caddesi No:31",
+    "lat": 39.637663,
+    "lng": 34.467275,
+    "services": [
+      "ECOMAX"
+    ]
+  },
+  {
+    "province": "yozgat",
+    "district": "YERKÖY",
+    "name": "SINIRLI SORUMLU YERKÖY KARAYOLU YÜK TAŞIMA KOOPERATİFİ",
+    "address": "Haşim Kılıç Mahallesi Yozgat Caddesi No:22 ( Ada:44 , Pafta:16 , Parsel:46 )",
+    "lat": 39.639739,
+    "lng": 34.469539
+  },
+  {
+    "province": "zonguldak",
+    "district": "EREGLI",
+    "name": "Çetinler Manifatura ve Tuhafiye İnş.Malz.Gıda Mad.Day.Tük.Mal.Demir Çelik San.ve Nak.Petrol San.Tic.Ltd.Şti.",
+    "address": "Sinitli Mah. Atatürk Caddesi, No:151 Ormanlı Beldesi",
+    "phone": "0372 300 07 00",
+    "lat": 41.202736,
+    "lng": 31.604599
+  },
+  {
+    "province": "zonguldak",
+    "district": "ALAPLI",
+    "name": "ALAPLI ALPER PETROL ÜRÜNLERİ GIDA İNŞAAT TURİZM EMLAK OTOMOTİV NAKLİYAT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "Merkez Mahallesi Kabristan Caddesi ( Ada:148 , Pafta:6 , Parsel:12 )",
+    "lat": 41.1748,
+    "lng": 31.3918
+  },
+  {
+    "province": "zonguldak",
+    "district": "DEVREK",
+    "name": "SABANCI AKARYAKIT SANAYİ TİCARET LİMİTED ŞİRKETİ",
+    "address": "İsmetpaşa Mahallesi Hışıroğlu Çay Caddesi No:110/B ( Ada:111 , Pafta:- , Parsel:840 )",
+    "lat": 41.243129,
+    "lng": 31.991378,
+    "services": [
+      "ECOMAX"
+    ]
+  }
+]
