@@ -135,6 +135,7 @@ marker_cluster = MarkerCluster().add_to(m)
 
 filtered_df = filtered_df.dropna(subset=['lat', 'lon'])
 
+# 1. Filtrelenen tüm istasyonları haritaya küme (cluster) olarak ekle
 for idx, row in filtered_df.iterrows():
     marka = str(row['provider'])
     img_name = marka.replace(" ", "_") 
@@ -157,5 +158,49 @@ for idx, row in filtered_df.iterrows():
             tooltip=tooltip_text,
             icon=folium.Icon(color='blue' if row['station_type'] == 'ev' else 'red', icon='info-sign')
         ).add_to(marker_cluster) 
+
+# 2. EĞER OPTİMİZE EDİLMİŞ BİR ROTA VARSA (A* ALGORİTMASI ÇALIŞMIŞSA) ÇİZGİ ÇEK VE VURGULA
+if "optimized_route" in st.session_state and st.session_state.optimized_route:
+    route_coords = []
+    
+    try:
+        # Çizginin uçtan uca gitmesi için Başlangıç ve Bitiş koordinatlarını alıyoruz
+        start_c = get_coordinates(start_loc)
+        end_c = get_coordinates(end_loc)
+        
+        # Başlangıç İkonu (Yeşil)
+        if start_c != (None, None):
+            route_coords.append(start_c)
+            folium.Marker(start_c, tooltip="Start Location", icon=folium.Icon(color="green", icon="play")).add_to(m)
+            
+        # Rota üzerindeki "Optimal" İstasyon İkonları (Turuncu Yıldız)
+        for stop in st.session_state.optimized_route:
+            stop_coord = (stop['lat'], stop['lon'])
+            route_coords.append(stop_coord)
+            
+            folium.Marker(
+                stop_coord, 
+                tooltip=f"🛑 OPTIMAL STOP: {stop['provider']}", 
+                icon=folium.Icon(color="orange", icon="star", prefix="fa")
+            ).add_to(m)
+
+        # Hedef İkonu (Kırmızı)
+        if end_c != (None, None):
+            route_coords.append(end_c)
+            folium.Marker(end_c, tooltip="Destination", icon=folium.Icon(color="red", icon="flag")).add_to(m)
+
+        # Koordinatları birbirine bağlayan Navigasyon Çizgisini (PolyLine) Çek
+        folium.PolyLine(
+            route_coords,
+            color="#FF9B9B", # Tatlı şeftali rengimizle uyumlu
+            weight=6,        # Çizgi kalınlığı
+            opacity=0.8      # Hafif transparanlık
+        ).add_to(m)
+        
+        # Haritanın kamerasını çizilen bu rotaya (çizgiye) otomatik olarak zoomla ve ortala
+        m.fit_bounds([start_c, end_c])
+        
+    except Exception as e:
+        st.warning(f"Harita çiziminde ufak bir hata oluştu: {e}")
 
 st_folium(m, width="100%", height=600, returned_objects=[])
