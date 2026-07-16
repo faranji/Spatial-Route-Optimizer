@@ -20,7 +20,7 @@ except ModuleNotFoundError:
     key = st.secrets["SUPABASE_KEY"]
     supabase: Client = create_client(url, key)
 
-st.set_page_config(page_title="GasGraph Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon="⚙️")
+st.set_page_config(page_title="GasGraph Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon=":noface:")
 
 # ==========================================
 # 0. SESSION STATE
@@ -55,7 +55,7 @@ df = load_gold_data()
 # ==========================================
 # 2. SIDEBAR & UI FORM
 # ==========================================
-col1, col_logo, col2 = st.sidebar.columns([1, 2, 1]) 
+col1, col_logo, col2 = st.sidebar.columns([1, 5, 1]) 
 with col_logo:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     logo_path = os.path.join(current_dir, "assets", "gasgraph_logo.png")
@@ -156,7 +156,7 @@ if submit_button:
 # 5. MAIN DASHBOARD UI (Dinamik Metrikler)
 # ==========================================
 col1, col2, col3 = st.columns(3)
-col1.metric(label="Distance to Destination", value="~450 KM", delta="-30 KM (Eco-Route)")
+col1.metric(label="Distance to Destination", value="~450 KM", delta="-30 KM (Eco-Route)", delta_color="inverse")
 col2.metric(label="Current Range", value=f"{st.session_state.remaining_range} KM", delta="-12% Battery", delta_color="inverse")
 col3.metric(label="Scanned Stations", value=len(filtered_df), delta="High Accuracy", delta_color="off")
 
@@ -165,12 +165,14 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ==========================================
 # 6. MAP CREATION (Dark Matter)
 # ==========================================
+# 1. Haritayı aydınlık, kurumsal ve temiz bir altlıkla değiştir
 m = folium.Map(
     location=[39.0, 35.0], 
     zoom_start=6, 
-    tiles="CartoDB dark_matter" 
+    tiles="CartoDB positron" 
 )
 marker_cluster = MarkerCluster().add_to(m)
+
 filtered_df = filtered_df.dropna(subset=['lat', 'lon'])
 
 for idx, row in filtered_df.iterrows():
@@ -190,11 +192,15 @@ for idx, row in filtered_df.iterrows():
             icon=custom_icon
         ).add_to(marker_cluster)  
     else:
+        # 2. MARKER RENKLERİNİ LOGO İLE UYUMLU YAP (EV için mavi, Fuel için turuncu)
         folium.Marker(
             location=[row['lat'], row['lon']],
             tooltip=tooltip_text,
-            icon=folium.Icon(color='blue' if row['station_type'] == 'ev' else 'red', icon='info-sign')
-        ).add_to(marker_cluster) 
+            icon=folium.Icon(
+                color='blue' if row['station_type'] == 'ev' else 'orange', 
+                icon='info-sign'
+            )
+        ).add_to(marker_cluster)
 
 if "optimized_route" in st.session_state and st.session_state.optimized_route:
     route_coords = []
