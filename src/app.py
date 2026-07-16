@@ -2,6 +2,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 import streamlit as st
+from supabase import create_client, Client
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster 
@@ -12,9 +13,16 @@ from utils.geocoder import get_coordinates
 from utils.optimizer import calculate_route, get_real_road_route
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from config import supabase
+try:
+    from config import supabase
+except ModuleNotFoundError:
+    # Buluttayken (config.py olmadığı için) Streamlit Secrets'ı kullanır
+    url = st.secrets["SUPABASE_URL"]
+    key = st.secrets["SUPABASE_KEY"]
+    supabase: Client = create_client(url, key)
 
 st.set_page_config(page_title="GasGraph Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon=":no_mouth:")
+
 
 # ==========================================
 # 0. SESSION STATE
