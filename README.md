@@ -1,7 +1,7 @@
 # SRO (Spatial Route Optimizer): Advanced Spatial Routing & Range Optimization Engine
 [![Live Dashboard](https://img.shields.io/badge/LIVE_DASHBOARD-1E1E1E?style=for-the-badge&logo=streamlit&logoColor=white)](https://gasgraph-ws9tmhabavrjwnxypbv7hi.streamlit.app/)
 
-**SRO** is an advanced spatial routing and analytics platform designed to solve "range anxiety" for both Electric Vehicles (EVs) and traditional combustion engine vehicles during long-distance transit. By synthesizing concepts from **Data Engineering, Operations Research (OR), and Mathematical Optimization**, GasGraph calculates the most efficient refueling and recharging paths across major networks in Turkey (e.g., Shell, Opet, Trugo, ZES) with minimal cost, distance, and detour overhead.
+**SRO** is an advanced spatial routing and analytics platform designed to solve "range anxiety" for both Electric Vehicles (EVs) and traditional combustion engine vehicles during long-distance transit. By synthesizing concepts from **Data Engineering, Operations Research (OR), and Mathematical Optimization**, SRO calculates the most efficient refueling and recharging paths across major networks in Turkey (e.g., Shell, Opet, Trugo, ZES) with minimal cost, distance, and detour overhead.
 
 ---
 
