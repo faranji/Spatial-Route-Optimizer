@@ -6,6 +6,3 @@ turkey-gas-station-data/
 
 __pycache__/
 *.pyc
-
-src/resize_logos.py
-src/assets
