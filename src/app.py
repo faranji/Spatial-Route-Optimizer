@@ -20,7 +20,7 @@ except ModuleNotFoundError:
     key = st.secrets["SUPABASE_KEY"]
     supabase: Client = create_client(url, key)
 
-st.set_page_config(page_title="GasGraph Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon=":no_mouth:")
+st.set_page_config(page_title="SRO | Spatial Route Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon=":no_mouth:")
 
 # ==========================================
 # 0. SESSION STATE
