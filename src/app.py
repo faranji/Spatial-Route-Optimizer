@@ -11,7 +11,7 @@ from streamlit_folium import st_folium
 import os
 import sys
 from utils.geocoder import get_coordinates
-from utils.optimizer import calculate_route, get_real_road_route
+from utils.optimizer import calculate_route, get_real_road_route, calculate_multi_waypoint_route
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 try:
@@ -30,6 +30,8 @@ if "remaining_range" not in st.session_state:
     st.session_state.remaining_range = 150 
 if "current_location" not in st.session_state:
     st.session_state.current_location = "Istanbul" 
+if "waypoint_count" not in st.session_state:
+    st.session_state.waypoint_count = 0
 
 # ==========================================
 # 1. LOAD REAL CLOUD DATA
@@ -54,7 +56,7 @@ def load_gold_data():
 df = load_gold_data()
 
 # ==========================================
-# 2. SIDEBAR & UI FORM
+# 2. SIDEBAR & UI FORM (MULTI-WAYPOINT)
 # ==========================================
 col1, col_logo, col2 = st.sidebar.columns([0.5, 8, 0.5]) 
 with col_logo:
@@ -63,36 +65,52 @@ with col_logo:
     if os.path.exists(logo_path):
         st.image(logo_path, use_container_width=True)
 
-
-
-st.sidebar.markdown("<br>", unsafe_allow_html=True) # İkisi arasına biraz boşluk
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 st.sidebar.title("Route Setup")
 
-# Eklentinin Nominatim ile konuşmasını sağlayan aracı fonksiyon
 def search_for_dropdown(searchterm: str):
     if not searchterm:
         return []
-    
-    # Senin mevcut geocoder fonksiyonun çalışır
     results = get_coordinates(searchterm)
-    
     if isinstance(results, dict):
-        # Dropdown menü için (Ekranda Görünen, Arka Plandaki Değer) formatına çevirir
         return [(address, coords) for address, coords in results.items()]
     return []
 
 with st.sidebar:
-    st.sidebar.markdown("**📍 Start Location**")
+    st.markdown("**📍 Start Location**")
     start_coords_final = st_searchbox(
         search_for_dropdown,
         key="start_searchbox",
         placeholder="Start typing... (e.g., Istanbul)"
     )
 
-    st.sidebar.markdown("<br>", unsafe_allow_html=True)
+    # Dinamik olarak araya giren duraklar (Waypoints)
+    waypoint_coords_list = []
+    for i in range(st.session_state.waypoint_count):
+        st.markdown(f"**🛑 Stopover {i+1}**")
+        wp_coords = st_searchbox(
+            search_for_dropdown,
+            key=f"wp_searchbox_{i}",
+            placeholder="Add a stopover..."
+        )
+        if wp_coords:
+            waypoint_coords_list.append(wp_coords)
 
-    st.sidebar.markdown("**🚩 Destination**")
+    # Yeni durak ekleme ve sıfırlama butonları
+    col_add, col_clear = st.columns(2)
+    with col_add:
+        if st.button("➕ Add Stop"):
+            st.session_state.waypoint_count += 1
+            st.rerun()
+    with col_clear:
+        if st.button("🗑️ Clear Stops") and st.session_state.waypoint_count > 0:
+            st.session_state.waypoint_count = 0
+            st.rerun()
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    st.markdown("**🚩 Final Destination**")
     end_coords_final = st_searchbox(
         search_for_dropdown,
         key="end_searchbox",
@@ -153,21 +171,22 @@ elif "EV" in engine_type and req_strict:
 # 4. OPTIMIZATION TRIGGER
 # ==========================================
 if submit_button:
-    st.session_state.current_location = start_loc
     st.session_state.remaining_range = current_range 
     
     with st.spinner("🗺️ Calculating coordinates and optimizing route..."): 
         
         if start_coords_final is None or end_coords_final is None:
-            st.error("City not found. Please enter a valid location name.")
+            st.error("Please explicitly select Start and Destination locations.")
         else:
             try:
                 w_bonus = 5.0 if req_wc else 0.0
                 m_bonus = 3.0 if req_market else 0.0
                 
-                optimized_route = calculate_route(
-                    start_coords=start_coords,
-                    end_coords=end_coords,
+                # Başlangıç, Ara Duraklar ve Bitişi tek bir listede birleştiriyoruz
+                full_waypoints = [start_coords_final] + waypoint_coords_list + [end_coords_final]
+                
+                optimized_route = calculate_multi_waypoint_route(
+                    waypoints_list=full_waypoints,
                     current_range=current_range,
                     max_range=max_range,
                     df_stations=filtered_df,
@@ -177,8 +196,9 @@ if submit_button:
                     force_forward=force_forward
                 )
                 
-                st.success(f"Route generated successfully with {len(optimized_route)} stops!")
+                st.success(f"Multi-Waypoint Route generated successfully with {len(optimized_route)} fueling stops!")
                 st.session_state.optimized_route = optimized_route 
+                st.session_state.full_waypoints = full_waypoints
                 
             except Exception as e:
                 st.error(f"Optimization failed. Try a different route or increase your current range. Error: {e}")
@@ -234,25 +254,33 @@ for idx, row in filtered_df.iterrows():
 if "optimized_route" in st.session_state and st.session_state.optimized_route:
     route_coords = []
     try:
-        start_c = st.session_state.final_start
-        end_c = st.session_state.final_end
+        user_waypoints = st.session_state.full_waypoints
         
-        if start_c != (None, None):
-            route_coords.append(start_c)
-            folium.Marker(start_c, tooltip="Start Location", icon=folium.Icon(color="green", icon="play")).add_to(m)
+        # Kullanıcının seçtiği ana durakları (Start, Stopovers, End) haritaya ekle
+        for idx, wp in enumerate(user_waypoints):
+            route_coords.append(wp)
+            if idx == 0:
+                folium.Marker(wp, tooltip="Start Location", icon=folium.Icon(color="green", icon="play")).add_to(m)
+            elif idx == len(user_waypoints) - 1:
+                folium.Marker(wp, tooltip="Destination", icon=folium.Icon(color="red", icon="flag")).add_to(m)
+            else:
+                folium.Marker(wp, tooltip=f"Waypoint {idx}", icon=folium.Icon(color="purple", icon="info-sign")).add_to(m)
             
+        # Algoritmanın bulduğu istasyon duraklarını haritaya ekle ve rotaya dahil et
         for stop in st.session_state.optimized_route:
-            stop_coord = (stop['lat'], stop['lon'])
+            if isinstance(stop, list) and len(stop) > 0:
+                best_stop = stop[0]
+            else:
+                best_stop = stop
+                
+            stop_coord = (best_stop['lat'], best_stop['lon'])
             route_coords.append(stop_coord)
+            
             folium.Marker(
                 stop_coord, 
-                tooltip=f"🛑 OPTIMAL STOP: {stop['provider']}", 
+                tooltip=f"🛑 OPTIMAL STOP: {best_stop['provider']}", 
                 icon=folium.Icon(color="orange", icon="star", prefix="fa")
             ).add_to(m)
-
-        if end_c != (None, None):
-            route_coords.append(end_c)
-            folium.Marker(end_c, tooltip="Destination", icon=folium.Icon(color="red", icon="flag")).add_to(m)
 
         real_road_path = get_real_road_route(route_coords)
 
@@ -263,7 +291,7 @@ if "optimized_route" in st.session_state and st.session_state.optimized_route:
             opacity=0.8      
         ).add_to(m)
         
-        m.fit_bounds([start_c, end_c])
+        m.fit_bounds([user_waypoints[0], user_waypoints[-1]])
         
     except Exception as e:
         st.warning(f"Harita çiziminde ufak bir hata oluştu: {e}")
