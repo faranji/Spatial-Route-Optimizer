@@ -154,9 +154,9 @@ if submit_button:
 # 5. MAIN DASHBOARD UI (Dinamik Metrikler)
 # ==========================================
 col1, col2, col3 = st.columns(3)
-col1.metric(label="Distance to Destination", value="~450 KM", delta="-30 KM (Eco-Route)", delta_color="inverse")
-col2.metric(label="Current Range", value=f"{st.session_state.remaining_range} KM", delta="-12% Battery", delta_color="inverse")
-col3.metric(label="Scanned Stations", value=len(filtered_df), delta="High Accuracy", delta_color="off")
+col1.metric(label="Distance to Destination", value="~450 KM", delta_color="inverse")
+col2.metric(label="Current Range", value=f"{st.session_state.remaining_range} KM", delta_color="inverse")
+col3.metric(label="Scanned Stations", value=len(filtered_df), delta_color="off")
 
 st.markdown("<br>", unsafe_allow_html=True)
 
