@@ -15,7 +15,7 @@ def load_json_file(file_path: str) -> List[Dict[str, Any]]:
     # EĞER DATA BİR SÖZLÜKSE (DICTIONARY)
     if isinstance(data, dict):
         
-        # 1. TRUGO FORMATI (GeoJSON yapısı: data -> stationList -> features)
+        # 1. (GeoJSON: data -> stationList -> features)
         if "data" in data and isinstance(data["data"], dict):
             if "stationList" in data["data"] and "features" in data["data"]["stationList"]:
                 return data["data"]["stationList"]["features"]
@@ -24,7 +24,7 @@ def load_json_file(file_path: str) -> List[Dict[str, Any]]:
         if "Values" in data:
             return data["Values"]
             
-        # 3. ZES VB. FORMATI
+        # 3. ZES FORMATI
         extracted_stations = []
         if "stations" in data and isinstance(data["stations"], list):
             extracted_stations.extend(data["stations"])
@@ -67,7 +67,7 @@ def insert_to_supabase(data: List[Dict[str, Any]], provider_name: str, station_t
     
     formatted_data = []
     for item in data:
-        # JSON verisinin içine 'station_type' bilgisini enjekte ediyoruz! (NoSQL esnekliği)
+        # JSON verisinin içine 'station_type' bilgisini enjekte ediyoruz
         item["gasgraph_station_type"] = station_type
         formatted_data.append({
             "provider": provider_name, 
@@ -96,7 +96,7 @@ def main():
         
         # Klasör yoksa hata vermeden diğerine geçsin
         if not os.path.exists(data_dir):
-            print(f"Warning: Directory {data_dir} not found. Skipping...")
+            print(f"Warning: Directory {data_dir} not found.")
             continue
 
         json_files = [f for f in os.listdir(data_dir) if f.endswith('.json')]

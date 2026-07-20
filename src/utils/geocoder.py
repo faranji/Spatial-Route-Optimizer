@@ -6,14 +6,13 @@ from geopy.exc import GeocoderTimedOut
 def get_coordinates(location_name: str) -> tuple:
     """
     Girilen şehir/ilçe ismini koordinatlara çevirir.
-    Mac SSL sorununu 'certifi' paketinin resmi sertifikalarıyla çözer.
+    Mac SSL sorununu 'certifi' paketiyle çöz
     """
-    # İndirdiğimiz certifi paketindeki güvenilir sertifikaların yolunu gösteriyoruz
+    
     ctx = ssl.create_default_context(cafile=certifi.where())
 
     try:
-        # Nominatim'e bu geçerli sertifikalarla bağlanmasını söylüyoruz
-        locator = Nominatim(user_agent="gasgraph_app", ssl_context=ctx)
+        locator = Nominatim(user_agent="spatial_route_optimizer", ssl_context=ctx)
         location = locator.geocode(location_name, timeout=10)
 
         if location:
