@@ -64,25 +64,50 @@ with col_logo:
 
 st.sidebar.title("Route Setup")
 
-# ARAMA KISMI FORMDAN ÇIKARILDI (Kullanıcı yazdıkça anında arama yapsın diye)
-search_start = st.sidebar.text_input("Start Location Search", value=st.session_state.current_location)
+# --- BAŞLANGIÇ NOKTASI (Sanki tek bir kutuymuş gibi görünecek) ---
+st.sidebar.markdown("**📍 Start Location**") # Ana başlığımız
+search_start = st.sidebar.text_input(
+    "Start Location Search", 
+    value=st.session_state.current_location, 
+    label_visibility="collapsed", # Kutunun üstündeki yazıyı gizler!
+    placeholder="Search start location (e.g., Istanbul)"
+)
+
 start_options = get_coordinates(search_start) if search_start else {}
 
-if start_options:
-    selected_start_name = st.sidebar.selectbox("Confirm Start Location:", list(start_options.keys()))
+if isinstance(start_options, dict) and start_options:
+    selected_start_name = st.sidebar.selectbox(
+        "Confirm Start Location:", 
+        list(start_options.keys()), 
+        label_visibility="collapsed" # Seçenekler kutusunun başlığını da gizler, arama kutusuyla birleşikmiş gibi durur!
+    )
     start_coords_final = start_options[selected_start_name]
 else:
-    st.sidebar.warning("Start location not found.")
     start_coords_final = None
 
-search_end = st.sidebar.text_input("Destination Search", value="Ankara")
+
+st.sidebar.markdown("<br>", unsafe_allow_html=True) # İkisi arasına biraz boşluk
+
+
+# --- VARIŞ NOKTASI ---
+st.sidebar.markdown("**🚩 Destination**")
+search_end = st.sidebar.text_input(
+    "Destination Search", 
+    value="Ankara", 
+    label_visibility="collapsed",
+    placeholder="Search destination (e.g., Ankara)"
+)
+
 end_options = get_coordinates(search_end) if search_end else {}
 
-if end_options:
-    selected_end_name = st.sidebar.selectbox("Confirm Destination:", list(end_options.keys()))
+if isinstance(end_options, dict) and end_options:
+    selected_end_name = st.sidebar.selectbox(
+        "Confirm Destination:", 
+        list(end_options.keys()), 
+        label_visibility="collapsed"
+    )
     end_coords_final = end_options[selected_end_name]
 else:
-    st.sidebar.warning("Destination not found.")
     end_coords_final = None
 
 st.sidebar.divider()
