@@ -3,6 +3,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 import streamlit as st
 from supabase import create_client, Client
+from streamlit_searchbox import st_searchbox
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster 
@@ -62,57 +63,43 @@ with col_logo:
     if os.path.exists(logo_path):
         st.image(logo_path, use_container_width=True)
 
-st.sidebar.title("Route Setup")
-
-# --- BAŞLANGIÇ NOKTASI (Sanki tek bir kutuymuş gibi görünecek) ---
-st.sidebar.markdown("**📍 Start Location**") # Ana başlığımız
-search_start = st.sidebar.text_input(
-    "Start Location Search", 
-    value=st.session_state.current_location, 
-    label_visibility="collapsed", # Kutunun üstündeki yazıyı gizler!
-    placeholder="Search start location (e.g., Istanbul)"
-)
-
-start_options = get_coordinates(search_start) if search_start else {}
-
-if isinstance(start_options, dict) and start_options:
-    selected_start_name = st.sidebar.selectbox(
-        "Confirm Start Location:", 
-        list(start_options.keys()), 
-        label_visibility="collapsed" # Seçenekler kutusunun başlığını da gizler, arama kutusuyla birleşikmiş gibi durur!
-    )
-    start_coords_final = start_options[selected_start_name]
-else:
-    start_coords_final = None
 
 
 st.sidebar.markdown("<br>", unsafe_allow_html=True) # İkisi arasına biraz boşluk
 
+st.sidebar.title("Route Setup")
 
-# --- VARIŞ NOKTASI ---
-st.sidebar.markdown("**🚩 Destination**")
-search_end = st.sidebar.text_input(
-    "Destination Search", 
-    value="Ankara", 
-    label_visibility="collapsed",
-    placeholder="Search destination (e.g., Ankara)"
+# Eklentinin Nominatim ile konuşmasını sağlayan aracı fonksiyon
+def search_for_dropdown(searchterm: str):
+    if not searchterm:
+        return []
+    
+    # Senin mevcut geocoder fonksiyonun çalışır
+    results = get_coordinates(searchterm)
+    
+    if isinstance(results, dict):
+        # Dropdown menü için (Ekranda Görünen, Arka Plandaki Değer) formatına çevirir
+        return [(address, coords) for address, coords in results.items()]
+    return []
+
+st.sidebar.markdown("**📍 Start Location**")
+start_coords_final = st_searchbox(
+    search_for_dropdown,
+    key="start_searchbox",
+    placeholder="Start typing... (e.g., Istanbul)"
 )
 
-end_options = get_coordinates(search_end) if search_end else {}
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
-if isinstance(end_options, dict) and end_options:
-    selected_end_name = st.sidebar.selectbox(
-        "Confirm Destination:", 
-        list(end_options.keys()), 
-        label_visibility="collapsed"
-    )
-    end_coords_final = end_options[selected_end_name]
-else:
-    end_coords_final = None
+st.sidebar.markdown("**🚩 Destination**")
+end_coords_final = st_searchbox(
+    search_for_dropdown,
+    key="end_searchbox",
+    placeholder="Start typing... (e.g., Ankara)"
+)
 
 st.sidebar.divider()
 
-# ARAÇ VE DİĞER AYARLAR FORM İÇİNDE KALMAYA DEVAM EDİYOR
 with st.sidebar.form(key="route_setup_form"):
     st.title("Vehicle & Capacity")
     engine_type = st.selectbox("Vehicle Type", ["Combustion (Fuel)", "Electric (EV)"])

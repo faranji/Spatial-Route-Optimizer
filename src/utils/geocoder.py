@@ -12,7 +12,7 @@ def get_coordinates(location_name: str) -> tuple:
 
     try:
         locator = Nominatim(user_agent="spatial_route_optimizer", ssl_context=ctx)
-        location = locator.geocode(location_name, exactly_one=False, limit=5, timeout=10)
+        location = locator.geocode(location_name, exactly_one=False, limit=10, timeout=10)
 
         if location:
             return {loc.address: (loc.latitude, loc.longitude) for loc in location}
