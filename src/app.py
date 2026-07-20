@@ -98,10 +98,8 @@ with st.sidebar.form(key="route_setup_form"):
     with col_btn:
         submit_button = st.form_submit_button(label="Optimize Route", use_container_width=True)
 
-# Gelişmiş Ayarlar (Formun Dışında)
 with st.sidebar.expander("Advanced Settings"):
     st.slider("Tortuosity Factor (Road Curvature)", min_value=1.0, max_value=1.5, value=1.3, step=0.1)
-    st.checkbox("Force Forward Progress (Directional Penalty)", value=True)
     st.checkbox("Show EV Stations Only", value=False)
 
 # ==========================================
