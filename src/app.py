@@ -21,7 +21,7 @@ except ModuleNotFoundError:
     key = st.secrets["SUPABASE_KEY"]
     supabase: Client = create_client(url, key)
 
-st.set_page_config(page_title="SRO | Spatial Route Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon=":no_mouth:")
+st.set_page_config(page_title="SRO | Spatial Route Optimizer", layout="wide", initial_sidebar_state="expanded", page_icon="📍")
 
 # ==========================================
 # 0. SESSION STATE
@@ -58,7 +58,7 @@ df = load_gold_data()
 # ==========================================
 # 2. SIDEBAR & UI FORM (MULTI-WAYPOINT)
 # ==========================================
-col1, col_logo, col2 = st.sidebar.columns([0.5, 8, 0.5]) 
+col1, col_logo, col2 = st.sidebar.columns([1, 6, 1]) 
 with col_logo:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     logo_path = os.path.join(current_dir, "assets", "gasgraph_logo.png")
@@ -66,8 +66,6 @@ with col_logo:
         st.image(logo_path, use_container_width=True)
 
 st.sidebar.markdown("<br>", unsafe_allow_html=True)
-
-st.sidebar.title("Route Setup")
 
 def search_for_dropdown(searchterm: str):
     if not searchterm:
@@ -78,14 +76,15 @@ def search_for_dropdown(searchterm: str):
     return []
 
 with st.sidebar:
-    st.markdown("**📍 Start Location**")
+    st.subheader("📍 Route Setup")
+    
+    st.markdown("**Start Location**")
     start_coords_final = st_searchbox(
         search_for_dropdown,
         key="start_searchbox",
         placeholder="Start typing... (e.g., Istanbul)"
     )
 
-    # Dinamik olarak araya giren duraklar (Waypoints)
     waypoint_coords_list = []
     for i in range(st.session_state.waypoint_count):
         st.markdown(f"**🛑 Stopover {i+1}**")
@@ -97,14 +96,14 @@ with st.sidebar:
         if wp_coords:
             waypoint_coords_list.append(wp_coords)
 
-    # Yeni durak ekleme ve sıfırlama butonları
+    # Butonları daha şık ve yan yana konumlandırma
     col_add, col_clear = st.columns(2)
     with col_add:
-        if st.button("➕ Add Stop"):
+        if st.button("➕ Add Stop", use_container_width=True):
             st.session_state.waypoint_count += 1
             st.rerun()
     with col_clear:
-        if st.button("🗑️ Clear Stops") and st.session_state.waypoint_count > 0:
+        if st.button("🗑️ Clear Stops", use_container_width=True) and st.session_state.waypoint_count > 0:
             st.session_state.waypoint_count = 0
             st.rerun()
 
@@ -117,18 +116,21 @@ with st.sidebar:
         placeholder="Start typing... (e.g., Ankara)"
     )
 
-st.sidebar.divider()
+st.sidebar.markdown("---") # st.divider() yerine daha ince bir çizgi
 
 with st.sidebar.form(key="route_setup_form"):
-    st.title("Vehicle & Capacity")
+    st.subheader("🚗 Vehicle & Capacity")
     engine_type = st.selectbox("Vehicle Type", ["Combustion (Fuel)", "Electric (EV)"])
     
-    current_range = st.number_input("Current Dashboard Range (KM)", min_value=10, max_value=1500, value=st.session_state.remaining_range, step=10)
-    max_range = st.number_input("Vehicle Max Capacity (Full Tank/Battery KM)", min_value=100, max_value=1500, value=400, step=10)
+    col_range1, col_range2 = st.columns(2)
+    with col_range1:
+        current_range = st.number_input("Current (KM)", min_value=10, max_value=1500, value=st.session_state.remaining_range, step=10)
+    with col_range2:
+        max_range = st.number_input("Max (KM)", min_value=100, max_value=1500, value=400, step=10)
 
-    st.divider()
+    st.markdown("---")
     
-    st.title("Preferences")
+    st.subheader("⚙️ Preferences")
     raw_brands = sorted(df['provider'].dropna().unique().tolist())
     brand_options = ["All Brands"] + raw_brands
     
@@ -141,17 +143,15 @@ with st.sidebar.form(key="route_setup_form"):
     
     req_wc = st.checkbox("WC Available (Bonus)")
     req_market = st.checkbox("Market Available (Bonus)")
-    req_strict = st.checkbox("LPG (Fuel) / Fast Charge (EV) Only (Strict)")
+    req_strict = st.checkbox("LPG / Fast Charge Only (Strict)")
 
     st.markdown("<br>", unsafe_allow_html=True)
     
-    col_space1, col_btn, col_space2 = st.columns([1, 4, 1])
-    with col_btn:
-        submit_button = st.form_submit_button(label="Optimize Route", use_container_width=True)
+    submit_button = st.form_submit_button(label="🚀 Optimize Route", use_container_width=True)
 
-with st.sidebar.expander("Advanced Settings"):
+with st.sidebar.expander("🛠️ Advanced Settings"):
     user_tortuosity = st.slider("Tortuosity Factor (Road Curvature)", min_value=1.0, max_value=1.5, value=1.3, step=0.1)
-    force_forward = st.checkbox("Force Forward Progress (Directional Penalty)", value=False)
+    force_forward = st.checkbox("Force Forward Progress", value=False)
 
 # ==========================================
 # 3. FILTERING THE DATA 
@@ -182,7 +182,6 @@ if submit_button:
                 w_bonus = 5.0 if req_wc else 0.0
                 m_bonus = 3.0 if req_market else 0.0
                 
-                # Başlangıç, Ara Duraklar ve Bitişi tek bir listede birleştiriyoruz
                 full_waypoints = [start_coords_final] + waypoint_coords_list + [end_coords_final]
                 
                 optimized_route = calculate_multi_waypoint_route(
@@ -207,9 +206,9 @@ if submit_button:
 # 5. MAIN DASHBOARD UI (Dinamik Metrikler)
 # ==========================================
 col1, col2, col3 = st.columns(3)
-col1.metric(label="Distance to Destination", value="~450 KM", delta_color="inverse")
-col2.metric(label="Current Range", value=f"{st.session_state.remaining_range} KM", delta_color="inverse")
-col3.metric(label="Scanned Stations", value=len(filtered_df), delta_color="off")
+col1.metric(label="🛣️ Distance to Destination", value="~450 KM", delta_color="inverse")
+col2.metric(label="🔋 Current Range", value=f"{st.session_state.remaining_range} KM", delta_color="inverse")
+col3.metric(label="⛽ Scanned Stations", value=len(filtered_df), delta_color="off")
 
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -219,7 +218,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 m = folium.Map(
     location=[39.0, 35.0], 
     zoom_start=6, 
-    tiles="CartoDB dark_matter" 
+    tiles="CartoDB positron" # AÇIK RENK HARİTA TEMASI
 )
 marker_cluster = MarkerCluster().add_to(m)
 
@@ -246,7 +245,7 @@ for idx, row in filtered_df.iterrows():
             location=[row['lat'], row['lon']],
             tooltip=tooltip_text,
             icon=folium.Icon(
-                color='blue' if row['station_type'] == 'ev' else 'orange', 
+                color='blue' if row['station_type'] == 'ev' else 'lightgray', 
                 icon='info-sign'
             )
         ).add_to(marker_cluster)
@@ -256,7 +255,6 @@ if "optimized_route" in st.session_state and st.session_state.optimized_route:
     try:
         user_waypoints = st.session_state.full_waypoints
         
-        # Kullanıcının seçtiği ana durakları (Start, Stopovers, End) haritaya ekle
         for idx, wp in enumerate(user_waypoints):
             route_coords.append(wp)
             if idx == 0:
@@ -266,7 +264,6 @@ if "optimized_route" in st.session_state and st.session_state.optimized_route:
             else:
                 folium.Marker(wp, tooltip=f"Waypoint {idx}", icon=folium.Icon(color="purple", icon="info-sign")).add_to(m)
             
-        # Algoritmanın bulduğu istasyon duraklarını haritaya ekle ve rotaya dahil et
         for stop in st.session_state.optimized_route:
             if isinstance(stop, list) and len(stop) > 0:
                 best_stop = stop[0]
@@ -286,8 +283,8 @@ if "optimized_route" in st.session_state and st.session_state.optimized_route:
 
         folium.PolyLine(
             real_road_path, 
-            color="#FF9B9B", 
-            weight=6,        
+            color="#1E88E5", # PROFESYONEL MAVİ ÇİZGİ
+            weight=5,        
             opacity=0.8      
         ).add_to(m)
         

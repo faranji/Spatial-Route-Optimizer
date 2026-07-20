@@ -1,24 +1,38 @@
-import ssl
-import certifi
-from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderTimedOut
+import googlemaps
+import streamlit as st
 
-def get_coordinates(location_name: str) -> tuple:
+# Streamlit secrets üzerinden API anahtarını güvenli bir şekilde alıyoruz
+try:
+    API_KEY = st.secrets["GOOGLE_MAPS_API_KEY"]
+    gmaps = googlemaps.Client(key=API_KEY)
+except Exception as e:
+    print(f"API Key yüklenemedi: {e}")
+    gmaps = None
+
+def get_coordinates(location_name: str) -> dict:
     """
-    Girilen şehir/ilçe ismini koordinatlara çevirir.
-    Mac SSL sorununu 'certifi' paketiyle çöz
+    Girilen metni Google Maps Geocoding API kullanarak koordinatlara çevirir.
+    Hatalı yazımları düzeltir ve sadece Türkiye'deki sonuçları getirir.
     """
-    ctx = ssl.create_default_context(cafile=certifi.where())
-
-    try:
-        locator = Nominatim(user_agent="spatial_route_optimizer", ssl_context=ctx)
-        location = locator.geocode(location_name, exactly_one=False, limit=10, timeout=10)
-
-        if location:
-            return {loc.address: (loc.latitude, loc.longitude) for loc in location}
-        else:
-            return {}
+    if not gmaps:
+        return {}
         
-    except GeocoderTimedOut:
-        print("timeout error.")
+    try:
+        # components={"country": "TR"} ile aramayı sadece Türkiye'ye kilitliyoruz
+        geocode_result = gmaps.geocode(location_name, components={"country": "TR"})
+        
+        results = {}
+        
+        # Gelen en iyi 5 sonucu al ve SRO'nun anlayacağı sözlük formatına çevir
+        for place in geocode_result[:5]:
+            tam_adres = place['formatted_address']
+            lat = place['geometry']['location']['lat']
+            lon = place['geometry']['location']['lng']
+            
+            results[tam_adres] = (lat, lon)
+            
+        return results
+        
+    except Exception as e:
+        print(f"Google Maps Hatası: {e}")
         return {}
