@@ -113,7 +113,7 @@ with st.sidebar:
 
     waypoint_coords_list = []
     for i in range(st.session_state.waypoint_count):
-        st.markdown(f"**🛑 Stopover {i+1}**")
+        st.markdown(f"**Stopover {i+1}**")
         wp_coords = st_searchbox(
             search_for_dropdown,
             key=f"wp_searchbox_{i}",
