@@ -73,7 +73,7 @@ def calculate_route(start_coords, end_coords, current_range, max_range, df_stati
         reachable_df['detour'] = detour
         reachable_df['cost'] = detour - wc_discount - market_discount
         
-        top_3_stations = reachable_df.nsmallest(3, 'cost')
+        top_3_stations = reachable_df.sort_values('cost').drop_duplicates(subset=['provider']).head(3) # aynı istasyonu vermesin
         route_history.append(top_3_stations.to_dict('records'))
         
         best_station = top_3_stations.iloc[0] 

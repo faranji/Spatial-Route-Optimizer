@@ -268,7 +268,7 @@ final_selected_stops = []
 
 if "optimized_route" in st.session_state and st.session_state.optimized_route:
     st.markdown("---")
-    st.subheader("Station Selection (Human-in-the-Loop)")
+    st.subheader("Station Selection")
     st.write("Algorithm generated top options based on cost, distance, and amenities. Select your preferred stations.")
     
     if "user_selections" not in st.session_state:
