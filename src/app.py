@@ -32,7 +32,7 @@ st.set_page_config(
     page_title="SRO | Spatial Route Optimizer",
     layout="wide",
     initial_sidebar_state="expanded",
-    page_icon="🚗",
+    page_icon=":no_mouth:",
 )
 
 
@@ -116,7 +116,7 @@ def load_gold_data() -> pd.DataFrame:
     loaded_df = pd.DataFrame(all_data)
 
     if loaded_df.empty:
-        raise RuntimeError("sro_gold_stations tablosundan veri alınamadı.")
+        raise RuntimeError("sro_gold_stations table unavailable.")
 
     return loaded_df
 
@@ -124,7 +124,7 @@ def load_gold_data() -> pd.DataFrame:
 try:
     df = load_gold_data()
 except Exception as exc:
-    st.error(f"İstasyon verisi yüklenemedi: {exc}")
+    st.error(f"error: {exc}")
     st.stop()
 
 
@@ -132,10 +132,9 @@ except Exception as exc:
 # HELPERS
 # ==========================================
 def create_search_function(box_key: str):
-    """Her arama kutusu için bağımsız seçenek hafızası oluşturur."""
+    """option box for all searches."""
 
     def search_for_dropdown(searchterm: str):
-        # DÜZELTME 3: 3 harften kısa yazımlarda boşuna API isteği atıp sistemi kilitleme
         if not searchterm or len(searchterm) < 3:
             return st.session_state.get(f"{box_key}_options", [])
 
@@ -192,7 +191,7 @@ def run_route_optimization(
     )
 
     if request_stations.empty:
-        raise ValueError("Seçilen filtrelere uygun istasyon bulunamadı.")
+        raise ValueError("couldn't find any station.")
 
     route_plan = calculate_multi_waypoint_route(
         waypoints_list=route_request["waypoints"],
@@ -211,7 +210,6 @@ def run_route_optimization(
 
 
 def handle_station_change(changed_stop_index: int) -> None:
-    """Bir istasyon seçimi değişince sonraki seçimleri sıfırlar."""
     existing_plan = st.session_state.get("route_plan") or {}
     group_count = len(existing_plan.get("candidate_groups", []))
 
@@ -379,7 +377,6 @@ filtered_df = build_filtered_stations(
     strict_requirement=req_strict,
 )
 
-
 # ==========================================
 # OPTIMIZATION TRIGGER
 # ==========================================
@@ -437,7 +434,7 @@ if submit_button:
                 )
 
 
-# Kullanıcı radio seçimini değiştirince sonraki rota zincirini yeniden hesapla.
+# recalculate if user choose another option.
 if (
     st.session_state.get("route_needs_recompute")
     and st.session_state.get("route_request")
@@ -509,7 +506,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 
 # ==========================================
-# HUMAN-IN-THE-LOOP STATION SELECTION
+# STATION SELECTION
 # ==========================================
 if route_plan and route_plan.get("candidate_groups"):
     st.markdown("---")
@@ -575,8 +572,9 @@ elif route_plan:
 
 
 # ==========================================
-# MAP (ULTRA OPTIMIZED FOR CLOUD)
+# MAP 
 # ==========================================
+
 map_center = [39.0, 35.0]
 map_zoom = 6
 
@@ -619,7 +617,6 @@ if route_plan and route_request:
 
     for stop_index, candidates in enumerate(route_plan.get("candidate_groups", [])):
         
-        # Kullanıcının radyodan seçtiği index'i al (Yoksa varsayılan 0)
         selected_idx = st.session_state.get(f"radio_stop_{stop_index}", 0)
         
         for option_idx, candidate in enumerate(candidates):
@@ -629,7 +626,6 @@ if route_plan and route_request:
             
             is_selected = (option_idx == selected_idx)
 
-            # Seçili olana belirgin YILDIZ, alternatiflere kendi logoları
             if is_selected:
                 marker_icon = folium.Icon(color="orange", icon="star", prefix="fa")
                 tooltip_text = f"⭐ SELECTED: {provider_formatted}"
