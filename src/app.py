@@ -144,18 +144,19 @@ with st.sidebar:
 
 
 st.sidebar.markdown("---")
-"""
-if st.button("🔍 Google API Test Et", use_container_width=True):
-        try:
-            import googlemaps
-            anahtar = st.secrets["GOOGLE_MAPS_API_KEY"]
-            gmaps_test = googlemaps.Client(key=anahtar)
-            sonuc = gmaps_test.geocode("İstanbul", components={"country": "TR"})
-            st.success("BAŞARILI! API çalışıyor.")
-            st.write(sonuc)
-        except Exception as e:
-            st.error(f"HATA DETAYI: {e}")
-"""
+
+# if st.button("🔍 Google API Test Et", use_container_width=True):
+       # try:
+          #  import googlemaps
+          #  anahtar = st.secrets["GOOGLE_MAPS_API_KEY"]
+          #  gmaps_test = googlemaps.Client(key=anahtar)
+          #  sonuc = gmaps_test.geocode("İstanbul", components={"country": "TR"})
+          #  st.success("BAŞARILI! API çalışıyor.")
+          #  st.write(sonuc)
+       # except Exception as e:
+         #   st.error(f"HATA DETAYI: {e}")
+
+
 with st.sidebar.form(key="route_setup_form"):
     st.subheader("Vehicle & Capacity")
     engine_type = st.selectbox("Vehicle Type", ["Combustion (Fuel)", "Electric (EV)"])
