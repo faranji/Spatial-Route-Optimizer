@@ -136,7 +136,8 @@ def create_search_function(box_key: str):
     """Her arama kutusu için bağımsız seçenek hafızası oluşturur."""
 
     def search_for_dropdown(searchterm: str):
-        if not searchterm:
+        # DÜZELTME 3: 3 harften kısa yazımlarda boşuna API isteği atıp sistemi kilitleme
+        if not searchterm or len(searchterm) < 3:
             return st.session_state.get(f"{box_key}_options", [])
 
         results = get_coordinates(searchterm)
@@ -371,7 +372,6 @@ with st.sidebar.expander("Advanced Settings"):
     )
 
 
-# Mevcut kontroller için önizleme filtresi
 current_station_type = "fuel" if "Fuel" in engine_type else "ev"
 filtered_df = build_filtered_stations(
     source_df=df,
@@ -606,10 +606,10 @@ if route_request:
 assets_dir = CURRENT_DIR / "assets"
 available_icons = {p.stem for p in assets_dir.glob("*.png")} if assets_dir.exists() else set()
 
-
 display_map_df = map_station_df if route_plan else map_station_df.head(300)
 
-for _, row in map_station_df.iterrows():
+
+for _, row in display_map_df.iterrows():
     provider = str(row.get("provider") or "Unknown")
     image_name = provider.replace(" ", "_")
 
@@ -624,9 +624,10 @@ for _, row in map_station_df.iterrows():
     if pd.notna(has_market_value) and bool(has_market_value):
         tooltip_text += "<br>Market: Available"
 
-    if icon_path.exists():
+    if image_name in available_icons:
+        icon_file_path = assets_dir / f"{image_name}.png"
         station_icon = folium.CustomIcon(
-            str(icon_path),
+            str(icon_file_path),
             icon_size=(35, 35),
         )
     else:
@@ -640,65 +641,3 @@ for _, row in map_station_df.iterrows():
         tooltip=tooltip_text,
         icon=station_icon,
     ).add_to(marker_cluster)
-
-
-if route_plan and route_request:
-    user_waypoints = route_request["waypoints"]
-
-    for waypoint_index, waypoint in enumerate(user_waypoints):
-        if waypoint_index == 0:
-            tooltip = "Start Location"
-            icon = folium.Icon(color="green", icon="play")
-        elif waypoint_index == len(user_waypoints) - 1:
-            tooltip = "Final Destination"
-            icon = folium.Icon(color="red", icon="flag")
-        else:
-            tooltip = f"User Stopover {waypoint_index}"
-            icon = folium.Icon(color="purple", icon="info-sign")
-
-        folium.Marker(
-            location=waypoint,
-            tooltip=tooltip,
-            icon=icon,
-        ).add_to(route_map)
-
-    for stop_index, selected_stop in enumerate(route_plan.get("selected_stops", [])):
-        folium.Marker(
-            location=[
-                float(selected_stop["lat"]),
-                float(selected_stop["lon"]),
-            ],
-            tooltip=(
-                f"Required Stop {stop_index + 1}: "
-                f"{format_station_name(selected_stop)}"
-            ),
-            icon=folium.Icon(
-                color="orange",
-                icon="star",
-                prefix="fa",
-            ),
-        ).add_to(route_map)
-
-    road_geometry = route_plan.get("road_geometry", [])
-    if road_geometry:
-        folium.PolyLine(
-            road_geometry,
-            color="#1E88E5",
-            weight=5,
-            opacity=0.85,
-        ).add_to(route_map)
-
-    route_bounds = [
-        [float(lat), float(lon)]
-        for lat, lon in route_plan.get("route_coords", [])
-    ]
-    if route_bounds:
-        route_map.fit_bounds(route_bounds, padding=(30, 30))
-
-
-st_folium(
-    route_map,
-    width="100%",
-    height=600,
-    returned_objects=[],
-)
