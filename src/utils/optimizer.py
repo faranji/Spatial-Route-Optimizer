@@ -255,12 +255,9 @@ def calculate_route(
     tortuosity: Optional[float] = None,
 ) -> Dict[str, Any]:
     """
-    Bir rota bacağı için gerekli istasyonları gerçek OSRM mesafesine göre seçer.
-
-    Haversine yalnızca binlerce istasyonu kısa listeye indirmek için kullanılır.
-    Erişilebilirlik, ileri ilerleme ve uzama gerçek yol mesafesiyle hesaplanır.
+    calculates the real OSRM route.
     """
-    del tortuosity  # Eski çağrılarla uyumluluk için tutuluyor; artık kullanılmıyor.
+    del tortuosity
 
     if not 0.50 <= float(range_safety_ratio) <= 1.0:
         raise ValueError("range_safety_ratio 0.50 ile 1.00 arasında olmalıdır.")
@@ -317,7 +314,7 @@ def calculate_route(
             }
 
         if df_work.empty:
-            raise ValueError("Kullanılabilecek başka istasyon kalmadı.")
+            raise ValueError("couldn't find any station(s).")
 
         lats = pd.to_numeric(df_work["lat"], errors="coerce").to_numpy()
         lons = pd.to_numeric(df_work["lon"], errors="coerce").to_numpy()
@@ -328,7 +325,7 @@ def calculate_route(
         lons = lons[valid_coordinate_mask]
 
         if df_work.empty:
-            raise ValueError("Geçerli koordinata sahip istasyon bulunamadı.")
+            raise ValueError("couldn't find any station(s).")
 
         air_from_current = vectorized_haversine(
             current_loc[0],
@@ -357,8 +354,7 @@ def calculate_route(
 
         if preliminary_df.empty:
             raise ValueError(
-                "Mevcut güvenli menzil içerisinde istasyon bulunamadı. "
-                "Menzili artırın veya güvenlik rezervini azaltın."
+                "couldn't find any station(s)."
             )
 
         preliminary_df["_air_from_current"] = air_from_current[preliminary_mask]
@@ -444,13 +440,11 @@ def calculate_route(
         if reachable_df.empty:
             if force_forward:
                 raise ValueError(
-                    "Mevcut menzil içinde ve gerçek yol üzerinden ileri "
-                    "ilerleyen uygun istasyon bulunamadı."
+                    "couldn't find any station(s)."
                 )
 
             raise ValueError(
-                "Kuş uçuşu yakın görünen istasyonların hiçbirine mevcut "
-                "menzille gerçek yol üzerinden ulaşılamıyor."
+                "couldn't find any station(s)."
             )
 
         reachable_df["detour"] = (
@@ -487,7 +481,7 @@ def calculate_route(
         )
 
         if top_candidates.empty:
-            raise ValueError("Uygun istasyon seçilemedi.")
+            raise ValueError("couldn't choose any station(s).")
 
         candidate_records = _station_records_for_ui(
             top_candidates,
@@ -522,8 +516,7 @@ def calculate_route(
         )
 
     raise ValueError(
-        f"Bir rota bacağı {max_stops} duraktan fazla gerektiriyor veya "
-        "algoritma yeterli ilerleme sağlayamıyor."
+        f"too much stops: {max_stops}"
     )
 
 
@@ -540,9 +533,7 @@ def calculate_multi_waypoint_route(
     tortuosity: Optional[float] = None,
 ) -> Dict[str, Any]:
     """
-    Sıralı kullanıcı noktalarını bacaklara böler ve kalan menzili bacaklar
-    arasında gerçek biçimde taşır. Kullanıcının istasyon seçimleri sonraki
-    durakların hesabına doğrudan yansır.
+    divides route into pieces.
     """
     del tortuosity
 
@@ -551,7 +542,7 @@ def calculate_multi_waypoint_route(
     ]
 
     if len(normalized_waypoints) < 2:
-        raise ValueError("En az başlangıç ve varış noktası gereklidir.")
+        raise ValueError("please enter the start and final destinations")
 
     all_candidate_groups: List[List[Dict[str, Any]]] = []
     all_selected_stops: List[Dict[str, Any]] = []
