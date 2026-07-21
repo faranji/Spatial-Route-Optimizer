@@ -6,3 +6,4 @@ turkey-gas-station-data/
 
 __pycache__/
 *.pyc
+.streamlit/secrets.toml
