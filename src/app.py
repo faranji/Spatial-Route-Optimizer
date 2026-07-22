@@ -718,8 +718,8 @@ if submit_button:
             "station_type": current_station_type,
             "selected_brands": selected_brands,
             "strict_requirement": bool(req_strict),
-            "wc_bonus": 5.0 if req_wc else 0.0,
-            "market_bonus": 3.0 if req_market else 0.0,
+            "wc_bonus": 0.0,
+            "market_bonus": 0.0,
             "force_forward": bool(force_forward),
             "range_safety_ratio": (100.0 - safety_reserve_percent) / 100.0,
         }
