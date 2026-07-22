@@ -251,7 +251,7 @@ def load_gold_data() -> pd.DataFrame:
 try:
     df = load_gold_data()
 except Exception as exc:
-    st.error(f"İstasyon verisi yüklenemedi: {exc}")
+    st.error(f"Station data could not be loaded: {exc}")
     st.stop()
 
 
@@ -324,7 +324,7 @@ def run_route_optimization(
     )
 
     if request_stations.empty:
-        raise ValueError("Seçilen filtrelere uygun istasyon bulunamadı.")
+        raise ValueError("No stations match the selected filters.")
 
     route_plan = calculate_multi_waypoint_route(
         waypoints_list=route_request["waypoints"],
@@ -616,6 +616,12 @@ with st.sidebar:
 st.sidebar.markdown("---")
 
 with st.sidebar.form(key="route_setup_form"):
+    submit_button = st.form_submit_button(
+        label="Optimize Route",
+        type="primary",
+        use_container_width=True,
+    )
+
     st.subheader("Vehicle & Capacity")
     engine_type = st.selectbox(
         "Vehicle Type",
@@ -662,11 +668,6 @@ with st.sidebar.form(key="route_setup_form"):
     # req_market = st.checkbox("Market Available")
     req_strict = st.checkbox("LPG / Fast Charge Only")
 
-    # st.markdown("<br>", unsafe_allow_html=True)
-    submit_button = st.form_submit_button(
-        label="Optimize Route",
-        use_container_width=True,
-    )
 
 with st.sidebar.expander("Advanced Settings"):
     safety_reserve_percent = st.slider(
@@ -675,12 +676,12 @@ with st.sidebar.expander("Advanced Settings"):
         max_value=30,
         value=20,
         step=5,
-        help="İstasyona ulaşırken menzilin bu yüzdesi güvenlik payı olarak kullanılmaz.",
+        help="This percentage of the vehicle range is reserved as a safety margin and is not used when calculating station reachability.",
     )
     force_forward = st.checkbox(
         "Force Forward Progress",
         value=False,
-        help="Hedefe gerçek yol mesafesi bakımından yaklaşmayan istasyonları eler.",
+        help="Excludes stations that do not move the route closer to the destination based on actual road distance.",
     )
 
 
