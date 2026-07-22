@@ -1,7 +1,7 @@
+import html
 import os
 import ssl
 import sys
-import html
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -10,7 +10,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 import folium
 import pandas as pd
 import streamlit as st
-from folium.plugins import MarkerCluster
+from folium.plugins import FastMarkerCluster
 from streamlit_folium import st_folium
 from streamlit_searchbox import st_searchbox
 from supabase import Client, create_client
@@ -34,7 +34,7 @@ st.set_page_config(
     page_title="SRO | Spatial Route Optimizer",
     layout="wide",
     initial_sidebar_state="expanded",
-    page_icon=":no_mouth:",
+    page_icon="🚗",
 )
 
 
@@ -59,6 +59,129 @@ st.markdown(
         .material-icons, [class*="icon"], [data-testid="stIconMaterial"] {
             font-family: 'Material Symbols Rounded' !important;
         }
+
+        .sro-hitl-header {
+            margin: 0.25rem 0 1.25rem 0;
+        }
+
+        .sro-hitl-header p {
+            color: #667085;
+            font-size: 0.98rem;
+            line-height: 1.65;
+            margin: 0.35rem 0 0 0;
+        }
+
+        .sro-stop-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1.45rem 0 0.7rem 0;
+        }
+
+        .sro-stop-title {
+            color: #243447;
+            font-size: 1.08rem;
+            font-weight: 700;
+        }
+
+        .sro-leg-pill,
+        .sro-badge {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            border-radius: 999px;
+            font-size: 0.74rem;
+            font-weight: 600;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .sro-leg-pill {
+            color: #475467;
+            background: #f2f4f7;
+            padding: 0.38rem 0.62rem;
+        }
+
+        .sro-badge-row {
+            min-height: 1.7rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .sro-badge {
+            color: #344054;
+            background: #f2f4f7;
+            padding: 0.34rem 0.55rem;
+            margin: 0 0.28rem 0.28rem 0;
+        }
+
+        .sro-badge-recommended {
+            color: #17603a;
+            background: #eaf8f0;
+        }
+
+        .sro-badge-selected {
+            color: #175cd3;
+            background: #eaf2ff;
+        }
+
+        .sro-station-name {
+            color: #1d2939;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.4;
+            min-height: 2.8rem;
+            margin: 0.1rem 0 0.8rem 0;
+        }
+
+        .sro-card-metric-label {
+            color: #667085;
+            font-size: 0.72rem;
+            margin-bottom: 0.06rem;
+        }
+
+        .sro-card-metric-value {
+            color: #101828;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+        }
+
+        .sro-card-footer {
+            color: #667085;
+            font-size: 0.78rem;
+            line-height: 1.4;
+            min-height: 2.15rem;
+            margin-top: 0.35rem;
+        }
+
+        .sro-selected-summary {
+            color: #344054;
+            background: #f8fafc;
+            border: 1px solid #e4e7ec;
+            border-radius: 10px;
+            padding: 0.7rem 0.85rem;
+            margin: 0.7rem 0 0.3rem 0;
+            font-size: 0.88rem;
+        }
+
+        div[data-testid="stVerticalBlockBorderWrapper"] {
+            border-radius: 16px !important;
+            border-color: #e4e7ec !important;
+            box-shadow: 0 4px 14px rgba(16, 24, 40, 0.045);
+            background: #ffffff;
+        }
+
+        div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+            border-color: #b9c8dc !important;
+            box-shadow: 0 7px 20px rgba(16, 24, 40, 0.075);
+            transition: 0.18s ease;
+        }
+
+        div[data-testid="stButton"] > button {
+            border-radius: 10px;
+            font-weight: 600;
+        }
     </style>
     """,
     unsafe_allow_html=True,
@@ -77,6 +200,8 @@ def initialize_session_state() -> None:
         "route_request": None,
         "route_needs_recompute": False,
         "route_status_message": None,
+        "active_stop_index": 0,
+        "show_full_station_map": False,
     }
 
     for key, value in defaults.items():
@@ -164,21 +289,28 @@ def clear_station_radio_state() -> None:
 def build_filtered_stations(
     source_df: pd.DataFrame,
     station_type: str,
-    selected_brand: str,
+    selected_brands: List[str],
     strict_requirement: bool,
 ) -> pd.DataFrame:
     result = source_df[source_df["station_type"] == station_type].copy()
 
-    if selected_brand != "All Brands":
-        result = result[result["provider"] == selected_brand]
+    # Hiç marka seçilmemişse tüm markaları kullan.
+    if selected_brands:
+        result = result[result["provider"].isin(selected_brands)]
 
     if strict_requirement:
         if station_type == "fuel":
             result = result[result["has_lpg"].fillna(False) == True]
         else:
-            result = result[result["has_fast_charge"].fillna(False) == True]
+            result = result[
+                result["has_fast_charge"].fillna(False) == True
+            ]
 
-    return result.dropna(subset=["id", "lat", "lon"]).reset_index(drop=True)
+    return (
+        result
+        .dropna(subset=["id", "lat", "lon"])
+        .reset_index(drop=True)
+    )
 
 
 def run_route_optimization(
@@ -188,7 +320,7 @@ def run_route_optimization(
     request_stations = build_filtered_stations(
         source_df=df,
         station_type=route_request["station_type"],
-        selected_brand=route_request["selected_brand"],
+        selected_brands=route_request["selected_brands"],
         strict_requirement=route_request["strict_requirement"],
     )
 
@@ -211,16 +343,21 @@ def run_route_optimization(
     return route_plan
 
 
-def handle_station_change(changed_stop_index: int) -> None:
-    """Bir istasyon seçimi değişince sonraki seçimleri sıfırlar."""
+def select_station_card(stop_index: int, candidate_index: int) -> None:
+    """Kart seçimini kaydeder ve sonraki rota zincirini yeniden hesaplatır."""
+    st.session_state[f"radio_stop_{stop_index}"] = int(candidate_index)
+
     existing_plan = st.session_state.get("route_plan") or {}
     group_count = len(existing_plan.get("candidate_groups", []))
 
-    for next_index in range(changed_stop_index + 1, group_count):
-        key = f"radio_stop_{next_index}"
-        if key in st.session_state:
-            del st.session_state[key]
+    # Değişen durağın ardından gelen seçimler artık eski rota zincirine aittir.
+    for next_index in range(stop_index + 1, group_count):
+        next_key = f"radio_stop_{next_index}"
+        if next_key in st.session_state:
+            del st.session_state[next_key]
 
+    st.session_state.route_status_message = None
+    st.session_state.active_stop_index = int(stop_index)
     st.session_state.route_needs_recompute = True
 
 
@@ -243,6 +380,186 @@ def format_station_name(candidate: Dict[str, Any]) -> str:
         return f"{provider} — {shortened}"
 
     return provider
+
+
+
+def sample_route_geometry(
+    geometry: List[List[float]],
+    maximum_points: int = 2200,
+) -> List[List[float]]:
+    """Folium bileşenine gönderilen rota verisini makul boyutta tutar."""
+    if not geometry or len(geometry) <= maximum_points:
+        return geometry
+
+    step = max(1, len(geometry) // maximum_points)
+    sampled = geometry[::step]
+
+    if sampled[-1] != geometry[-1]:
+        sampled.append(geometry[-1])
+
+    return sampled
+
+
+def add_route_layers(
+    target_map: folium.Map,
+    current_route_plan: Dict[str, Any],
+    current_route_request: Dict[str, Any],
+    show_alternatives: bool,
+) -> None:
+    """Başlangıç, hedef, seçili duraklar, alternatifler ve rota çizgisini ekler."""
+    user_waypoints = current_route_request["waypoints"]
+
+    for waypoint_index, waypoint in enumerate(user_waypoints):
+        if waypoint_index == 0:
+            tooltip = "Start Location"
+            icon = folium.Icon(color="green", icon="play")
+        elif waypoint_index == len(user_waypoints) - 1:
+            tooltip = "Final Destination"
+            icon = folium.Icon(color="red", icon="flag")
+        else:
+            tooltip = f"User Stopover {waypoint_index}"
+            icon = folium.Icon(color="purple", icon="info-sign")
+
+        folium.Marker(
+            location=[float(waypoint[0]), float(waypoint[1])],
+            tooltip=tooltip,
+            icon=icon,
+        ).add_to(target_map)
+
+    selected_indices = current_route_plan.get("selected_choice_indices", [])
+    candidate_groups = current_route_plan.get("candidate_groups", [])
+
+    if show_alternatives:
+        for stop_index, candidates in enumerate(candidate_groups):
+            selected_index = (
+                int(selected_indices[stop_index])
+                if stop_index < len(selected_indices)
+                else 0
+            )
+
+            for candidate_index, candidate in enumerate(candidates):
+                if candidate_index == selected_index:
+                    continue
+
+                provider = html.escape(format_station_name(candidate))
+                distance = float(candidate.get("distance_from_previous_km", 0.0))
+                detour = float(candidate.get("detour", 0.0))
+
+                folium.CircleMarker(
+                    location=[float(candidate["lat"]), float(candidate["lon"])],
+                    radius=6,
+                    color="#64748B",
+                    weight=2,
+                    fill=True,
+                    fill_color="#CBD5E1",
+                    fill_opacity=0.9,
+                    tooltip=(
+                        f"Alternative for Stop {stop_index + 1}: {provider} | "
+                        f"{distance:.1f} km away | +{detour:.1f} km detour"
+                    ),
+                ).add_to(target_map)
+
+    for stop_index, selected_stop in enumerate(
+        current_route_plan.get("selected_stops", [])
+    ):
+        folium.Marker(
+            location=[
+                float(selected_stop["lat"]),
+                float(selected_stop["lon"]),
+            ],
+            tooltip=(
+                f"Selected Stop {stop_index + 1}: "
+                f"{format_station_name(selected_stop)}"
+            ),
+            icon=folium.Icon(
+                color="orange",
+                icon="star",
+                prefix="fa",
+            ),
+        ).add_to(target_map)
+
+    road_geometry = sample_route_geometry(
+        current_route_plan.get("road_geometry", [])
+    )
+    if road_geometry:
+        folium.PolyLine(
+            road_geometry,
+            color="#1E88E5",
+            weight=5,
+            opacity=0.88,
+        ).add_to(target_map)
+
+    route_bounds = [
+        [float(lat), float(lon)]
+        for lat, lon in current_route_plan.get("route_coords", [])
+    ]
+    if route_bounds:
+        target_map.fit_bounds(route_bounds, padding=(28, 28))
+
+
+def build_route_overview_map(
+    current_route_plan: Dict[str, Any],
+    current_route_request: Dict[str, Any],
+) -> folium.Map:
+    """Yalnızca rota ve HITL adaylarını gösteren hızlı önizleme haritası."""
+    first_coord = current_route_plan["route_coords"][0]
+    overview_map = folium.Map(
+        location=[float(first_coord[0]), float(first_coord[1])],
+        zoom_start=7,
+        tiles="CartoDB positron",
+        control_scale=True,
+    )
+
+    add_route_layers(
+        target_map=overview_map,
+        current_route_plan=current_route_plan,
+        current_route_request=current_route_request,
+        show_alternatives=True,
+    )
+
+    legend_html = """
+    <div style="position: fixed; bottom: 22px; left: 22px; z-index: 9999;
+                background: white; border: 1px solid #d0d5dd; border-radius: 10px;
+                padding: 10px 12px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.10);">
+        <div style="font-weight: 700; margin-bottom: 5px;">Route overview</div>
+        <div><span style="color:#F59E0B;">★</span> Selected station</div>
+        <div><span style="color:#64748B;">●</span> Alternative station</div>
+        <div><span style="color:#1E88E5;">━</span> Optimized road route</div>
+    </div>
+    """
+    overview_map.get_root().html.add_child(folium.Element(legend_html))
+    return overview_map
+
+
+def build_full_station_map(
+    current_route_plan: Dict[str, Any],
+    current_route_request: Dict[str, Any],
+    station_df: pd.DataFrame,
+) -> folium.Map:
+    """Tüm istasyonları FastMarkerCluster ile isteğe bağlı olarak gösterir."""
+    first_coord = current_route_plan["route_coords"][0]
+    full_map = folium.Map(
+        location=[float(first_coord[0]), float(first_coord[1])],
+        zoom_start=6,
+        tiles="CartoDB positron",
+        control_scale=True,
+    )
+
+    station_locations = (
+        station_df[["lat", "lon"]]
+        .astype(float)
+        .values
+        .tolist()
+    )
+    FastMarkerCluster(station_locations).add_to(full_map)
+
+    add_route_layers(
+        target_map=full_map,
+        current_route_plan=current_route_plan,
+        current_route_request=current_route_request,
+        show_alternatives=False,
+    )
+    return full_map
 
 
 # ==========================================
@@ -333,17 +650,16 @@ with st.sidebar.form(key="route_setup_form"):
     st.subheader("Preferences")
 
     raw_brands = sorted(df["provider"].dropna().astype(str).unique().tolist())
-    brand_options = ["All Brands"] + raw_brands
 
     def format_brand_name(brand: str) -> str:
-        if brand == "All Brands":
-            return brand
         return brand.replace("_", " ").title()
 
-    selected_brand = st.selectbox(
-        "Preferred Brand",
-        options=brand_options,
+    selected_brands = st.multiselect(
+        "Preferred Brands",
+        options=raw_brands,
         format_func=format_brand_name,
+        placeholder="All brands",
+        help="Select one or more brands. Leave empty to include all brands.",
     )
 
     req_wc = st.checkbox("WC Available (Bonus)")
@@ -377,7 +693,7 @@ current_station_type = "fuel" if "Fuel" in engine_type else "ev"
 filtered_df = build_filtered_stations(
     source_df=df,
     station_type=current_station_type,
-    selected_brand=selected_brand,
+    selected_brands=selected_brands,
     strict_requirement=req_strict,
 )
 
@@ -404,7 +720,7 @@ if submit_button:
             "current_range": float(current_range),
             "max_range": float(max_range),
             "station_type": current_station_type,
-            "selected_brand": selected_brand,
+            "selected_brands": selected_brands,
             "strict_requirement": bool(req_strict),
             "wc_bonus": 5.0 if req_wc else 0.0,
             "market_bonus": 3.0 if req_market else 0.0,
@@ -413,6 +729,8 @@ if submit_button:
         }
 
         clear_station_radio_state()
+        st.session_state.active_stop_index = 0
+        st.session_state.show_full_station_map = False
 
         with st.spinner("Calculating real road distances and optimizing route..."):
             try:
@@ -511,40 +829,57 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 
 # ==========================================
+# FAST ROUTE OVERVIEW MAP
+# ==========================================
+if route_plan and route_request and route_plan.get("route_coords"):
+    st.markdown("---")
+    st.subheader("Route Overview")
+    st.caption(
+        "Orange stars show the currently selected stations. "
+        "Gray points show the available HITL alternatives. "
+        "Changing a station updates this map automatically."
+    )
+
+    selected_ids = "-".join(
+        str(stop.get("id", index))
+        for index, stop in enumerate(route_plan.get("selected_stops", []))
+    )
+    overview_map = build_route_overview_map(route_plan, route_request)
+    st_folium(
+        overview_map,
+        width="100%",
+        height=430,
+        key=f"route_overview_{selected_ids}",
+        returned_objects=[],
+    )
+
+
+# ==========================================
 # HUMAN-IN-THE-LOOP STATION SELECTION
 # ==========================================
 if route_plan and route_plan.get("candidate_groups"):
-    st.markdown("---")
-    st.subheader("Station Selection")
-    st.write(
-        "Select an alternative station. Every change automatically recalculates "
-        "all following stops from the selected station."
+    st.markdown(
+        """
+        <div class="sro-hitl-header">
+            <h2>Choose Your Preferred Stations</h2>
+            <p>
+                Open a required stop to compare its three recommended stations.
+                Changing a selection automatically recalculates every following
+                stop from the newly selected station.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
     selected_indices = route_plan.get("selected_choice_indices", [])
+    active_stop_index = int(st.session_state.get("active_stop_index", 0))
 
     for stop_index, candidates in enumerate(route_plan["candidate_groups"]):
+        if not candidates:
+            continue
+
         leg_number = int(candidates[0].get("leg_index", 0)) + 1
-        st.markdown(
-            f"**Required Stop {stop_index + 1} · Route Leg {leg_number}**"
-        )
-
-        option_labels = []
-        for candidate in candidates:
-            wc_tag = " | WC" if candidate.get("has_wc") else ""
-            market_tag = " | Market" if candidate.get("has_market") else ""
-            distance_from_previous = float(
-                candidate.get("distance_from_previous_km", 0.0)
-            )
-            detour = float(candidate.get("detour", 0.0))
-
-            option_labels.append(
-                f"{format_station_name(candidate)}"
-                f"{wc_tag}{market_tag} "
-                f"| {distance_from_previous:.1f} KM away "
-                f"| +{detour:.1f} KM detour"
-            )
-
         default_index = (
             int(selected_indices[stop_index])
             if stop_index < len(selected_indices)
@@ -553,22 +888,141 @@ if route_plan and route_plan.get("candidate_groups"):
         if default_index < 0 or default_index >= len(candidates):
             default_index = 0
 
-        radio_key = f"radio_stop_{stop_index}"
-        stored_value = st.session_state.get(radio_key, default_index)
-        if not isinstance(stored_value, int) or stored_value not in range(len(candidates)):
-            st.session_state[radio_key] = default_index
+        choice_key = f"radio_stop_{stop_index}"
+        stored_choice = st.session_state.get(choice_key, default_index)
+        if (
+            not isinstance(stored_choice, int)
+            or stored_choice < 0
+            or stored_choice >= len(candidates)
+        ):
+            stored_choice = default_index
 
-        st.radio(
-            label=f"Stop {stop_index + 1} Options",
-            options=range(len(candidates)),
-            format_func=lambda option_index, labels=option_labels: labels[option_index],
-            index=default_index,
-            key=radio_key,
-            horizontal=True,
-            label_visibility="collapsed",
-            on_change=handle_station_change,
-            args=(stop_index,),
+        st.session_state[choice_key] = stored_choice
+        selected_candidate = candidates[stored_choice]
+        selected_name = format_station_name(selected_candidate)
+        selected_detour = float(selected_candidate.get("detour", 0.0))
+
+        expander_title = (
+            f"Required Stop {stop_index + 1} · Route Leg {leg_number} · "
+            f"{selected_name} · +{selected_detour:.1f} km detour"
         )
+
+        with st.expander(
+            expander_title,
+            expanded=(stop_index == active_stop_index),
+        ):
+            st.caption(
+                "Compare distance, extra detour and station facilities, "
+                "then choose the option that best fits your trip."
+            )
+
+            card_columns = st.columns(len(candidates), gap="medium")
+
+            for candidate_index, candidate in enumerate(candidates):
+                is_selected = candidate_index == stored_choice
+                is_recommended = candidate_index == 0
+
+                provider_name = html.escape(format_station_name(candidate))
+                distance_from_previous = float(
+                    candidate.get("distance_from_previous_km", 0.0)
+                )
+                distance_to_leg_end = float(
+                    candidate.get("distance_to_leg_end_km", 0.0)
+                )
+                detour = float(candidate.get("detour", 0.0))
+
+                badge_parts = []
+                if is_selected:
+                    badge_parts.append(
+                        '<span class="sro-badge sro-badge-selected">Selected</span>'
+                    )
+                elif is_recommended:
+                    badge_parts.append(
+                        '<span class="sro-badge sro-badge-recommended">Best Match</span>'
+                    )
+
+                if candidate.get("has_wc"):
+                    badge_parts.append('<span class="sro-badge">WC</span>')
+                if candidate.get("has_market"):
+                    badge_parts.append('<span class="sro-badge">Market</span>')
+                if candidate.get("has_lpg"):
+                    badge_parts.append('<span class="sro-badge">LPG</span>')
+                if candidate.get("has_fast_charge"):
+                    badge_parts.append('<span class="sro-badge">Fast Charge</span>')
+
+                badge_html = "".join(badge_parts) or (
+                    '<span class="sro-badge">Standard Station</span>'
+                )
+
+                with card_columns[candidate_index]:
+                    with st.container(border=True):
+                        st.markdown(
+                            f"""
+                            <div class="sro-badge-row">{badge_html}</div>
+                            <div class="sro-station-name">{provider_name}</div>
+                            """,
+                            unsafe_allow_html=True,
+                        )
+
+                        metric_left, metric_right = st.columns(2)
+                        with metric_left:
+                            st.markdown(
+                                f"""
+                                <div class="sro-card-metric-label">Distance</div>
+                                <div class="sro-card-metric-value">
+                                    {distance_from_previous:.1f} km
+                                </div>
+                                """,
+                                unsafe_allow_html=True,
+                            )
+                        with metric_right:
+                            st.markdown(
+                                f"""
+                                <div class="sro-card-metric-label">Extra detour</div>
+                                <div class="sro-card-metric-value">
+                                    +{detour:.1f} km
+                                </div>
+                                """,
+                                unsafe_allow_html=True,
+                            )
+
+                        st.markdown(
+                            f"""
+                            <div class="sro-card-footer">
+                                {distance_to_leg_end:.1f} km remains to the end of this route leg.
+                            </div>
+                            """,
+                            unsafe_allow_html=True,
+                        )
+
+                        if is_selected:
+                            st.button(
+                                "Selected",
+                                key=f"selected_card_{stop_index}_{candidate_index}",
+                                type="primary",
+                                use_container_width=True,
+                                disabled=True,
+                            )
+                        else:
+                            st.button(
+                                "Choose This Station",
+                                key=f"choose_card_{stop_index}_{candidate_index}",
+                                type="secondary",
+                                use_container_width=True,
+                                on_click=select_station_card,
+                                args=(stop_index, candidate_index),
+                            )
+
+            st.markdown(
+                f"""
+                <div class="sro-selected-summary">
+                    <strong>Current selection:</strong>
+                    {html.escape(selected_name)}.
+                    The next required stop is calculated from this station.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -577,124 +1031,40 @@ elif route_plan:
 
 
 # ==========================================
-# MAP
+# OPTIONAL FULL STATION NETWORK MAP
 # ==========================================
-map_center = [39.0, 35.0]
-map_zoom = 6
-
-if route_plan and route_plan.get("route_coords"):
-    first_coord = route_plan["route_coords"][0]
-    map_center = [first_coord[0], first_coord[1]]
-    map_zoom = 9
-
-route_map = folium.Map(
-    location=map_center,
-    zoom_start=map_zoom,
-    tiles="CartoDB positron",
-)
-
-marker_cluster = MarkerCluster().add_to(route_map)
-
-map_station_df = filtered_df
-if route_request:
-    map_station_df = build_filtered_stations(
-        source_df=df,
-        station_type=route_request["station_type"],
-        selected_brand=route_request["selected_brand"],
-        strict_requirement=route_request["strict_requirement"],
-    )
-
-for _, row in map_station_df.iterrows():
-    provider = str(row.get("provider") or "Unknown")
-    image_name = provider.replace(" ", "_")
-    icon_path = CURRENT_DIR / "assets" / f"{image_name}.png"
-
-    tooltip_text = (
-        f"<b>{provider}</b><br>"
-        f"Type: {str(row.get('station_type', '')).upper()}"
-    )
-    has_wc_value = row.get("has_wc")
-    has_market_value = row.get("has_market")
-    if pd.notna(has_wc_value) and bool(has_wc_value):
-        tooltip_text += "<br>WC: Available"
-    if pd.notna(has_market_value) and bool(has_market_value):
-        tooltip_text += "<br>Market: Available"
-
-    if icon_path.exists():
-        station_icon = folium.CustomIcon(
-            str(icon_path),
-            icon_size=(35, 35),
-        )
-    else:
-        station_icon = folium.Icon(
-            color="blue" if row.get("station_type") == "ev" else "lightgray",
-            icon="info-sign",
-        )
-
-    folium.Marker(
-        location=[float(row["lat"]), float(row["lon"])],
-        tooltip=tooltip_text,
-        icon=station_icon,
-    ).add_to(marker_cluster)
-
-
 if route_plan and route_request:
-    user_waypoints = route_request["waypoints"]
+    st.markdown("---")
+    st.subheader("Full Station Network")
+    st.caption(
+        "The route overview above is loaded immediately for fast interaction. "
+        "Load the complete station network only when you need to inspect all stations."
+    )
 
-    for waypoint_index, waypoint in enumerate(user_waypoints):
-        if waypoint_index == 0:
-            tooltip = "Start Location"
-            icon = folium.Icon(color="green", icon="play")
-        elif waypoint_index == len(user_waypoints) - 1:
-            tooltip = "Final Destination"
-            icon = folium.Icon(color="red", icon="flag")
-        else:
-            tooltip = f"User Stopover {waypoint_index}"
-            icon = folium.Icon(color="purple", icon="info-sign")
+    show_full_station_map = st.toggle(
+        f"Load all {int(route_plan.get('scanned_station_count', len(filtered_df))):,} station markers",
+        key="show_full_station_map",
+        help="This view can take longer to render because it contains the complete station dataset.",
+    )
 
-        folium.Marker(
-            location=waypoint,
-            tooltip=tooltip,
-            icon=icon,
-        ).add_to(route_map)
+    if show_full_station_map:
+        map_station_df = build_filtered_stations(
+            source_df=df,
+            station_type=route_request["station_type"],
+            selected_brands=route_request["selected_brands"],
+            strict_requirement=route_request["strict_requirement"],
+        )
 
-    for stop_index, selected_stop in enumerate(route_plan.get("selected_stops", [])):
-        folium.Marker(
-            location=[
-                float(selected_stop["lat"]),
-                float(selected_stop["lon"]),
-            ],
-            tooltip=(
-                f"Required Stop {stop_index + 1}: "
-                f"{format_station_name(selected_stop)}"
-            ),
-            icon=folium.Icon(
-                color="orange",
-                icon="star",
-                prefix="fa",
-            ),
-        ).add_to(route_map)
-
-    road_geometry = route_plan.get("road_geometry", [])
-    if road_geometry:
-        folium.PolyLine(
-            road_geometry,
-            color="#1E88E5",
-            weight=5,
-            opacity=0.85,
-        ).add_to(route_map)
-
-    route_bounds = [
-        [float(lat), float(lon)]
-        for lat, lon in route_plan.get("route_coords", [])
-    ]
-    if route_bounds:
-        route_map.fit_bounds(route_bounds, padding=(30, 30))
-
-
-st_folium(
-    route_map,
-    width="100%",
-    height=600,
-    returned_objects=[],
-)
+        with st.spinner("Loading the complete station network..."):
+            full_station_map = build_full_station_map(
+                current_route_plan=route_plan,
+                current_route_request=route_request,
+                station_df=map_station_df,
+            )
+            st_folium(
+                full_station_map,
+                width="100%",
+                height=600,
+                key="full_station_network_map",
+                returned_objects=[],
+            )
