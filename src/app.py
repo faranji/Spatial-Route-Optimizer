@@ -243,7 +243,7 @@ def load_gold_data() -> pd.DataFrame:
     loaded_df = pd.DataFrame(all_data)
 
     if loaded_df.empty:
-        raise RuntimeError("sro_gold_stations tablosundan veri alınamadı.")
+        raise RuntimeError("couldn't load data.")
 
     return loaded_df
 
@@ -259,7 +259,6 @@ except Exception as exc:
 # HELPERS
 # ==========================================
 def create_search_function(box_key: str):
-    """Her arama kutusu için bağımsız seçenek hafızası oluşturur."""
 
     def search_for_dropdown(searchterm: str):
         if not searchterm:
@@ -344,7 +343,6 @@ def run_route_optimization(
 
 
 def select_station_card(stop_index: int, candidate_index: int) -> None:
-    """Kart seçimini kaydeder ve sonraki rota zincirini yeniden hesaplatır."""
     st.session_state[f"radio_stop_{stop_index}"] = int(candidate_index)
 
     existing_plan = st.session_state.get("route_plan") or {}
@@ -387,7 +385,6 @@ def sample_route_geometry(
     geometry: List[List[float]],
     maximum_points: int = 2200,
 ) -> List[List[float]]:
-    """Folium bileşenine gönderilen rota verisini makul boyutta tutar."""
     if not geometry or len(geometry) <= maximum_points:
         return geometry
 
@@ -406,7 +403,6 @@ def add_route_layers(
     current_route_request: Dict[str, Any],
     show_alternatives: bool,
 ) -> None:
-    """Başlangıç, hedef, seçili duraklar, alternatifler ve rota çizgisini ekler."""
     user_waypoints = current_route_request["waypoints"]
 
     for waypoint_index, waypoint in enumerate(user_waypoints):
@@ -757,7 +753,6 @@ if submit_button:
                 )
 
 
-# Kullanıcı radio seçimini değiştirince sonraki rota zincirini yeniden hesapla.
 if (
     st.session_state.get("route_needs_recompute")
     and st.session_state.get("route_request")

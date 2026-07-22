@@ -94,7 +94,7 @@ def get_osrm_route(coords_list: Sequence[Sequence[float]]) -> Dict[str, Any]:
     normalized_coords = [_normalize_coordinate(coords) for coords in coords_list]
 
     if len(normalized_coords) < 2:
-        raise ValueError("Rota için en az iki koordinat gereklidir.")
+        raise ValueError("at least two coordinates for route.")
 
     waypoints = ";".join(
         f"{lon:.7f},{lat:.7f}" for lat, lon in normalized_coords
@@ -113,7 +113,7 @@ def get_osrm_route(coords_list: Sequence[Sequence[float]]) -> Dict[str, Any]:
 
     if data.get("code") != "Ok" or not data.get("routes"):
         raise RuntimeError(
-            f"OSRM rota oluşturamadı: {data.get('message', data.get('code'))}"
+            f"OSRM couldn't load the route: {data.get('message', data.get('code'))}"
         )
 
     route = data["routes"][0]
@@ -128,13 +128,12 @@ def get_osrm_route(coords_list: Sequence[Sequence[float]]) -> Dict[str, Any]:
 
 
 def get_real_road_route(coords_list: Sequence[Sequence[float]]) -> List[Coordinate]:
-    """Harita için gerçek yol geometrisini döndürür; hata olursa düz çizgiye düşer."""
     normalized_coords = [_normalize_coordinate(coords) for coords in coords_list]
 
     try:
         return get_osrm_route(normalized_coords)["geometry"]
     except Exception as exc:
-        print(f"OSRM rota geometrisi hatası: {exc}")
+        print(f"OSRM error: {exc}")
         return normalized_coords
 
 
@@ -170,11 +169,10 @@ def get_osrm_route_distance(
 def get_osrm_distance_matrix(
     coords_list: Sequence[Sequence[float]],
 ) -> np.ndarray:
-    """Koordinatlar arasındaki gerçek sürüş mesafesi matrisini KM olarak döndürür."""
     normalized_coords = [_normalize_coordinate(coords) for coords in coords_list]
 
     if len(normalized_coords) < 2:
-        raise ValueError("Mesafe matrisi için en az iki koordinat gereklidir.")
+        raise ValueError("need at least two coordinates.")
 
     coordinate_string = ";".join(
         f"{lon:.7f},{lat:.7f}" for lat, lon in normalized_coords
@@ -189,7 +187,7 @@ def get_osrm_distance_matrix(
 
     if data.get("code") != "Ok" or "distances" not in data:
         raise RuntimeError(
-            "OSRM mesafe matrisi oluşturamadı: "
+            "OSRM error: "
             f"{data.get('message', data.get('code'))}"
         )
 
@@ -210,7 +208,6 @@ def _station_records_for_ui(
     leg_index: int,
     global_stop_index: int,
 ) -> List[Dict[str, Any]]:
-    """İç hesaplama sütunlarını temizleyip UI için kayıt listesi üretir."""
     records: List[Dict[str, Any]] = []
 
     for _, row in candidates_df.iterrows():
@@ -260,10 +257,10 @@ def calculate_route(
     del tortuosity
 
     if not 0.50 <= float(range_safety_ratio) <= 1.0:
-        raise ValueError("range_safety_ratio 0.50 ile 1.00 arasında olmalıdır.")
+        raise ValueError("range_safety_ratio needs to be between 0.50 and 1.00.")
 
     if float(current_range) <= 0 or float(max_range) <= 0:
-        raise ValueError("Menzil değerleri sıfırdan büyük olmalıdır.")
+        raise ValueError("range needs to be bigger than 0.")
 
     current_loc = _normalize_coordinate(start_coords)
     end_coords_normalized = _normalize_coordinate(end_coords)
@@ -424,7 +421,7 @@ def calculate_route(
         station_to_destination = distance_matrix[2:, 1]
 
         if not np.isfinite(base_road_distance):
-            raise ValueError("Başlangıç ile hedef arasında sürüş rotası bulunamadı.")
+            raise ValueError("couldn't find any route to this destination.")
 
         shortlist["_road_from_current"] = road_to_station
         shortlist["_road_to_destination"] = station_to_destination
