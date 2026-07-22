@@ -455,13 +455,11 @@ def calculate_route(
             )
 
         # cost =  detour - advantages + remanining range (we will go as far as we can)
-        reachable_df["cost"] = (
-            reachable_df["detour"]
-            - wc_discount
-            - market_discount
+        reachable_df["detour"] = (
+            reachable_df["_road_from_current"]
             + reachable_df["_road_to_destination"]
+            - base_road_distance
         ).clip(lower=0.0)
-
 
         wc_discount = (
             reachable_df["has_wc"]
@@ -476,10 +474,12 @@ def calculate_route(
             * float(market_bonus)
         )
 
+
         reachable_df["cost"] = (
             reachable_df["detour"]
             - wc_discount
             - market_discount
+            + reachable_df["_road_to_destination"]
         )
 
         top_candidates = (
