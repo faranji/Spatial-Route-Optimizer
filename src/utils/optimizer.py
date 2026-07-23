@@ -247,8 +247,8 @@ def calculate_route(
     choice_indices: Optional[Sequence[int]] = None,
     choice_offset: int = 0,
     leg_index: int = 0,
-    max_stops: int = 20,
-    max_osrm_candidates: int = 36,
+    max_stops: int = 30,
+    max_osrm_candidates: int = 45,
     tortuosity: Optional[float] = None,
 ) -> Dict[str, Any]:
     """
@@ -375,52 +375,86 @@ def calculate_route(
             * float(market_bonus)
         )
 
-        # Prefer stations near the useful end of the available range,
-        # rather than repeatedly selecting very short local hops.
-        target_air_distance = safe_range * 0.85
-        preliminary_df["_target_gap"] = (
-            preliminary_df["_air_from_current"] - target_air_distance
-        ).abs()
+        full_tank_safe_range = float(max_range) * float(range_safety_ratio)
         preliminary_df["_approx_progress"] = (
             current_air_to_destination
             - preliminary_df["_air_to_destination"]
         )
 
-        preliminary_df["_approx_cost"] = (
-            3.0 * preliminary_df["_approx_detour"]
-            + 0.35 * preliminary_df["_target_gap"]
-            - 0.10 * preliminary_df["_approx_progress"].clip(lower=0.0)
-            - wc_discount
-            - market_discount
+        # Estimated number of additional stops after visiting each candidate.
+        # This is used only for the OSRM shortlist; the final decision below
+        # uses actual road distances.
+        remaining_after_candidate = np.maximum(
+            0.0,
+            preliminary_df["_air_to_destination"] - float(max_range),
         )
+        preliminary_df["_approx_future_stops"] = np.ceil(
+            remaining_after_candidate / max(full_tank_safe_range, 1.0)
+        ).astype(int)
+
+        # A candidate should make forward progress. When Force Forward
+        # Progress is enabled, apply a slightly stricter preliminary filter.
+        minimum_approx_progress = 1.0 if force_forward else 0.25
+        forward_preliminary_df = preliminary_df[
+            preliminary_df["_approx_progress"] >= minimum_approx_progress
+        ].copy()
+
+        if forward_preliminary_df.empty:
+            forward_preliminary_df = preliminary_df.copy()
 
         candidate_limit = max(18, int(max_osrm_candidates))
-        best_count = max(12, candidate_limit - 8)
 
-        best_candidates = (
-            preliminary_df
-            .sort_values(["_approx_cost", "_air_to_destination"])
-            .head(best_count)
+        # 1) Candidates with the lowest estimated stop count and detour.
+        stop_count_candidates = (
+            forward_preliminary_df
+            .sort_values(
+                [
+                    "_approx_future_stops",
+                    "_approx_detour",
+                    "_air_to_destination",
+                ]
+            )
+            .head(max(20, candidate_limit - 20))
         )
 
+        # 2) Candidates near the usable range frontier, which are important
+        # for minimizing the total number of stops.
         frontier_candidates = (
-            preliminary_df
+            forward_preliminary_df
             .sort_values(
                 ["_air_from_current", "_approx_detour"],
                 ascending=[False, True],
             )
-            .head(4)
+            .head(12)
         )
 
+        # 3) Low-detour candidates as a corridor-preserving fallback.
+        corridor_candidates = (
+            forward_preliminary_df
+            .sort_values(
+                ["_approx_detour", "_air_to_destination"]
+            )
+            .head(10)
+        )
+
+        # 4) A few nearest candidates ensure that low initial ranges still
+        # produce a valid shortlist.
         nearest_candidates = (
             preliminary_df
-            .sort_values(["_air_from_current", "_approx_cost"])
-            .head(4)
+            .sort_values(
+                ["_air_from_current", "_approx_detour"]
+            )
+            .head(5)
         )
 
         shortlist = (
             pd.concat(
-                [best_candidates, frontier_candidates, nearest_candidates]
+                [
+                    stop_count_candidates,
+                    frontier_candidates,
+                    corridor_candidates,
+                    nearest_candidates,
+                ]
             )
             .drop_duplicates(subset=["id"])
             .head(candidate_limit)
@@ -454,58 +488,38 @@ def calculate_route(
         )
 
         road_progress = base_road_distance - station_to_destination
-        forward_mask = reachable_mask & (road_progress > 0.5)
-
-        if force_forward:
-            strict_progress_km = max(
-                1.0,
-                min(10.0, safe_range * 0.05),
-            )
-            candidate_mask = (
-                reachable_mask
-                & (road_progress >= strict_progress_km)
-            )
-
-            if not candidate_mask.any():
-                raise ValueError(
-                    "No reachable station satisfies Force Forward Progress. "
-                    "Disable the option, increase the current range, or reduce "
-                    "the safety reserve."
-                )
-        elif forward_mask.any():
-            candidate_mask = forward_mask
-        else:
-            candidate_mask = reachable_mask
-
-        # Use a meaningful part of the available range whenever possible.
-        # This prevents several unnecessary stops around the same city.
-        minimum_hop_km = max(5.0, safe_range * 0.55)
-        long_hop_mask = (
-            candidate_mask
-            & (road_to_station >= minimum_hop_km)
+        minimum_forward_progress_km = 1.0 if force_forward else 0.25
+        forward_mask = (
+            reachable_mask
+            & (road_progress >= minimum_forward_progress_km)
         )
 
-        valid_mask = (
-            long_hop_mask
-            if long_hop_mask.any()
-            else candidate_mask
-        )
-
-        reachable_df = shortlist.loc[valid_mask].copy()
+        reachable_df = shortlist.loc[forward_mask].copy()
 
         if reachable_df.empty:
+            if force_forward:
+                raise ValueError(
+                    "No reachable station satisfies Force Forward Progress. "
+                    "Disable the option, increase the current range, reduce "
+                    "the safety reserve, or select more brands."
+                )
+
             raise ValueError(
-                "No station in the candidate set is reachable within the "
-                "current usable range. Increase the current range, reduce the "
-                "safety reserve, or select more brands."
+                "No reachable station makes forward progress toward the "
+                "destination. Increase the current range, reduce the safety "
+                "reserve, or select more brands."
             )
 
-        # cost =  detour - advantages + remanining range (we will go as far as we can)
         reachable_df["detour"] = (
             reachable_df["_road_from_current"]
             + reachable_df["_road_to_destination"]
             - base_road_distance
         ).clip(lower=0.0)
+
+        reachable_df["progress_km"] = (
+            base_road_distance
+            - reachable_df["_road_to_destination"]
+        )
 
         wc_discount = (
             reachable_df["has_wc"]
@@ -520,36 +534,81 @@ def calculate_route(
             * float(market_bonus)
         )
 
+        full_tank_safe_range = float(max_range) * float(range_safety_ratio)
 
-        reachable_df["progress_km"] = (
-            base_road_distance
-            - reachable_df["_road_to_destination"]
+        # Lower-bound estimate of how many further stops will be required
+        # after reaching each station:
+        # - If the destination is within a full tank, no further stop is needed.
+        # - Otherwise, each additional stop can cover at most the usable
+        #   full-tank range.
+        remaining_beyond_final_tank = np.maximum(
+            0.0,
+            reachable_df["_road_to_destination"] - float(max_range),
         )
+        reachable_df["estimated_future_stops"] = np.ceil(
+            remaining_beyond_final_tank
+            / max(full_tank_safe_range, 1.0)
+        ).astype(int)
 
-        target_road_distance = safe_range * 0.85
-        reachable_df["target_gap_km"] = (
-            reachable_df["_road_from_current"]
-            - target_road_distance
-        ).abs()
+        # Avoid unnecessary short hops when an equally good stop-count option
+        # uses a meaningful portion of the available range.
+        minimum_useful_hop_km = max(5.0, safe_range * 0.55)
+        reachable_df["short_hop_penalty"] = (
+            reachable_df["_road_from_current"] < minimum_useful_hop_km
+        ).astype(int)
 
+        # Lexicographic objective:
+        # 1) minimum estimated number of stops,
+        # 2) avoid short hops,
+        # 3) minimum detour,
+        # 4) preferences,
+        # 5) maximum forward progress.
+        #
+        # The numeric cost is retained for the UI/debugging output, while the
+        # actual ordering below follows the individual objective columns.
         reachable_df["cost"] = (
-            3.0 * reachable_df["detour"]
-            + 0.35 * reachable_df["target_gap_km"]
-            - 0.15 * reachable_df["progress_km"]
+            reachable_df["estimated_future_stops"] * 100000.0
+            + reachable_df["short_hop_penalty"] * 10000.0
+            + reachable_df["detour"] * 100.0
             - wc_discount
             - market_discount
+            - reachable_df["progress_km"] * 0.01
         )
 
-        top_candidates = (
+        ordered_candidates = (
             reachable_df
             .sort_values(
-                ["cost", "_road_from_current"],
-                ascending=[True, False],
+                [
+                    "estimated_future_stops",
+                    "short_hop_penalty",
+                    "detour",
+                    "progress_km",
+                ],
+                ascending=[True, True, True, False],
             )
             .drop_duplicates(subset=["id"])
-            .head(3)
-            .copy()
         )
+
+        # The three HITL alternatives should first come from the best
+        # stop-count class. If fewer than three exist, fill the remaining
+        # slots from the global ordering.
+        minimum_future_stops = int(
+            ordered_candidates["estimated_future_stops"].min()
+        )
+        best_stop_count_class = ordered_candidates[
+            ordered_candidates["estimated_future_stops"]
+            == minimum_future_stops
+        ]
+
+        top_candidates = best_stop_count_class.head(3).copy()
+
+        if len(top_candidates) < 3:
+            remaining_candidates = ordered_candidates[
+                ~ordered_candidates["id"].isin(top_candidates["id"])
+            ].head(3 - len(top_candidates))
+            top_candidates = pd.concat(
+                [top_candidates, remaining_candidates]
+            ).head(3).copy()
 
         if top_candidates.empty:
             raise ValueError("couldn't choose any station(s).")
@@ -581,8 +640,9 @@ def calculate_route(
         current_remaining_range = float(max_range)
         choice_cursor += 1
 
-        # Remove the selected record and near-duplicate station records
-        # around the same physical location.
+        # Remove the selected station and near-duplicate records around
+        # the same physical location. This prevents repeated stops at the same
+        # station complex under different provider/name records.
         remaining_lats = pd.to_numeric(
             df_work["lat"],
             errors="coerce",
@@ -601,13 +661,15 @@ def calculate_route(
         df_work = (
             df_work[
                 (df_work["id"] != selected_station["id"])
-                & (distance_from_selected >= 1.0)
+                & (distance_from_selected >= 0.75)
             ]
             .reset_index(drop=True)
         )
 
     raise ValueError(
-        f"too much stops: {max_stops}"
+        "The optimizer could not complete the route within "
+        f"{max_stops} stops. This usually indicates insufficient range, "
+        "an overly restrictive station filter, or a gap in station coverage."
     )
 
 
