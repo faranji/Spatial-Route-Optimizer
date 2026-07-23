@@ -248,7 +248,7 @@ def calculate_route(
     choice_offset: int = 0,
     leg_index: int = 0,
     max_stops: int = 20,
-    max_osrm_candidates: int = 28,
+    max_osrm_candidates: int = 36,
     tortuosity: Optional[float] = None,
 ) -> Dict[str, Any]:
     """
@@ -375,25 +375,27 @@ def calculate_route(
             * float(market_bonus)
         )
 
+        # Prefer stations near the useful end of the available range,
+        # rather than repeatedly selecting very short local hops.
+        target_air_distance = safe_range * 0.85
+        preliminary_df["_target_gap"] = (
+            preliminary_df["_air_from_current"] - target_air_distance
+        ).abs()
         preliminary_df["_approx_progress"] = (
             current_air_to_destination
             - preliminary_df["_air_to_destination"]
         )
 
-        # Prefer candidates that create meaningful forward progress while
-        # keeping the approximate detour low. Nearby candidates are retained
-        # only as a fallback, not as the main optimization target.
         preliminary_df["_approx_cost"] = (
-            2.0 * preliminary_df["_approx_detour"]
-            - preliminary_df["_approx_progress"]
+            3.0 * preliminary_df["_approx_detour"]
+            + 0.35 * preliminary_df["_target_gap"]
+            - 0.10 * preliminary_df["_approx_progress"].clip(lower=0.0)
             - wc_discount
             - market_discount
         )
 
-        candidate_limit = max(12, int(max_osrm_candidates))
-        nearest_count = min(6, candidate_limit)
-        frontier_count = min(8, max(0, candidate_limit - nearest_count))
-        best_count = max(0, candidate_limit - nearest_count - frontier_count)
+        candidate_limit = max(18, int(max_osrm_candidates))
+        best_count = max(12, candidate_limit - 8)
 
         best_candidates = (
             preliminary_df
@@ -402,18 +404,18 @@ def calculate_route(
         )
 
         frontier_candidates = (
-            preliminary_df[preliminary_df["_approx_progress"] > 0.0]
+            preliminary_df
             .sort_values(
                 ["_air_from_current", "_approx_detour"],
                 ascending=[False, True],
             )
-            .head(frontier_count)
+            .head(4)
         )
 
         nearest_candidates = (
             preliminary_df
             .sort_values(["_air_from_current", "_approx_cost"])
-            .head(nearest_count)
+            .head(4)
         )
 
         shortlist = (
@@ -452,43 +454,46 @@ def calculate_route(
         )
 
         road_progress = base_road_distance - station_to_destination
+        forward_mask = reachable_mask & (road_progress > 0.5)
 
-        # Avoid unnecessary short hops when a station that provides meaningful
-        # progress is available. The threshold scales with the usable range,
-        # but remains conservative for short initial ranges.
-        useful_progress_km = max(
-            2.0,
-            min(15.0, safe_range * 0.10),
-        )
-
-        useful_forward_mask = (
-            reachable_mask
-            & (road_progress >= useful_progress_km)
-        )
-
-        if useful_forward_mask.any():
-            valid_mask = useful_forward_mask
-        elif force_forward:
-            minimum_forward_progress_km = 0.5
-            valid_mask = (
-                reachable_mask
-                & (road_progress >= minimum_forward_progress_km)
+        if force_forward:
+            strict_progress_km = max(
+                1.0,
+                min(10.0, safe_range * 0.05),
             )
-        else:
-            # Fallback for sparse regions: allow any reachable station, while
-            # the cost function below still strongly prefers forward progress.
-            valid_mask = reachable_mask
+            candidate_mask = (
+                reachable_mask
+                & (road_progress >= strict_progress_km)
+            )
 
-        reachable_df = shortlist.loc[valid_mask].copy()
-
-        if reachable_df.empty:
-            if force_forward:
+            if not candidate_mask.any():
                 raise ValueError(
                     "No reachable station satisfies Force Forward Progress. "
                     "Disable the option, increase the current range, or reduce "
                     "the safety reserve."
                 )
+        elif forward_mask.any():
+            candidate_mask = forward_mask
+        else:
+            candidate_mask = reachable_mask
 
+        # Use a meaningful part of the available range whenever possible.
+        # This prevents several unnecessary stops around the same city.
+        minimum_hop_km = max(5.0, safe_range * 0.55)
+        long_hop_mask = (
+            candidate_mask
+            & (road_to_station >= minimum_hop_km)
+        )
+
+        valid_mask = (
+            long_hop_mask
+            if long_hop_mask.any()
+            else candidate_mask
+        )
+
+        reachable_df = shortlist.loc[valid_mask].copy()
+
+        if reachable_df.empty:
             raise ValueError(
                 "No station in the candidate set is reachable within the "
                 "current usable range. Increase the current range, reduce the "
@@ -521,19 +526,26 @@ def calculate_route(
             - reachable_df["_road_to_destination"]
         )
 
-        # For a station located directly on the route, detour is near zero and
-        # progress is close to the driven distance. This score therefore
-        # prefers farther forward stations instead of many short local hops.
+        target_road_distance = safe_range * 0.85
+        reachable_df["target_gap_km"] = (
+            reachable_df["_road_from_current"]
+            - target_road_distance
+        ).abs()
+
         reachable_df["cost"] = (
-            2.0 * reachable_df["detour"]
-            - reachable_df["progress_km"]
+            3.0 * reachable_df["detour"]
+            + 0.35 * reachable_df["target_gap_km"]
+            - 0.15 * reachable_df["progress_km"]
             - wc_discount
             - market_discount
         )
 
         top_candidates = (
             reachable_df
-            .sort_values(["cost", "_road_to_destination"])
+            .sort_values(
+                ["cost", "_road_from_current"],
+                ascending=[True, False],
+            )
             .drop_duplicates(subset=["id"])
             .head(3)
             .copy()
@@ -569,8 +581,28 @@ def calculate_route(
         current_remaining_range = float(max_range)
         choice_cursor += 1
 
+        # Remove the selected record and near-duplicate station records
+        # around the same physical location.
+        remaining_lats = pd.to_numeric(
+            df_work["lat"],
+            errors="coerce",
+        ).to_numpy()
+        remaining_lons = pd.to_numeric(
+            df_work["lon"],
+            errors="coerce",
+        ).to_numpy()
+        distance_from_selected = vectorized_haversine(
+            current_loc[0],
+            current_loc[1],
+            remaining_lats,
+            remaining_lons,
+        )
+
         df_work = (
-            df_work[df_work["id"] != selected_station["id"]]
+            df_work[
+                (df_work["id"] != selected_station["id"])
+                & (distance_from_selected >= 1.0)
+            ]
             .reset_index(drop=True)
         )
 
